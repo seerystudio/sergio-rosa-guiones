@@ -4,13 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Guiones · Sergio Rosa y Asociados</title>
-<meta name="description" content="Los guiones de octubre, con arranques para elegir, el video de ejemplo al lado y ángulos para los próximos meses.">
+<meta name="description" content="Guiones de Sergio Rosa y Asociados: trece temas en tres formatos, uno por semana, con su reel de referencia.">
 <meta name="robots" content="noindex">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
+@font-face{font-family:'General Sans';src:url(assets/generalsans-400.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'General Sans';src:url(assets/generalsans-500.woff2) format('woff2');font-weight:500;font-display:swap}
+@font-face{font-family:'General Sans';src:url(assets/generalsans-600.woff2) format('woff2');font-weight:600;font-display:swap}
+@font-face{font-family:'General Sans';src:url(assets/generalsans-700.woff2) format('woff2');font-weight:700;font-display:swap}
+@font-face{font-family:'Cabinet Grotesk';src:url(assets/cabinetgrotesk-700.woff2) format('woff2');font-weight:700;font-display:swap}
+@font-face{font-family:'Cabinet Grotesk';src:url(assets/cabinetgrotesk-800.woff2) format('woff2');font-weight:800;font-display:swap}
 
-/* Sistema de Seery Studio: el mismo del portfolio (propuestas/1-naranja.html) y del tablero de Solmi.
+/* Sistema del estudio: el mismo de portfolio/personal.html y de la propuesta de Solmi.
    Negro, hueso, gris y un solo acento naranja. Las tarjetas de guion van en «campo claro»:
    mismos colores, roles invertidos, así se leen de lejos mientras se graba. */
 :root{
@@ -18,8 +22,8 @@
   --hueso:#F5F4F2; --gris:#A2A29E; --gris-2:#807F79;
   --naranja:#FF4D00;
   --linea:rgba(255,255,255,.11); --linea-2:rgba(255,255,255,.2);
-  --sans:Inter,system-ui,-apple-system,'Segoe UI',sans-serif;
-  --tit:Inter,system-ui,sans-serif;
+  --sans:'General Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --tit:'Cabinet Grotesk','General Sans',system-ui,sans-serif;
   --sal:cubic-bezier(.23,1,.32,1);
 }
 *,*::before,*::after{box-sizing:border-box}
@@ -97,6 +101,67 @@ details.tr pre{white-space:pre-wrap;font-family:inherit;font-size:13px;color:var
 .g[data-v="B"] .var::before{content:"B"}
 .g[data-v="C"] .var::before{content:"C";background:transparent;color:#141414;border:1.5px solid #141414}
 .g[data-v="D"] .var::before{content:"D";background:#63625E}
+.tag-grabar{display:inline-flex;align-items:center;gap:6px;margin:0 0 8px 8px;padding:4px 10px;border-radius:100px;background:var(--naranja);color:#fff;font-size:11px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;vertical-align:top}
+.tag-grabar::before{content:"";width:7px;height:7px;border-radius:50%;background:#fff}
+.g.grabar{box-shadow:0 0 0 2px var(--naranja)}
+.grab{background:#FFF4EE}
+.grab .lab b{color:#C23A00}
+.grab .gnota{font-size:13px;color:var(--tenue);margin:0 0 10px}
+.grab ol{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.grab li{display:grid;grid-template-columns:38px 1fr;gap:10px;font-size:14.5px;line-height:1.45}
+.grab .t{font-size:12px;font-weight:700;color:var(--tenue);padding-top:2px}
+.grab .q{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--tenue)}
+.grab li.v .q{color:#C23A00}
+.grab li.e .tx{font-weight:600}
+.grab .nt{display:block;font-size:12.5px;color:var(--tenue);margin-top:2px}
+.grab .cierres{margin-top:12px;display:grid;gap:6px;font-size:14px;line-height:1.45}
+.grab .cierres b{color:#C23A00}
+.grab li.chat .tx{display:inline-block;background:#DCF8C6;border-radius:10px;padding:4px 8px}
+.ejlink{font-size:13px;color:var(--tenue);margin:6px 0 0}
+.porque{font-size:13.5px;line-height:1.4;margin:8px 0 0;padding:8px 10px;border-radius:10px;background:#FFF4EE;color:#141414}
+.tag-grabar.luego{background:#E7E5E0;color:#63625E}
+.tag-grabar.hecho{background:#1F7A3A}
+.bhecho{margin:0 0 8px 8px;padding:4px 12px;border-radius:100px;border:1.5px solid #1F7A3A;background:#fff;color:#1F7A3A;font:700 11px/1.6 inherit;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;vertical-align:top}
+.bhecho:hover{background:#EAF5EE}
+.bhecho[aria-pressed="true"]{background:#1F7A3A;color:#fff}
+article.tanda.esHecho{opacity:.8}
+.vacio{margin:0;padding:18px 20px;border:1.5px dashed #CFCBC4;border-radius:14px;color:#63625E;font-size:14px}
+[data-ed]{outline:none;border-radius:5px;cursor:text;transition:background .15s}
+[data-ed]:hover{background:rgba(255,77,0,.07)}
+[data-ed]:focus{background:#fff;box-shadow:0 0 0 2px var(--naranja)}
+.ed.cambiado{background:#FFE9C7}
+.edreset{display:block;margin-top:3px;border:0;background:none;padding:0;font-size:12px;font-weight:600;color:#C23A00;text-decoration:underline;cursor:pointer}
+.edreset[hidden]{display:none}
+.vtabs{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.vtabs button{border:1px solid rgba(0,0,0,.2);background:#fff;border-radius:100px;padding:5px 11px;font-size:12.5px;font-weight:600;color:#141414;cursor:pointer}
+.vtabs button small{font-weight:700;color:#C23A00;margin-left:2px}
+.vtabs button[aria-pressed="true"]{background:#141414;border-color:#141414;color:#fff}
+.vtabs button[aria-pressed="true"] small{color:#FFB38F}
+.recom{font-size:13px;line-height:1.4;margin:8px 0 0;color:#3A3935}
+.recom b{color:#C23A00}
+.vblk[hidden]{display:none}
+.imp{display:inline-flex;align-items:center;gap:6px;margin:0 0 8px 8px;padding:4px 11px;border:1px solid rgba(0,0,0,.25);border-radius:100px;background:#fff;color:#141414;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;vertical-align:top;cursor:pointer;transition:background .2s,border-color .2s}
+.imp:hover{border-color:#141414}
+.imp:focus-visible{outline:2px solid var(--naranja);outline-offset:2px}
+.par{display:flex;gap:14px;align-items:flex-start;flex:none}
+.refside{width:268px;position:sticky;top:76px;gap:10px}
+.refside .vblk:not([hidden]){display:flex;flex-direction:column;gap:10px}
+.refside .who{margin:0}
+.refside .refde{margin:0;font-family:var(--tit);font-size:17px;font-weight:700;line-height:1.2;letter-spacing:-.015em;color:var(--hueso)}
+.refside .sin{margin:0;font-size:13.5px;line-height:1.45;color:var(--gris)}
+details.opc{margin-top:10px;border-top:1px solid var(--lin);padding-top:8px}
+details.opc summary{cursor:pointer;font-size:13px;font-weight:700;color:#C23A00}
+details.opc ol{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:6px}
+details.opc li{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:start;padding:7px 9px;border:1px solid var(--lin);border-radius:9px;background:#fff;font-size:13.5px;line-height:1.4}
+details.opc li.sel{border-color:var(--naranja);background:#FFF4EE}
+details.opc button{border:1px solid rgba(0,0,0,.2);background:transparent;border-radius:100px;padding:3px 10px;font-size:12px;font-weight:600;color:#141414;white-space:nowrap}
+details.opc li.sel button{background:#141414;border-color:#141414;color:#fff}
+.varlist{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.varlist li{display:grid;gap:3px;font-size:14px;line-height:1.45}
+.varlist b{font-family:var(--tit);font-size:15.5px;letter-spacing:-.01em}
+.varlist span{color:#3A3935}
+.tag-grabar.luego::before{background:#63625E}
+.ejlink a{color:#C23A00;font-weight:600}
 .g h3{font-family:var(--tit);margin:0;font-size:25px;font-weight:800;line-height:1.05;letter-spacing:-.03em;padding-right:48px}
 .g .angle{margin:8px 0 0;font-size:13.5px;color:var(--tenue)}
 .star{position:absolute;top:16px;right:16px;width:40px;height:40px;border-radius:50%;border:1px solid var(--lin);background:transparent;font-size:18px;line-height:1;color:#141414;transition:background .25s,color .25s,transform .3s var(--sal)}
@@ -136,11 +201,6 @@ body.editing [data-ed]:focus{outline:2px solid var(--naranja);background:#fff}
 .acciones button{border:1px solid rgba(0,0,0,.18);background:transparent;border-radius:100px;padding:7px 14px;font-size:13px;font-weight:600;color:#141414}
 .acciones button:hover{border-color:var(--naranja);color:var(--naranja)}
 .acciones .reset[hidden]{display:none}
-.acciones .bhecho{border-color:#1F7A3A;color:#1F7A3A}
-.acciones .bhecho:hover{background:#EAF5EE;color:#1F7A3A;border-color:#1F7A3A}
-.acciones .bhecho[aria-pressed="true"]{background:#1F7A3A;color:#fff}
-.tag-hecho{display:inline-block;margin:0 0 10px;padding:4px 12px;border-radius:100px;background:#1F7A3A;color:#fff;font-size:11.5px;font-weight:700;letter-spacing:.02em}
-.card.g.esHecho{opacity:.86}
 #editar[aria-pressed="true"]{border-color:var(--naranja);background:var(--naranja);color:#fff}
 .aviso-ed{display:none;position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:60;background:var(--naranja);color:#fff;border-radius:100px;padding:9px 16px;font-size:13px;font-weight:600;max-width:calc(100% - 32px);text-align:center}
 body.editing .aviso-ed{display:block}
@@ -170,9 +230,18 @@ body.list .igw{width:100%;max-width:390px;margin:0 auto}
 body.list .intro h2{font-size:32px}
 body.list .scripts{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -16px;padding:4px 16px 14px;scrollbar-width:none}
 body.list .g{flex:0 0 88%;max-width:450px;scroll-snap-align:center}
+body.list .par{scroll-snap-align:center}
+body.list .par .g{flex:0 0 450px;max-width:450px}
+@media (max-width:760px){
+  body.list .par{flex:0 0 88%;max-width:450px;flex-direction:column;gap:10px}
+  body.list .par .g{flex:none;width:100%;max-width:none}
+  body.list .refside{order:-1;width:auto;align-self:stretch;position:static}
+  body.list .refside .vid{max-width:220px}
+}
 body.list .vid{max-width:300px;margin:0 auto;width:100%}
 .scripts{display:flex;gap:24px;align-items:flex-start}
 body.onlypicks .g:not(.pick){display:none}
+body.onlypicks .par:not(:has(.g.pick)){display:none}
 body.onlypicks .row:not(:has(.g.pick)){display:none}
 @media (max-width:700px){
   .bar{gap:6px;padding:10px 12px}
@@ -184,7 +253,7 @@ body.onlypicks .row:not(:has(.g.pick)){display:none}
 @media (max-width:480px){.seg{display:none}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 
-/* respuestas de Víctor */
+/* respuestas */
 .beat.e .a{font-family:var(--tit);font-weight:700;font-size:16px;letter-spacing:-.01em}
 .who-e{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--tenue)}
 .beat.v .who-v{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#C23A00}
@@ -379,33 +448,11 @@ body.list .piez{width:auto}
 .acc-copia{margin-top:14px;padding-top:14px;border-top:1px solid var(--linea)}
 .acc-copia button{border:1px solid var(--linea-2);background:rgba(255,255,255,.04);border-radius:100px;padding:8px 14px;font-size:13px;font-weight:600;color:var(--hueso)}
 .acc-copia button:hover{border-color:var(--naranja);color:var(--naranja)}
-
-/* Sergio: líneas completas (no hay casilleros para responder) */
-.beat.x .who-e{color:var(--tenue)}
-.beat.x .a{font-size:15.5px;font-weight:500;line-height:1.4}
-.beat.x .d{margin-top:3px;font-size:12px;font-weight:600;color:#C23A00}
-
-/* auditoría Heras: ⭐ recomendados, ✗ descartados (se pueden elegir igual) */
-details.hks li.si{background:#FFF4EE;border-color:rgba(255,77,0,.35)}
-details.hks li.no{opacity:.5}
-details.hks li.no:hover{opacity:1}
-
-/* textos editables: se toca cualquier frase y se escribe encima */
-.ed{border-radius:4px;cursor:text;outline:none;transition:background .15s, box-shadow .15s}
-.ed:hover{background:rgba(255,77,0,.08)}
-.ed:focus{background:rgba(255,77,0,.1);box-shadow:0 0 0 1.5px var(--naranja)}
-.ed.cambiado{box-shadow:inset 0 -2px 0 var(--naranja)}
-.ed.cambiado:focus{box-shadow:0 0 0 1.5px var(--naranja)}
-.ed:empty::before{content:'…';opacity:.4}
-
-/* segundo video de ejemplo de una fila */
-.ref.extra{width:300px}
-.ref.extra .idea-f{font-size:19px}
 </style>
 </head>
 <body>
 <div class="bar">
-  <h1><i></i>Sergio Rosa y Asociados<small>guiones · octubre</small></h1>
+  <h1><i></i>Sergio Rosa y Asociados<small>guiones · noviembre-diciembre</small></h1>
   <span class="sp"></span>
   <select class="chip" id="jump" aria-label="Ir al formato"></select>
   <button class="chip" id="enviar">Enviar <span id="prog"></span></button>
@@ -418,7 +465,7 @@ details.hks li.no:hover{opacity:1}
 <div class="zoomui"><button id="zout" aria-label="Alejar">−</button><button id="zfit" aria-label="Encajar">⤢</button><button id="zin" aria-label="Acercar">+</button></div>
 
 <dialog id="dlg">
-  <h2>Lo elegido</h2>
+  <h2>Tus respuestas</h2>
   <p id="dlgtxt"></p>
   <div class="btns">
     <button class="pri" id="bWa">Mandar por WhatsApp</button>
@@ -438,15 +485,15 @@ details.hks li.no:hover{opacity:1}
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <div class="alerta" id="alerta" hidden>Este navegador no está guardando lo que escribís (puede ser una ventana privada). Antes de cerrar, tocá «Enviar» o bajate un respaldo.</div>
 
-<script src="guiones.js?v=2026-11-16"></script>
+<script src="guiones.js?v=2026-11-06"></script>
 <script>
 const D = window.GUIONES;
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 /* guardado: todo en localStorage de este navegador y, si hay NUBE, también en la planilla de Google.
    Si falla, se avisa en vez de callarse. */
-const NUBE = 'https://script.google.com/macros/s/AKfycbxgjYt2q3iZXebWQTGmeCoIkdg6bAyGNUPSIwTy47F43D51ED09QDCZU1WNqTMlQp31qw/exec', TABLERO = 'sergio-rosa-guiones';
-const CLAVES = ['sr-resp', 'sr-fijo', 'sr-conf', 'sr-hkx', 'sr-perfil', 'sr-piezas', 'sr-ed', 'sr-hecho'];
+const NUBE = 'https://script.google.com/macros/s/AKfycbxgjYt2q3iZXebWQTGmeCoIkdg6bAyGNUPSIwTy47F43D51ED09QDCZU1WNqTMlQp31qw/exec', TABLERO = 'sergio-rosa-noviembre';
+const CLAVES = ['sr2-resp', 'sr2-fijo', 'sr2-conf', 'sr2-hkx', 'sr2-perfil', 'sr2-piezas', 'sr2-ed', 'sr2-ver', 'sr2-hecho'];
 const DONDE = NUBE ? 'Guardado' : 'Guardado en este dispositivo';
 let tToast;
 const hora = (h = new Date()) => String(h.getHours()).padStart(2,'0') + ':' + String(h.getMinutes()).padStart(2,'0');
@@ -468,7 +515,7 @@ const store = {
     return true;
   }
 };
-try { localStorage.setItem('sr-test', '1'); localStorage.removeItem('sr-test'); } catch { addEventListener('DOMContentLoaded', alertaGuardado); setTimeout(alertaGuardado, 0); }
+try { localStorage.setItem('sr2-test', '1'); localStorage.removeItem('sr2-test'); } catch { addEventListener('DOMContentLoaded', alertaGuardado); setTimeout(alertaGuardado, 0); }
 /* nube: cada cambio se sube a la planilla un segundo y medio después de la última tecla. Al abrir, si la
    planilla tiene algo más nuevo que este dispositivo (lo escribió en otro aparato), se trae eso. */
 const leerN = k => { try { return Number(localStorage.getItem(k)) || 0; } catch { return 0; } };
@@ -476,21 +523,21 @@ const anotarN = (k, n) => { try { localStorage.setItem(k, String(n)); } catch {}
 let tSubir, subiendo = false, huboCambio = false;
 function marcarCambio(){
   /* nunca para atrás: si el reloj de otro aparato iba adelantado, el cambio de acá igual queda como el último */
-  huboCambio = true; anotarN('sr-cambio', Math.max(Date.now(), leerN('sr-cambio') + 1));
+  huboCambio = true; anotarN('sr2-cambio', Math.max(Date.now(), leerN('sr2-cambio') + 1));
   if (NUBE){ clearTimeout(tSubir); tSubir = setTimeout(subir, 1500); }
 }
 function estadoLocal(){ const o = {}; CLAVES.forEach(k => { const v = store.get(k, null); if (v !== null) o[k] = v; }); return o; }
 async function subir(keep){
   if (!NUBE) return;
-  const fecha = leerN('sr-cambio');
-  if (!fecha || fecha <= leerN('sr-subido')) return;
+  const fecha = leerN('sr2-cambio');
+  if (!fecha || fecha <= leerN('sr2-subido')) return;
   if (subiendo && !keep){ clearTimeout(tSubir); tSubir = setTimeout(subir, 1500); return; }
   subiendo = true;
   try {
     const r = await fetch(NUBE, {method: 'POST', keepalive: !!keep, body: JSON.stringify({t: TABLERO, fecha, estado: estadoLocal(), filas: filasTodo()})});
     const o = await r.json();
     if (!o.ok) throw 0;
-    anotarN('sr-subido', fecha);
+    anotarN('sr2-subido', fecha);
     if (!keep) toast('Guardado en la nube · ' + hora());
   } catch {
     if (!keep) toast('Sin conexión: quedó en este dispositivo y se sube solo cuando vuelva', 3500);
@@ -501,17 +548,17 @@ async function bajar(){
   try {
     const o = await (await fetch(NUBE + '?t=' + encodeURIComponent(TABLERO))).json();
     if (!o.ok) return;
-    if (o.estado && o.fecha > leerN('sr-cambio') && !huboCambio){
+    if (o.estado && o.fecha > leerN('sr2-cambio') && !huboCambio){
       CLAVES.forEach(k => { if (k in o.estado) localStorage.setItem(k, JSON.stringify(o.estado[k])); else localStorage.removeItem(k); });
-      anotarN('sr-cambio', o.fecha); anotarN('sr-subido', o.fecha);
-      resp = store.get('sr-resp', {}); fijo = store.get('sr-fijo', {}); conf = store.get('sr-conf', {}); hkx = store.get('sr-hkx', {}); ed = store.get('sr-ed', {}); hecho = store.get('sr-hecho', {});
-      perfil = cargarPerfil(store.get('sr-perfil', {})); delete perfil.foto;
+      anotarN('sr2-cambio', o.fecha); anotarN('sr2-subido', o.fecha);
+      resp = store.get('sr2-resp', {}); ed = store.get('sr2-ed', {}); ver = store.get('sr2-ver', {}); hecho = store.get('sr2-hecho', null) || Object.fromEntries((D.hechos || []).map(r => [r, true])); fijo = store.get('sr2-fijo', {}); conf = store.get('sr2-conf', {}); hkx = store.get('sr2-hkx', {});
+      perfil = cargarPerfil(store.get('sr2-perfil', {})); delete perfil.foto;
       piezas = store.get(PZK, []);
       render(); despuesDeRender(); if (!document.body.classList.contains('list')) apply();
       toast('Traje lo último que escribiste · ' + hora(new Date(o.fecha)), 2500);
     } else {
       /* lo escrito antes de que existiera la nube no tiene fecha de cambio: se sube igual */
-      if (!o.estado && !leerN('sr-cambio') && Object.keys(estadoLocal()).length) anotarN('sr-cambio', Date.now());
+      if (!o.estado && !leerN('sr2-cambio') && Object.keys(estadoLocal()).length) anotarN('sr2-cambio', Date.now());
       subir();
     }
   } catch {}
@@ -519,18 +566,20 @@ async function bajar(){
 addEventListener('online', () => subir());
 addEventListener('pagehide', () => subir(true));
 document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') subir(true); });
-let resp = store.get('sr-resp', {});
-let fijo = store.get('sr-fijo', {});
-let conf = store.get('sr-conf', {});
-let hkx = store.get('sr-hkx', {});
-/* textos cambiados a mano: id → texto. Lo que no está acá se ve como viene en guiones.js */
-let ed = store.get('sr-ed', {});
-/* reels ya hechos: los de guiones.js (hechos) vienen marcados; lo que se toca acá (true/false) manda */
-let hecho = store.get('sr-hecho', {});
-const esHecho = k => k in hecho ? !!hecho[k] : !!(D.hechos || {})[k];
-const T = (id, txt) => id in ed ? ed[id] : (txt == null ? '' : String(txt));
-const PO = (() => { const x = document.createElement('div'); try { x.contentEditable = 'plaintext-only'; } catch { return false; } return x.contentEditable === 'plaintext-only'; })();
-const E = (id, txt) => `<span class="ed${id in ed ? ' cambiado' : ''}" contenteditable="${PO ? 'plaintext-only' : 'true'}" spellcheck="false" data-ed="${esc(id)}" data-o="${esc(txt == null ? '' : txt)}">${esc(T(id, txt))}</span>`;
+let resp = store.get('sr2-resp', {});
+/* textos de los guiones editables en la página. Cada edición guarda el texto nuevo y el original de ese momento:
+   si después el guion cambia en guiones.js, la edición vieja no pisa la versión nueva. */
+let ed = store.get('sr2-ed', {});
+let ver = store.get('sr2-ver', {}); /* versión elegida de cada reel: A, B o C */
+let hecho = store.get('sr2-hecho', null) || Object.fromEntries((D.hechos || []).map(r => [r, true])); /* reels ya grabados: se mueven a la fila «Hechos» */
+const edVal = (id, orig) => { const x = ed[id]; return x && x.o === orig ? x.t : orig; };
+function E(id, orig, cls = ''){
+  const v = edVal(id, orig), cambio = v !== orig;
+  return `<span class="${cls} ed${cambio ? ' cambiado' : ''}" contenteditable="true" spellcheck="true" data-ed="${esc(id)}" data-orig="${esc(orig)}">${esc(v)}</span><button type="button" class="edreset" data-edreset="${esc(id)}"${cambio ? '' : ' hidden'}>volver al original</button>`;
+}
+let fijo = store.get('sr2-fijo', {});
+let conf = store.get('sr2-conf', {});
+let hkx = store.get('sr2-hkx', {});
 function allHooks(key, g){ return (g.hooks || []).concat((hkx[key] || []).map(t => ['Tuyo', t, null, true])); }
 /* El arranque elegido se guarda por su texto, no por su posición: así se pueden sumar opciones sin
    correr la elección. Las elecciones viejas eran un número (diez fijos y después los propios). */
@@ -542,23 +591,12 @@ function allHooks(key, g){ return (g.hooks || []).concat((hkx[key] || []).map(t 
     conf[k] = (v < 10 ? (g.hooks[v] || [])[1] : (hkx[key] || [])[v - 10]) || null;
     cambio = true;
   }));
-  if (cambio) try { localStorage.setItem('sr-conf', JSON.stringify(conf)); } catch {}
+  if (cambio) try { localStorage.setItem('sr2-conf', JSON.stringify(conf)); } catch {}
 })();
 const elegido = (key, g) => { const t = conf['hk' + key]; return t && allHooks(key, g).some(x => x[1] === t) ? t : null; };
-/* lo que dice el arranque de arriba: el elegido (con el texto que le hayas cambiado en la lista) o el propuesto */
-function sayBase(key, g){
-  const t = elegido(key, g); if (!t) return T(key + ':dice', g.hook.dice);
-  const j = allHooks(key, g).findIndex(x => x[1] === t), x = allHooks(key, g)[j];
-  return x[3] ? t : T(key + ':h' + j, t);
-}
-const sayText = (key, g) => T(key + ':say', sayBase(key, g));
-function pintarSay(key, g){
-  const el = document.querySelector(`[data-say="${key}"]`); if (!el) return;
-  el.innerHTML = E(key + ':say', sayBase(key, g));
-}
 function hooksList(key, g){
   const hk = elegido(key, g), n = (g.hooks || []).length;
-  return allHooks(key, g).map((x, j) => `<li class="${hk === x[1] ? 'sel' : ''}${x[3] ? ' mio' : ''}${String(x[2] || '').startsWith('⭐') ? ' si' : ''}${String(x[2] || '').startsWith('✗') ? ' no' : ''}"><span class="mk">${esc(x[0])}</span><span class="tx">${x[3] ? esc(x[1]) : E(key + ':h' + j, x[1])}</span>${x[2] ? `<span class="nt">${E(key + ':n' + j, x[2])}</span>` : ''}<button type="button" data-hk="${key}" data-i="${j}">${hk === x[1] ? 'Elegido' : 'Este'}</button>${x[3] ? `<button type="button" class="del" data-hkdel="${key}" data-i="${j - n}">Borrar</button>` : ''}</li>`).join('');
+  return allHooks(key, g).map((x, j) => `<li class="${hk === x[1] ? 'sel' : ''}${x[3] ? ' mio' : ''}"><span class="mk">${esc(x[0])}</span><span class="tx">${esc(x[1])}</span>${x[2] ? `<span class="nt">${esc(x[2])}</span>` : ''}<button type="button" data-hk="${key}" data-i="${j}">${hk === x[1] ? 'Elegido' : 'Este'}</button>${x[3] ? `<button type="button" class="del" data-hkdel="${key}" data-i="${j - n}">Borrar</button>` : ''}</li>`).join('');
 }
 const nV = g => g.beats.filter(b => b[1] === 'V').length;
 const hechas = (key, g) => g.beats.reduce((s, b, i) => s + (b[1] === 'V' && (resp[key + '|' + i] || '').trim() ? 1 : 0), 0);
@@ -566,71 +604,169 @@ const guion = key => { for (const r of D.refs) for (const g of r.guiones) if (r.
 
 function renderScript(r, g){
   const key = r.n + g.v;
-  const beats = g.beats.map((b, i) => b[1] === 'X'
-    ? `<div class="beat x"><div class="t">${esc(b[0])}</div><div><div class="who-e">${E(key + ':q' + i, b[3])}</div><div class="a">${E(key + ':b' + i, b[2])}</div>${b[4] ? `<div class="d">⚠️ ${E(key + ':d' + i, b[4])}</div>` : ''}</div></div>`
-    : b[1] === 'E'
-    ? `<div class="beat e"><div class="t">${esc(b[0])}</div><div><div class="who-e">Emanuel pregunta</div><div class="a">${esc(b[2])}</div></div></div>`
+  const beats = g.beats.map((b, i) => b[1] === 'E'
+    ? `<div class="beat e"><div class="t">${esc(b[0])}</div><div><div class="who-e">Pregunta en off</div><div class="a">${esc(b[2])}</div></div></div>`
     : `<div class="beat v"><div class="t">${esc(b[0])}</div><div>
-        <div class="who-v">Víctor</div>
+        <div class="who-v">A cámara</div>
         <div class="guia">${esc(b[2])}</div>
-        <textarea data-r="${key}|${i}" rows="3" aria-label="Respuesta de Víctor, ${esc(b[0])}" placeholder="Escribí cómo lo dirías…" class="${(resp[key + '|' + i] || '').trim() ? 'ok' : ''}">${esc(resp[key + '|' + i] || '')}</textarea>
+        <textarea data-r="${key}|${i}" rows="3" aria-label="Respuesta, ${esc(b[0])}" placeholder="Escribí cómo lo dirías…" class="${(resp[key + '|' + i] || '').trim() ? 'ok' : ''}">${esc(resp[key + '|' + i] || '')}</textarea>
         ${b[3] ? `<details class="ej"><summary>Ver un ejemplo</summary><p>${esc(b[3])}</p></details>` : ''}
       </div></div>`).join('');
   const h = hechas(key, g), t = nV(g), c = conf[key], hk = elegido(key, g);
   const hooks = g.hooks ? `<details class="hks"><summary>${g.hooks.length} arranques más · o escribí el tuyo</summary><ol data-hkl="${key}">${hooksList(key, g)}</ol><div class="hkadd"><textarea data-hkin="${key}" rows="2" aria-label="Tu propio arranque" placeholder="Escribí tu propio arranque…"></textarea><button type="button" data-hkadd="${key}">Agregar</button></div></details>` : '';
-  return `<article class="card g${esHecho(key) ? ' esHecho' : ''}" data-v="${g.v}" data-k="${key}">
+  const G0 = (D.grabar || {})[key];
+  const TV = G0 && D.tanda ? D.tanda.items.find(x => x.r === G0.r) : null;
+  const G = TV ? Object.assign({}, G0, {lineas: TV.lineas, cierre: TV.cierre, nota: TV.nota}) : G0;
+  const ya = G && enJornada(G.r);
+  const grab = G ? `<div class="sec grab"><p class="lab"><b>${ya ? 'Para grabar' : 'Guion listo'} · ${esc(G.r)}</b>${ya ? ' · ' + (ORDEN.indexOf(G.r) + 1) + ' de ' + ORDEN.length + ' en la jornada' : ' · para más adelante'}</p>
+      ${G.nota ? `<p class="gnota">${esc(G.nota)}</p>` : ''}
+      <ol>${G.lineas.map((l, i) => `<li class="${l[1] === 'E' ? 'e' : 'v'}"><span class="t">${esc(l[0])}</span><div><div class="q">${l[1] === 'E' ? 'Pregunta en off' : 'A cámara'}</div>${E(G.r + '|' + i, l[2], 'tx')}${l[3] ? `<span class="nt">${esc(l[3])}</span>` : ''}</div></li>`).join('')}</ol>
+      <div class="cierres"><div><b>Cierre:</b> ${E(G.r + '|cierre', G.cierre)}</div>${G.validar ? '<div class="gnota">A validar: ' + esc(G.validar) + '</div>' : ''}</div>
+    </div>` : '';
+  return `<article class="card g${ya ? ' grabar' : ''}" data-v="${g.v}" data-k="${key}">
     <header>
-      ${esHecho(key) ? `<span class="tag-hecho">✓ ${esc((D.hechos || {})[key] || 'Hecho')}</span>` : ''}
-      <span class="var">${E(key + ':tipo', g.tipo)}</span>
-      <h3>${E(key + ':titulo', g.titulo)}</h3>
-      <p class="angle">${E(key + ':angulo', g.angulo)}</p>
-      ${t ? `<div class="cont ${h === t ? 'full' : ''}" data-cont="${key}">${h} de ${t} respondidas</div>` : ''}
+      <span class="var">${esc(g.tipo)}</span>${ya ? '<span class="tag-grabar">Grabar</span>' : G ? '<span class="tag-grabar luego">Más adelante</span>' : ''}${G ? `<button type="button" class="imp" data-imprimir="${esc(G.r)}" title="Imprime la versión elegida, con tiempos, en formato SRT">Imprimir · SRT</button>` : ''}
+      <h3>${esc(g.titulo)}</h3>
+      <p class="angle">${esc(g.angulo)}</p>
+      <div class="cont ${h === t ? 'full' : ''}" data-cont="${key}">${h} de ${t} respondidas</div>
     </header>
-    <div class="sec"><p class="lab">Arranque · primeros 3 segundos · dice ${E(key + ':quien', g.hook.quien)}</p>
+    ${grab}
+    <div class="sec"><p class="lab">Arranque · primeros 3 segundos · dice ${esc(g.hook.quien)}</p>
       <div class="hook">
-        <div class="say" data-say="${key}">${E(key + ':say', sayBase(key, g))}</div>
+        <div class="say" data-say="${key}">${esc(hk || g.hook.dice)}</div>
       </div>
       ${hooks}
     </div>
-    <div class="sec"><p class="lab">Guion · ${E(key + ':dur', g.dur)}</p><div class="beats">${beats}</div></div>
-    ${g.plano ? `<div class="sec"><p class="lab">Cómo se graba</p><p class="cap">${E(key + ':plano', g.plano)}</p></div>` : ''}
-    ${g.ojo ? `<div class="sec"><div class="warn">${E(key + ':ojo', g.ojo)}</div></div>` : ''}
-    ${g.confirmar ? `<div class="sec"><div class="conf"><div><b>Confirmanos:</b> ${E(key + ':confirmar', g.confirmar)}</div>
+    <div class="sec"><p class="lab">Guion · ${esc(g.dur)}</p><div class="beats">${beats}</div></div>
+    ${g.confirmar ? `<div class="sec"><div class="conf"><div><b>Confirmanos:</b> ${esc(g.confirmar)}</div>
       <div class="op">${['Sí, va así', 'No, cambiarlo', 'Lo hablamos'].map(o => `<button type="button" data-conf="${key}" aria-pressed="${c === o}">${o}</button>`).join('')}</div></div></div>` : ''}
-    <div class="sec acciones"><button type="button" data-copiarcar="${key}">Copiar el guion</button><button type="button" class="bhecho" data-hecho="${key}" aria-pressed="${esHecho(key)}">${esHecho(key) ? '✓ Hecho · desmarcar' : 'Marcar hecho'}</button></div>
+    <div class="sec acciones"><button type="button" data-copiarcar="${key}">Copiar el guion</button></div>
   </article>`;
 }
 
-function renderRef(r, extra, pre){
-  return `<aside class="card ref${extra ? ' extra' : ''}">${extra ? `<h3 class="idea-f">${E(pre + ':formato', r.formato || '')}</h3>` : ''}
+function renderRef(r){
+  return `<aside class="card ref">
     <div class="vid" data-embed="${r.id}"><div class="ph"><button type="button">▶ Ver el ejemplo</button><a href="https://www.instagram.com/reel/${r.id}/" target="_blank" rel="noopener">abrir en Instagram ↗</a></div></div>
-    <div class="who">${r.cuenta ? `<b>${esc(r.cuenta)}</b> · ` : ''}${E(pre + ':datos', r.datos || '')}</div>
-    <div class="kv">${(r.tags || []).map((t, i) => `<span>${E(pre + ':t' + i, t)}</span>`).join('')}</div>
-    <div class="sticky"><h4>${extra ? 'También sirve de ejemplo' : 'Por qué funciona'}</h4><ol>${r.mecanica.map((m, i) => `<li>${E(pre + ':m' + i, m)}</li>`).join('')}</ol></div>
+    <div class="who">${r.cuenta ? `<b>${esc(r.cuenta)}</b> · ` : ''}${esc(r.datos || '')}</div>
+    <div class="kv">${(r.tags || []).map(t => `<span>${esc(t)}</span>`).join('')}</div>
+    <div class="sticky"><h4>Por qué funciona</h4><ol>${r.mecanica.map(m => `<li>${esc(m)}</li>`).join('')}</ol></div>
   </aside>`;
 }
 
 function prog(){
   let h = 0, t = 0;
-  D.refs.forEach(r => r.guiones.forEach(g => { t++; if (conf[r.n + g.v]) h++; }));
+  D.refs.forEach(r => r.guiones.forEach(g => { h += hechas(r.n + g.v, g); t += nV(g); }));
   $('#prog').textContent = h + '/' + t;
   return [h, t];
 }
-function renderIdeas(){
-  const I = D.ideas; if (!I) return '';
+function renderIdeas(I = D.ideas, pre = 'idea'){
+  if (!I) return '';
+  const lab = I.labels || ['Cómo es', 'Cómo lo haría el estudio', 'Qué pide'];
   return `<section class="row" id="r${I.n}">
-    <div class="row-title"><span class="n">${String(I.n).padStart(2,'0')}</span><span class="f">${E('ideas:titulo', I.titulo)}</span><span class="m">${E('ideas:resumen', I.resumen)}</span></div>
+    <div class="row-title"><span class="n">${String(I.n).padStart(2,'0')}</span><span class="f">${esc(I.titulo)}</span><span class="m">${esc(I.resumen)}</span></div>
     ${I.items.map((it, j) => `<aside class="card ref idea">
       <div class="vid" data-embed="${it.id}"><div class="ph"><button type="button">▶ Ver el ejemplo</button><a href="https://www.instagram.com/reel/${it.id}/" target="_blank" rel="noopener">abrir en Instagram ↗</a></div></div>
-      <h3 class="idea-f">${E('i' + j + ':formato', it.formato)}</h3>
-      <div class="who"><b>${esc(it.cuenta)}</b> · ${E('i' + j + ':datos', it.datos)}</div>
-      <div class="kv">${it.tags.map((t, i) => `<span>${E('i' + j + ':t' + i, t)}</span>`).join('')}</div>
-      <div class="sticky"><h4>Cómo es</h4><ol>${it.mecanica.map((m, i) => `<li>${E('i' + j + ':m' + i, m)}</li>`).join('')}</ol></div>
-      <div class="sticky"><h4>Cómo lo haría el estudio</h4><ol>${it.ideas.map((m, i) => `<li>${E('i' + j + ':x' + i, m)}</li>`).join('')}</ol></div>
-      <div class="sticky"><h4>Qué pide</h4><p>${E('i' + j + ':pide', it.pide)}</p></div>
-      <div class="op">${['Lo haría', 'No me convence'].map(o => `<button type="button" data-conf="idea${j}" aria-pressed="${conf['idea' + j] === o}">${o}</button>`).join('')}</div>
+      <h3 class="idea-f">${esc(it.formato)}</h3>
+      <div class="who"><b>${esc(it.cuenta)}</b> · ${esc(it.datos)}</div>
+      <div class="kv">${it.tags.map(t => `<span>${esc(t)}</span>`).join('')}</div>
+      <div class="sticky"><h4>${esc(lab[0])}</h4><ol>${it.mecanica.map(m => `<li>${esc(m)}</li>`).join('')}</ol></div>
+      <div class="sticky"><h4>${esc(lab[1])}</h4><ol>${it.ideas.map(m => `<li>${esc(m)}</li>`).join('')}</ol></div>
+      <div class="sticky"><h4>${esc(lab[2])}</h4><p>${esc(it.pide)}</p></div>
+      <div class="op">${['Lo haría', 'No me convence'].map(o => `<button type="button" data-conf="${pre}${j}" aria-pressed="${conf[pre + j] === o}">${o}</button>`).join('')}</div>
     </aside>`).join('')}
   </section>`;
+}
+const ORDEN = (D.jornada || {}).orden || [];
+const enJornada = r => ORDEN.includes(r);
+/* todos los guiones terminados, de las dos tandas, con la misma forma */
+function poolGuiones(){
+  const out = (D.tanda ? D.tanda.items : []).map(x => Object.assign({}, x));
+  D.refs.forEach(r => r.guiones.forEach(g => {
+    const G = (D.grabar || {})[r.n + g.v]; if (!G) return;
+    out.push({r: G.r, tipo: g.tipo, titulo: g.titulo, meta: 'Duración ' + g.dur, ej: r.id, ejde: r.formato + ' · ' + r.cuenta,
+      nota: G.nota, lineas: G.lineas, cierre: G.cierre, de: String(r.n).padStart(2, '0') + g.v});
+  }));
+  return out;
+}
+function cardTanda(G, ahora){
+  const ok = !!hecho[G.r];
+  const quien = q => q === 'E' ? 'Pregunta en off' : q === 'B' ? 'Imagen' : q === 'C' ? 'Chat de WhatsApp' : q === 'P' ? 'En pantalla' : q === 'S' ? 'Sin abogado' : q === 'K' ? 'Con abogado' : 'A cámara';
+  const por = ahora && D.jornada.porque ? D.jornada.porque[G.r] : '';
+  const vs = [{v: 'A', titulo: G.titulo, mecanica: 'la de la tanda', puntaje: null}].concat(G.versiones || []);
+  const rec = ((G.recomendacion || '').match(/grabar\s+([ABC])/) || [])[1];
+  const sel = vs.some(x => x.v === ver[G.r]) ? ver[G.r] : (vs.some(x => x.v === rec) ? rec : 'A');
+  const guion = (X, base, conOpc) => `
+        <ol>${X.lineas.map((l, i) => `<li class="${l[1] === 'E' || l[1] === 'C' || l[1] === 'P' ? 'e' : 'v'}${l[1] === 'C' ? ' chat' : ''}"><span class="t">${esc(l[0])}</span><div><div class="q">${quien(l[1])}</div>${E(base + '|' + i, l[2], 'tx')}${l[3] ? `<span class="nt">${esc(l[3])}</span>` : ''}</div></li>`).join('')}</ol>
+        <div class="cierres"><div><b>Cierre:</b> ${E(base + '|cierre', X.cierre)}</div></div>
+        ${conOpc ? opciones(X, base) : ''}`;
+  const tabs = vs.length > 1 ? `<div class="vtabs" role="group" aria-label="Versiones">${vs.map(x => `<button type="button" data-vsel="${esc(G.r)}" data-v="${x.v}" aria-pressed="${x.v === sel}">${x.v}${x.v === 'A' ? ' · ' + esc((G.tipo || '').split(' · ')[0].toLowerCase()) : ' · ' + esc(x.mecanica)}${x.puntaje ? ` <small>${x.puntaje}/10</small>` : ''}</button>`).join('')}</div>
+        ${G.recomendacion ? `<p class="recom"><b>Recomendación:</b> ${esc(G.recomendacion)}</p>` : ''}` : '';
+  const bloqueA = `<div class="vblk" data-vr="${esc(G.r)}" data-v="A"${sel === 'A' ? '' : ' hidden'}>
+      <div class="sec grab"><p class="lab"><b>Guion para grabar</b> · tocá cualquier texto para cambiarlo, se guarda solo</p>${guion(G, G.r, true)}
+      </div>
+      ${G.nota ? `<div class="sec"><p class="lab">Grabación</p><p class="gnota" style="margin:0">${esc(G.nota)}</p></div>` : ''}
+    </div>`;
+  const otros = (G.versiones || []).map(X => `<div class="vblk" data-vr="${esc(G.r)}" data-v="${X.v}"${sel === X.v ? '' : ' hidden'}>
+      <div class="sec grab"><p class="lab"><b>Versión ${X.v} · ${esc(X.titulo)}</b></p>
+        <p class="gnota">${esc(X.mecanica)}${X.meta ? ' · ' + esc(X.meta) : ''}${X.puntaje ? ' · ' + X.puntaje + '/10' : ''}${X.porque ? ' — ' + esc(X.porque) : ''}</p>
+        ${guion(X, G.r + '-' + X.v, true)}
+      </div>
+      ${X.nota ? `<div class="sec"><p class="lab">Grabación</p><p class="gnota" style="margin:0">${esc(X.nota)}</p></div>` : ''}
+    </div>`).join('');
+  const refs = [Object.assign({}, G, {v: 'A', mecanica: G.tipo})].concat(G.versiones || []);
+  const lado = `<aside class="card ref refside" aria-label="Reel de referencia de ${esc(G.r)}">${refs.map(X => `<div class="vblk" data-vr="${esc(G.r)}" data-v="${X.v}"${sel === X.v ? '' : ' hidden'}>
+      <p class="who">Referencia · versión <b>${X.v}</b></p>
+      ${X.ej ? `<h4 class="refde">${esc(X.ejde)}</h4>
+      <div class="vid" data-embed="${esc(X.ej)}"><div class="ph"><button type="button">▶ Ver la referencia</button><a href="https://www.instagram.com/reel/${esc(X.ej)}/" target="_blank" rel="noopener">abrir en Instagram ↗</a></div></div>` : '<p class="sin">Esta versión no tiene reel de referencia todavía.</p>'}
+    </div>`).join('')}</aside>`;
+  return `<div class="par"><article class="card g tanda${ahora ? ' grabar' : ''}${ok ? ' esHecho' : ''}" data-k="${esc(G.r)}">
+      <header>
+        <span class="var">${esc(G.tipo)}</span>${ok ? '<span class="tag-grabar hecho">Hecho</span>' : ahora ? `<span class="tag-grabar">Semana ${ORDEN.filter(r => !hecho[r]).indexOf(G.r) + 1} de ${ORDEN.filter(r => !hecho[r]).length}</span>` : '<span class="tag-grabar luego">Más adelante</span>'}<button type="button" class="bhecho" data-hecho="${esc(G.r)}" aria-pressed="${ok}" title="${ok ? 'Volver a la lista para grabar' : 'Mover a la fila Hechos'}">${ok ? '✓ Hecho · desmarcar' : 'Marcar hecho'}</button><button type="button" class="imp" data-imprimir="${esc(G.r)}" title="Imprime la versión elegida, con tiempos, en formato SRT">Imprimir · SRT</button>
+        <h3>${esc(G.r)} · ${esc(G.titulo)}</h3>
+        <p class="angle">${esc(G.meta)}${G.de ? ' · también en la fila del guion ' + esc(G.de) : ''}</p>
+        ${por ? `<p class="porque">${esc(por)}</p>` : ''}
+        ${tabs}
+      </header>
+      ${bloqueA}${otros}
+    </article>${lado}</div>`;
+}
+/* arranques y cierres opcionales: «Usar este» lo pone en el guion (se guarda como una edición más) */
+function opciones(G, base){
+  base = base || G.r;
+  const lista = (titulo, items, id, orig) => items && items.length ? `<details class="opc"><summary>${titulo}</summary><ol>${items.map(t => {
+    const sel = edVal(id, orig) === t;
+    return `<li class="${sel ? 'sel' : ''}"><span>${esc(t)}</span><button type="button" data-usar="${esc(id)}" data-txt="${esc(t)}">${sel ? 'Elegido' : 'Usar este'}</button></li>`;
+  }).join('')}</ol></details>` : '';
+  const hl = G.lineas[G.hookIdx || 0] || [];
+  return lista(`${(G.hooks || []).length} arranques más`, G.hooks, base + '|' + (G.hookIdx || 0), hl[2]) +
+         lista(`${(G.cierres || []).length} cierres más`, G.cierres, base + '|cierre', G.cierre);
+}
+function renderVariaciones(){
+  const V = (D.tanda || {}).variaciones || []; if (!V.length) return '';
+  return `<section class="row" id="rV">
+    <div class="row-title"><span class="n">+</span><span class="f">Más ideas con los mismos formatos</span><span class="m">Lo que más le pasa a un comercio, una pyme o una empresa familiar. Cada una ya trae el problema, la explicación y la solución</span></div>
+    <div class="scripts">${V.map(v => `<article class="card g var-card">
+      <header><span class="var">Variaciones</span><h3>${esc(v.formato)}</h3></header>
+      <div class="sec"><ol class="varlist">${v.items.map(it => `<li><b>${esc(it.t)}</b><span>${esc(it.d)}</span></li>`).join('')}</ol></div>
+    </article>`).join('')}</div>
+  </section>`;
+}
+function renderTanda(){
+  if (!D.tanda) return '';
+  const pool = poolGuiones();
+  const ahora = ORDEN.filter(r => !hecho[r]).map(r => pool.find(x => x.r === r)).filter(Boolean);
+  const luego = (D.tanda.items || []).filter(x => !enJornada(x.r) && !hecho[x.r]);
+  const listos = Object.keys(hecho).filter(r => hecho[r]).map(r => pool.find(x => x.r === r)).filter(Boolean);
+  return `<section class="row" id="rG">
+    <div class="row-title"><span class="n">▶</span><span class="f">${esc(D.tanda.titulo)}</span><span class="m">${esc(D.tanda.resumen)}</span></div>
+    <div class="scripts">${ahora.map(G => cardTanda(G, true)).join('')}</div>
+  </section>` + (luego.length ? `<section class="row" id="rM">
+    <div class="row-title"><span class="n">⏸</span><span class="f">Para más adelante</span><span class="m">Los otros temas, por si algún abogado prefiere uno de estos. Cualquiera puede reemplazar a uno de arriba</span></div>
+    <div class="scripts">${luego.map(G => cardTanda(G, false)).join('')}</div>
+  </section>` : '') + `<section class="row" id="rH">
+    <div class="row-title"><span class="n">✓</span><span class="f">Hechos</span><span class="m">Los reels que ya se grabaron y publicaron, con sus números. «Desmarcar» los devuelve a su fila</span></div>
+    <div class="scripts">${listos.length ? listos.map(G => cardTanda(G, false)).join('') : '<p class="vacio">Todavía no hay ninguno. Cuando grabes un reel, tocá «Marcar hecho» y pasa acá.</p>'}</div>
+  </section>` + renderVariaciones();
 }
 function renderFijados(){
   const F = D.fijados; if (!F) return '';
@@ -657,11 +793,11 @@ const verDe = v => VER.find(x => x.v === v) || VER[0];
 const datosDe = v => { const x = verDe(v); return Object.assign(copia(P ? P.base : {}), x ? copia(x.datos) : {}, x ? {version: x.v} : {}); };
 const cargarPerfil = o => Object.assign(datosDe((o || {}).version), o || {});
 const esOriginal = () => JSON.stringify(perfil) === JSON.stringify(datosDe(perfil.version));
-let perfil = cargarPerfil(store.get('sr-perfil', {}));
+let perfil = cargarPerfil(store.get('sr2-perfil', {}));
 delete perfil.foto; /* sin foto de perfil: si quedó una de una versión anterior, se descarta */
 const LIM = {nombre: 30, bio: 150, usuario: 30};
 const largo = s => [...String(s || '')].length;
-const guardarPerfil = () => store.set('sr-perfil', perfil);
+const guardarPerfil = () => store.set('sr2-perfil', perfil);
 function vistaPerfil(){
   const p = perfil, iniciales = (p.nombre || p.usuario || 'S').replace(/[^A-Za-zÁÉÍÓÚÑáéíóúñ& ]/g, '').split(/\s+/).filter(w => w && w !== '&').slice(0, 2).map(w => w[0].toUpperCase()).join('&');
   const hls = (p.destacadas || []).map(h => `<div class="ig-hl"><div class="c">${h.img ? `<div><img src="${h.img}" alt=""></div>` : `<div class="${h.fondo === 'hueso' ? 'hu' : 'az'}">${esc(h.letra)}</div>`}</div><div class="nm">${esc(h.nombre)}</div></div>`).join('');
@@ -729,9 +865,9 @@ let destinoFoto = null;
 function textoFuente(k){
   if (!k) return '';
   for (const r of D.refs) for (const g of r.guiones) if (r.n + g.v === k){
-    const L = ['GUION ' + String(r.n).padStart(2,'0') + g.v + ' · ' + T('r' + r.n + ':formato', r.formato) + ' · ' + T(k + ':titulo', g.titulo)];
-    L.push('Arranque: ' + sayText(k, g));
-    g.beats.forEach((b, i) => L.push(b[1] === 'X' ? T(k + ':q' + i, b[3]).split(' · ')[0] + ': ' + T(k + ':b' + i, b[2]) : b[1] === 'E' ? 'Emanuel: ' + b[2] : 'Víctor: ' + ((resp[k + '|' + i] || '').trim() || '(sin responder)')));
+    const L = ['GUION ' + String(r.n).padStart(2,'0') + g.v + ' · ' + r.formato + ' · ' + g.titulo];
+    L.push('Arranque: ' + (elegido(k, g) || g.hook.dice));
+    g.beats.forEach((b, i) => L.push(b[1] === 'E' ? 'Pregunta: ' + b[2] : 'A cámara: ' + ((resp[k + '|' + i] || '').trim() || '(sin responder)')));
     if (g.confirmar) L.push('Confirmar: ' + g.confirmar + ' → ' + (conf[k] || 'sin respuesta'));
     return L.join('\n');
   }
@@ -742,7 +878,7 @@ function textoFuente(k){
   const m = /^idea(\d+)$/.exec(k);
   if (m && D.ideas){
     const it = D.ideas.items[+m[1]];
-    if (it) return ['ÁNGULO NUEVO · ' + it.formato].concat(it.ideas).join('\n');
+    if (it) return ['OTRO FORMATO · ' + it.formato].concat(it.ideas).join('\n');
   }
   return '';
 }
@@ -750,13 +886,13 @@ function textoFuente(k){
    Un lugar para cargar el carrusel o la historia que ya está diseñada: se suben
    las láminas o se pega el link, se dice de qué guion sale —de ahí la flecha—
    y del otro lado se aprueba. Lo cargado se guarda como todo lo demás. */
-const PZK = 'sr-piezas';
+const PZK = 'sr2-piezas';
 let piezas = store.get(PZK, []);
 const PZ_EST = ['Borrador', 'Listo para publicar', 'Publicado'];
 const LIGAS = [].concat(
   D.refs.flatMap(r => r.guiones.map(g => ({k: r.n + g.v, t: 'Guion ' + String(r.n).padStart(2,'0') + g.v + ' · ' + g.titulo, row: r.n}))),
   D.fijados ? D.fijados.items.map(it => ({k: 'F' + it.n, t: '★ Fijado ' + it.n + ' · ' + it.formato, row: 'F'})) : [],
-  D.ideas ? D.ideas.items.map((it, j) => ({k: 'idea' + j, t: 'Ángulos nuevos · ' + it.formato, row: D.ideas.n})) : []
+  D.ideas ? D.ideas.items.map((it, j) => ({k: 'idea' + j, t: 'Otros formatos · ' + it.formato, row: D.ideas.n})) : []
 );
 const ligaDe = k => LIGAS.find(x => x.k === k);
 const guardarPz = callado => store.set(PZK, piezas, callado);
@@ -900,19 +1036,23 @@ function irAPieza(id){
 }
 
 /* el recorrido de arriba y las flechas entre una fila y la siguiente */
-const RECORRIDO = (P ? [{id: 'P', t: 'El perfil'}] : [])
+const RECORRIDO = (D.tanda ? [{id: 'G', t: 'Para grabar ahora'}, {id: 'M', t: 'Para más adelante'}, {id: 'H', t: 'Hechos'}, {id: 'V', t: 'Más ideas'}] : [])
   .concat(D.fijados ? [{id: 'F', t: 'Los 3 fijados'}] : [])
   .concat(D.refs.map(r => ({id: r.n, t: String(r.n).padStart(2,'0') + ' · ' + r.formato})))
-  .concat(D.ideas ? [{id: D.ideas.n, t: 'Ángulos nuevos'}] : [])
-  .concat([{id: 'DIS', t: 'Lo ya diseñado'}]);
+  .concat(D.ideas ? [{id: D.ideas.n, t: 'Otros formatos'}] : [])
+  .concat(D.estudios ? [{id: D.estudios.n, t: 'Estudios que hacen lo mismo'}] : [])
+  ;
 const FLUJO = {
-  '0': 'Los guiones, formato por formato',
-  '1': 'Una persona sola a cámara',
-  '2': 'Pregunta y respuesta',
-  '3': 'La cuenta escrita en el pizarrón',
-  '4': 'Contestando un comentario',
-  '5': 'Para los próximos meses, más ángulos',
-  '6': 'Cuando la pieza ya está diseñada, va acá'
+  '0': 'Lo primero: lo que se graba ahora',
+  'G': 'Los que quedan para la próxima',
+  'M': 'Y para las próximas, más ideas con los mismos formatos',
+  'V': 'Arriba de todo, en el perfil, van los tres fijados',
+  'P': 'Arriba de todo van los tres videos fijados',
+  'F': 'Y después, los guiones, formato por formato',
+  '1': 'El mismo tema, con otra mecánica',
+  '2': 'Y el tercero, más suelto',
+  '3': 'Y lo que hacen otros estudios como ustedes',
+  '4': ''
 };
 const mapaHTML = () => `<div class="mapa"><span class="rotulo">El recorrido</span><div class="pasos">${RECORRIDO.map((p, i) => `${i ? '<span class="fx">→</span>' : ''}<button type="button" data-go="${esc(p.id)}">${esc(p.t)}</button>`).join('')}</div></div>`;
 const FLECHA_SVG = '<svg width="24" height="46" viewBox="0 0 24 46" fill="none" aria-hidden="true"><path d="M12 2 V31" stroke="currentColor" stroke-width="2" stroke-dasharray="5 6" stroke-linecap="round"/><path d="M5.5 27 L12 36 L18.5 27" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
@@ -1054,7 +1194,7 @@ document.addEventListener('click', e => {
     const p = pieza(qui.dataset.pzquitar); if (!p) return;
     if (!confirm('¿Quitar «' + ((p.titulo || '').trim() || 'esta pieza') + '»? No se puede deshacer.')) return;
     piezas = piezas.filter(x => x.id !== p.id);
-    if (conf['pz' + p.id]){ delete conf['pz' + p.id]; store.set('sr-conf', conf, true); }
+    if (conf['pz' + p.id]){ delete conf['pz' + p.id]; store.set('sr2-conf', conf, true); }
     guardarPz(); refrescarDis();
     return;
   }
@@ -1071,52 +1211,85 @@ document.addEventListener('click', e => {
   }
 });
 
-function renderHechos(){
-  const listos = [];
-  D.refs.forEach(r => r.guiones.forEach(g => { if (esHecho(r.n + g.v)) listos.push(renderScript(r, g)); }));
-  return `<section class="row" id="rH">
-    <div class="row-title"><span class="n">✓</span><span class="f">Hechos</span><span class="m">Los reels que ya se grabaron y publicaron. «Desmarcar» los devuelve a su fila</span></div>
-    <div class="scripts">${listos.join('') || '<p class="vacio">Todavía no hay ninguno. Cuando un reel se publique, tocá «Marcar hecho» y pasa acá.</p>'}</div>
-  </section>`;
-}
-document.addEventListener('click', e => {
-  const b = e.target.closest && e.target.closest('[data-hecho]'); if (!b) return;
-  const k = b.dataset.hecho;
-  hecho[k] = !esHecho(k);
-  store.set('sr-hecho', hecho);
-  render(); despuesDeRender(); if (!document.body.classList.contains('list')) apply();
-  toast(esHecho(k) ? 'Pasó a «Hechos»' : 'Volvió a su fila', 2000);
-});
 function render(){
   const intro = `<section class="row" id="r0"><div class="card intro">
-    <span class="rotulo">Sergio Rosa y Asociados · octubre</span>
-    <h2>${E('intro:titulo', D.titulo)}</h2>
-    ${D.intro.map((p, i) => `<p>${E('intro:p' + i, p)}</p>`).join('')}
-    <ul>${D.reglas.map((p, i) => `<li>${E('intro:r' + i, p)}</li>`).join('')}</ul>
+    <span class="rotulo">Sergio Rosa y Asociados · un reel por semana</span>
+    <h2>${esc(D.titulo)}</h2>
+    ${D.intro.map(p => `<p>${esc(p)}</p>`).join('')}
+    <ul>${D.reglas.map(p => `<li>${esc(p)}</li>`).join('')}</ul>
   </div></section>`;
-  $('#world').innerHTML = intro + renderPerfil() + renderFijados() + D.refs.map(r => `<section class="row" id="r${r.n}">
-    <div class="row-title"><span class="n">${String(r.n).padStart(2,'0')}</span><span class="f">${E('r' + r.n + ':formato', r.formato)}</span><span class="m">${E('r' + r.n + ':resumen', r.resumen)}</span></div>
-    ${renderRef(r, false, 'r' + r.n)}${(r.extra || []).map((x, k) => renderRef(Object.assign({tags: [], mecanica: []}, x), true, 'r' + r.n + 'x' + k)).join('')}
-    <div class="scripts">${r.guiones.filter(g => !esHecho(r.n + g.v)).map(g => renderScript(r, g)).join('') || '<p class="vacio">Los guiones de esta fila ya están hechos: pasaron a «Hechos».</p>'}</div>
-  </section>`).join('') + renderHechos() + renderIdeas() + renderDis();
-  $('#jump').innerHTML = `<option value="0">Ir a…</option>` + (P ? `<option value="P">IG · El perfil</option>` : '') + (D.fijados ? `<option value="F">★ · Los 3 fijados</option>` : '') + D.refs.map(r => `<option value="${r.n}">${String(r.n).padStart(2,'0')} · ${esc(r.formato)}</option>`).join('') + `<option value="H">✓ · Hechos</option>` + (D.ideas ? `<option value="${D.ideas.n}">${String(D.ideas.n).padStart(2,'0')} · ${esc(D.ideas.titulo)}</option>` : '') + `<option value="DIS">PZ · Lo que ya está diseñado</option>`;
+  $('#world').innerHTML = intro + renderTanda() + renderPerfil() + renderFijados() + D.refs.map(r => `<section class="row" id="r${r.n}">
+    <div class="row-title"><span class="n">${String(r.n).padStart(2,'0')}</span><span class="f">${esc(r.formato)}</span><span class="m">${esc(r.resumen)}</span></div>
+    ${renderRef(r)}
+    <div class="scripts">${r.guiones.map(g => renderScript(r, g)).join('')}</div>
+  </section>`).join('') + renderIdeas() + renderIdeas(D.estudios, 'est');
+  $('#jump').innerHTML = `<option value="0">Ir a…</option>` + (D.tanda ? `<option value="G">▶ · Para grabar ahora</option><option value="M">⏸ · Para más adelante</option><option value="H">✓ · Hechos</option><option value="V">+ · Más ideas con los mismos formatos</option>` : '') + (P ? `<option value="P">IG · El perfil</option>` : '') + (D.fijados ? `<option value="F">★ · Los 3 fijados</option>` : '') + D.refs.map(r => `<option value="${r.n}">${String(r.n).padStart(2,'0')} · ${esc(r.formato)}</option>`).join('') + (D.ideas ? `<option value="${D.ideas.n}">${String(D.ideas.n).padStart(2,'0')} · ${esc(D.ideas.titulo)}</option>` : '') + (D.estudios ? `<option value="${D.estudios.n}">${String(D.estudios.n).padStart(2,'0')} · ${esc(D.estudios.titulo)}</option>` : '');
   prog();
 }
+/* guiones editables: lo que se escribe se guarda en sv-ed (viaja a la planilla) y se copia a la otra tarjeta del mismo reel */
+const edSync = (id, v, desde) => document.querySelectorAll('[data-ed]').forEach(x => { if (x.dataset.ed === id && x !== desde) x.textContent = v; });
+const edMarcar = (id, cambio) => {
+  const span = [...document.querySelectorAll('[data-ed]')].find(x => x.dataset.ed === id), v = span ? span.textContent : '';
+  document.querySelectorAll('[data-usar]').forEach(x => { if (x.dataset.usar === id){ const sel = x.dataset.txt === v; x.textContent = sel ? 'Elegido' : 'Usar este'; x.closest('li').classList.toggle('sel', sel); } });
+  document.querySelectorAll('[data-ed]').forEach(x => { if (x.dataset.ed === id) x.classList.toggle('cambiado', cambio); });
+  document.querySelectorAll('[data-edreset]').forEach(b => { if (b.dataset.edreset === id) b.hidden = !cambio; });
+};
+document.addEventListener('input', e => {
+  const el = e.target.closest && e.target.closest('[data-ed]'); if (!el) return;
+  const id = el.dataset.ed, orig = el.dataset.orig, v = el.innerText.replace(/\s+/g, ' ').trim();
+  if (!v || v === orig) delete ed[id]; else ed[id] = {t: v, o: orig};
+  store.set('sr2-ed', ed, true); edSync(id, v || orig, el); edMarcar(id, !!ed[id]);
+});
+document.addEventListener('paste', e => {
+  const el = e.target.closest && e.target.closest('[data-ed]'); if (!el) return;
+  e.preventDefault(); document.execCommand('insertText', false, (e.clipboardData || window.clipboardData).getData('text/plain'));
+});
+document.addEventListener('keydown', e => {
+  const el = e.target.closest && e.target.closest('[data-ed]'); if (el && e.key === 'Enter'){ e.preventDefault(); el.blur(); }
+});
+document.addEventListener('focusout', e => {
+  const el = e.target.closest && e.target.closest('[data-ed]'); if (el && ed[el.dataset.ed]) avisarGuardado();
+});
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-vsel]'); if (!b) return;
+  const r = b.dataset.vsel, v = b.dataset.v;
+  ver[r] = v;
+  store.set('sr2-ver', ver);
+  document.querySelectorAll('[data-vsel]').forEach(x => { if (x.dataset.vsel === r) x.setAttribute('aria-pressed', String(x.dataset.v === v)); });
+  document.querySelectorAll('.vblk').forEach(x => { if (x.dataset.vr === r) x.hidden = x.dataset.v !== v; });
+});
+document.addEventListener('click', e => {
+  const u = e.target.closest('[data-usar]'); if (!u) return;
+  const id = u.dataset.usar, t = u.dataset.txt, span = [...document.querySelectorAll('[data-ed]')].find(x => x.dataset.ed === id);
+  if (!span) return;
+  const orig = span.dataset.orig;
+  if (t === orig) delete ed[id]; else ed[id] = {t, o: orig};
+  store.set('sr2-ed', ed);
+  document.querySelectorAll('[data-ed]').forEach(x => { if (x.dataset.ed === id) x.textContent = t; });
+  edMarcar(id, !!ed[id]);
+  document.querySelectorAll('[data-usar]').forEach(x => { if (x.dataset.usar === id){ const sel = x.dataset.txt === t; x.textContent = sel ? 'Elegido' : 'Usar este'; x.closest('li').classList.toggle('sel', sel); } });
+});
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-edreset]'); if (!b) return;
+  const id = b.dataset.edreset; delete ed[id]; store.set('sr2-ed', ed);
+  document.querySelectorAll('[data-ed]').forEach(x => { if (x.dataset.ed === id) x.textContent = x.dataset.orig; });
+  edMarcar(id, false);
+});
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-hecho]'); if (!b) return;
+  const r = b.dataset.hecho;
+  if (hecho[r]) delete hecho[r]; else hecho[r] = true;
+  store.set('sr2-hecho', hecho);
+  const y = scrollY;
+  render(); despuesDeRender(); if (!document.body.classList.contains('list')) apply();
+  scrollTo(0, y);
+  toast(hecho[r] ? r + ' pasó a «Hechos»' : r + ' volvió a su fila', 2000);
+});
 render();
 despuesDeRender();
 
 /* escribir: se guarda en el dispositivo a cada tecla */
 document.addEventListener('input', e => {
-  const ee = e.target.closest && e.target.closest('[data-ed]');
-  if (ee){
-    const id = ee.dataset.ed, v = ee.textContent;
-    if (v.replace(/\s+/g, ' ').trim() === ee.dataset.o.replace(/\s+/g, ' ').trim()) delete ed[id]; else ed[id] = v;
-    ee.classList.toggle('cambiado', id in ed);
-    store.set('sr-ed', ed);
-    const mh = /^(\d+[A-Z]):h\d+$/.exec(id);
-    if (mh && !((mh[1] + ':say') in ed)) pintarSay(mh[1], guion(mh[1]));
-    return;
-  }
   const pe = e.target;
   if (pe.dataset && (pe.dataset.p || pe.dataset.hl || pe.dataset.fj)){
     if (pe.dataset.p){
@@ -1132,7 +1305,7 @@ document.addEventListener('input', e => {
   if (tf){
     const j = tf.dataset.f;
     if (tf.value.trim()) fijo[j] = tf.value; else delete fijo[j];
-    store.set('sr-fijo', fijo);
+    store.set('sr2-fijo', fijo);
     document.querySelector(`[data-fg="${j}"]`).textContent = tf.value.trim() ? DONDE + ' ✓' : '';
     return;
   }
@@ -1140,19 +1313,12 @@ document.addEventListener('input', e => {
   if (!ta) return;
   const v = ta.value;
   if (v.trim()) resp[ta.dataset.r] = v; else delete resp[ta.dataset.r];
-  store.set('sr-resp', resp);
+  store.set('sr2-resp', resp);
   ta.classList.toggle('ok', !!v.trim());
   const key = ta.dataset.r.split('|')[0], g = guion(key);
   const h = hechas(key, g), t = nV(g), el = document.querySelector(`[data-cont="${key}"]`);
   el.textContent = h + ' de ' + t + ' respondidas'; el.classList.toggle('full', h === t);
   prog();
-});
-document.addEventListener('keydown', e => {
-  if (e.key === 'Enter' && !e.shiftKey && e.target.closest && e.target.closest('[data-ed]')){ e.preventDefault(); e.target.blur(); }
-});
-document.addEventListener('paste', e => {
-  if (PO || !(e.target.closest && e.target.closest('[data-ed]'))) return;
-  e.preventDefault(); document.execCommand('insertText', false, (e.clipboardData || window.clipboardData).getData('text/plain'));
 });
 document.addEventListener('change', async e => {
   if (e.target.id !== 'pfile' || !e.target.files[0]) return;
@@ -1191,17 +1357,16 @@ document.addEventListener('click', e => {
   const hb = e.target.closest('[data-hk]');
   if (hb){
     const key = hb.dataset.hk, g = guion(key), k = 'hk' + key, t = allHooks(key, g)[+hb.dataset.i][1];
-    conf[k] = conf[k] === t ? null : t; store.set('sr-conf', conf);
-    if ((key + ':say') in ed){ delete ed[key + ':say']; store.set('sr-ed', ed); }
+    conf[k] = conf[k] === t ? null : t; store.set('sr2-conf', conf);
     document.querySelector(`[data-hkl="${key}"]`).innerHTML = hooksList(key, g);
-    pintarSay(key, g);
+    document.querySelector(`[data-say="${key}"]`).textContent = elegido(key, g) || g.hook.dice;
     return;
   }
   const ab = e.target.closest('[data-hkadd]');
   if (ab){
     const key = ab.dataset.hkadd, g = guion(key), ta = document.querySelector(`[data-hkin="${key}"]`), t = ta.value.trim();
     if (!t){ ta.focus(); return; }
-    (hkx[key] = hkx[key] || []).push(t); store.set('sr-hkx', hkx);
+    (hkx[key] = hkx[key] || []).push(t); store.set('sr2-hkx', hkx);
     ta.value = '';
     document.querySelector(`[data-hkl="${key}"]`).innerHTML = hooksList(key, g);
     return;
@@ -1209,18 +1374,17 @@ document.addEventListener('click', e => {
   const db = e.target.closest('[data-hkdel]');
   if (db){
     const key = db.dataset.hkdel, g = guion(key), i = +db.dataset.i, k = 'hk' + key;
-    const [borrado] = hkx[key].splice(i, 1); if (!hkx[key].length) delete hkx[key]; store.set('sr-hkx', hkx);
-    if (conf[k] === borrado && !allHooks(key, g).some(x => x[1] === borrado)){ conf[k] = null; store.set('sr-conf', conf); }
+    const [borrado] = hkx[key].splice(i, 1); if (!hkx[key].length) delete hkx[key]; store.set('sr2-hkx', hkx);
+    if (conf[k] === borrado && !allHooks(key, g).some(x => x[1] === borrado)){ conf[k] = null; store.set('sr2-conf', conf); }
     document.querySelector(`[data-hkl="${key}"]`).innerHTML = hooksList(key, g);
-    pintarSay(key, g);
+    document.querySelector(`[data-say="${key}"]`).textContent = elegido(key, g) || g.hook.dice;
     return;
   }
   const cb = e.target.closest('[data-conf]');
   if (cb){
     const k = cb.dataset.conf, o = cb.textContent;
-    conf[k] = conf[k] === o ? null : o; store.set('sr-conf', conf);
+    conf[k] = conf[k] === o ? null : o; store.set('sr2-conf', conf);
     cb.parentNode.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', conf[k] === b.textContent));
-    prog();
     return;
   }
   const pb = e.target.closest('.vid[data-embed] button');
@@ -1230,24 +1394,69 @@ document.addEventListener('click', e => {
   }
 });
 
+/* imprimir: la versión elegida de la ficha, con lo editado, en formato SRT (sirve para el teleprompter o en papel) */
+function srtDe(r){
+  const card = document.querySelector(`article.tanda[data-k="${CSS.escape(r)}"]`); if (!card) return null;
+  const blk = [...card.querySelectorAll('article > .vblk')].find(x => !x.hidden) || card;
+  const seg = s => { const [m, ss] = String(s).trim().split(':').map(Number); return (m || 0) * 60 + (ss || 0); };
+  const tc = t => { const ms = Math.round(t * 1000), z = (n, k) => String(n).padStart(k, '0');
+    return `${z(Math.floor(ms / 3600000), 2)}:${z(Math.floor(ms / 60000) % 60, 2)}:${z(Math.floor(ms / 1000) % 60, 2)},${z(ms % 1000, 3)}`; };
+  const dur = tx => Math.max(1.5, tx.split(/\s+/).length / 2.6);
+  const filas = [...blk.querySelectorAll('.grab > ol > li')].map(li => ({
+    t: seg(li.querySelector('.t').textContent), q: li.querySelector('.q').textContent.trim(),
+    tx: ((li.querySelector('[data-ed]') || {}).textContent || '').trim()
+  })).filter(f => f.q !== 'Imagen' && f.tx);
+  const cie = ((blk.querySelector('.cierres [data-ed]') || {}).textContent || '').trim();
+  if (cie) filas.push({t: null, q: 'A cámara', tx: cie});
+  let prev = 0;
+  const bloques = filas.map((f, i) => {
+    const ini = f.t == null ? prev : f.t;
+    const sig = filas[i + 1] && filas[i + 1].t != null ? filas[i + 1].t : ini + dur(f.tx);
+    const fin = Math.max(sig, ini + 1); prev = fin;
+    return `${i + 1}\n${tc(ini)} --> ${tc(fin)}\n${f.q === 'A cámara' ? '' : f.q.toUpperCase() + ': '}${f.tx}`;
+  });
+  const v = blk.dataset.v || 'A';
+  const sub = v === 'A' ? '' : ((blk.querySelector('.lab b') || {}).textContent || '');
+  return {r, v, titulo: card.querySelector('h3').textContent.trim(), sub, srt: bloques.join('\n\n') + '\n'};
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-imprimir]'); if (!b) return;
+  const x = srtDe(b.dataset.imprimir); if (!x) return;
+  const nombre = `${x.r}-${x.v}`;
+  const url = URL.createObjectURL(new Blob([x.srt], {type: 'application/x-subrip;charset=utf-8'}));
+  const w = window.open('', '_blank');
+  if (!w){ const a = document.createElement('a'); a.href = url; a.download = nombre + '.srt'; a.click(); return; }
+  w.document.write(`<!doctype html><html lang="es"><head><meta charset="utf-8"><title>${esc(nombre)}.srt</title><style>
+    body{margin:36px;color:#141414;background:#fff;font:15px/1.55 ui-monospace,Consolas,Menlo,monospace}
+    h1{font:800 22px/1.15 system-ui,sans-serif;letter-spacing:-.02em;margin:0 0 6px}
+    p{font:14px/1.4 system-ui,sans-serif;color:#55534E;margin:0 0 24px}
+    a{color:#C23A00;font-weight:700}
+    pre{white-space:pre-wrap;margin:0;font:inherit}
+    @media print{body{margin:18mm}.np{display:none}}
+  </style></head><body><h1>${esc(x.titulo)}</h1><p>Versión ${esc(x.v)}${x.sub ? ' · ' + esc(x.sub.replace(/^Versión [ABC] · /, '')) : ''} · formato SRT<span class="np"> · <a href="${url}" download="${esc(nombre)}.srt">Descargar el .srt</a></span></p><pre>${esc(x.srt)}</pre><script>setTimeout(function(){print()},350)<\/script></body></html>`);
+  w.document.close();
+});
+
 /* enviar */
 function textoTodo(){
-  const L = ['GUIONES DE OCTUBRE · Sergio Rosa y Asociados', ''];
+  const L = ['GUIONES · Sergio Rosa y Asociados', ''];
   D.refs.forEach(r => r.guiones.forEach(g => {
     const key = r.n + g.v;
-    L.push('== ' + String(r.n).padStart(2,'0') + g.v + ' · ' + T('r' + r.n + ':formato', r.formato) + ' · ' + T(key + ':titulo', g.titulo));
-    L.push(T(key + ':quien', g.hook.quien) + ': ' + sayText(key, g) + (elegido(key, g) ? ' (elegido)' : ''));
+    L.push('== ' + String(r.n).padStart(2,'0') + g.v + ' · ' + r.formato + ' · ' + g.titulo);
+    L.push(g.hook.quien + ': ' + g.hook.dice);
+    const el = g.hooks ? elegido(key, g) : null;
+    if (el) L.push('Arranque elegido (' + allHooks(key, g).find(x => x[1] === el)[0] + '): ' + el);
     (hkx[key] || []).forEach(t => L.push('Arranque propio: ' + t));
     g.beats.forEach((b, i) => {
-      if (b[1] === 'X') L.push(T(key + ':q' + i, b[3]).split(' · ')[0] + ': ' + T(key + ':b' + i, b[2]));
-      else if (b[1] === 'E') L.push('Emanuel: ' + b[2]);
-      else L.push('Víctor: ' + ((resp[key + '|' + i] || '').trim() || '(sin responder)'));
+      if (b[1] === 'E') L.push('Pregunta: ' + b[2]);
+      else L.push('A cámara: ' + ((resp[key + '|' + i] || '').trim() || '(sin responder)'));
     });
     if (g.confirmar) L.push('Confirmar: ' + g.confirmar + ' → ' + (conf[key] || 'sin respuesta'));
     L.push('');
   }));
   if (D.fijados){ L.push('== ' + D.fijados.titulo); D.fijados.items.forEach((it, j) => L.push(it.n + ' · ' + it.formato + ': ' + ((fijo[j] || '').trim() || '(sin notas)'))); L.push(''); }
   if (D.ideas){ L.push('== ' + D.ideas.titulo); D.ideas.items.forEach((it, j) => L.push(it.formato + ': ' + (conf['idea' + j] || 'sin marcar'))); L.push(''); }
+  if (D.estudios){ L.push('== ' + D.estudios.titulo); D.estudios.items.forEach((it, j) => L.push(it.formato + ' (' + it.cuenta + '): ' + (conf['est' + j] || 'sin marcar'))); L.push(''); }
   if (piezas.length){
     L.push('== Lo que ya está diseñado');
     piezas.forEach(p => { L.push(textoPieza(p, false)); L.push(''); });
@@ -1265,17 +1474,16 @@ function textoTodo(){
 function filasTodo(){
   const F = [];
   D.refs.forEach(r => r.guiones.forEach(g => {
-    const key = r.n + g.v, sec = String(r.n).padStart(2,'0') + g.v + ' · ' + T(key + ':titulo', g.titulo);
+    const key = r.n + g.v, sec = String(r.n).padStart(2,'0') + g.v + ' · ' + g.titulo;
     const el = g.hooks ? elegido(key, g) : null;
-    F.push([sec, 'Arranque', sayText(key, g) + (el || (key + ':say') in ed ? '' : ' (el propuesto)')]);
-    Object.keys(ed).filter(id => id.startsWith(key + ':') && id !== key + ':say').forEach(id => F.push([sec, 'Texto cambiado · ' + id.slice(key.length + 1), ed[id]]));
+    F.push([sec, 'Arranque', el || g.hook.dice + (g.hooks ? ' (el propuesto)' : '')]);
     (hkx[key] || []).forEach(t => F.push([sec, 'Arranque propio', t]));
-    g.beats.forEach((b, i) => { if (b[1] === 'V') F.push([sec, 'Víctor · ' + b[0], (resp[key + '|' + i] || '').trim()]); });
+    g.beats.forEach((b, i) => { if (b[1] === 'V') F.push([sec, 'A cámara · ' + b[0], (resp[key + '|' + i] || '').trim()]); });
     if (g.confirmar) F.push([sec, 'Confirmar: ' + g.confirmar, conf[key] || '']);
   }));
-  Object.keys(ed).filter(id => !/^\d+[A-Z]:/.test(id)).forEach(id => F.push(['Textos cambiados', id, ed[id]]));
   if (D.fijados) D.fijados.items.forEach((it, j) => F.push(['★ Fijado ' + it.n + ' · ' + it.formato, 'Notas', (fijo[j] || '').trim()]));
-  if (D.ideas) D.ideas.items.forEach((it, j) => F.push(['Ángulos nuevos · ' + it.formato, '¿Lo haría?', conf['idea' + j] || '']));
+  if (D.ideas) D.ideas.items.forEach((it, j) => F.push(['Otros formatos · ' + it.formato, '¿Lo haría?', conf['idea' + j] || '']));
+  if (D.estudios) D.estudios.items.forEach((it, j) => F.push(['Estudios · ' + it.formato, '¿Lo haría?', conf['est' + j] || '']));
   piezas.forEach(p => {
     const sec = 'Diseñado · ' + p.tipo + ' · ' + ((p.titulo || '').trim() || 'sin título'), l = ligaDe(p.de);
     if (l) F.push([sec, 'Sale de', l.t]);
@@ -1297,26 +1505,26 @@ function filasTodo(){
 }
 /* respaldo: todo lo guardado en un .json que se puede volver a cargar */
 $('#bBak').onclick = () => {
-  const o = {pagina: 'sergio-rosa-guiones', fecha: new Date().toISOString()};
+  const o = {pagina: 'solmi-guiones', fecha: new Date().toISOString()};
   CLAVES.forEach(k => { const v = store.get(k, null); if (v !== null) o[k] = v; });
   const a = document.createElement('a');
   a.href = URL.createObjectURL(new Blob([JSON.stringify(o)], {type: 'application/json'}));
-  a.download = 'respaldo-guiones-sergio-rosa-' + o.fecha.slice(0, 10) + '.json'; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  a.download = 'respaldo-guiones-solmi-' + o.fecha.slice(0, 10) + '.json'; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
 };
 $('#bLoad').onclick = () => $('#fLoad').click();
 $('#fLoad').onchange = async e => {
   const f = e.target.files[0]; e.target.value = ''; if (!f) return;
   let o; try { o = JSON.parse(await f.text()); } catch { alert('Ese archivo no es un respaldo de este tablero.'); return; }
-  if (!o || o.pagina !== 'sergio-rosa-guiones'){ alert('Ese archivo no es un respaldo de este tablero.'); return; }
+  if (!o || o.pagina !== 'solmi-guiones'){ alert('Ese archivo no es un respaldo de este tablero.'); return; }
   if (!confirm('¿Cargar el respaldo del ' + String(o.fecha || '').slice(0, 10) + '? Reemplaza lo que hay ahora en este dispositivo.')) return;
   try { CLAVES.forEach(k => { if (k in o) localStorage.setItem(k, JSON.stringify(o[k])); else localStorage.removeItem(k); }); }
   catch { alertaGuardado(); return; }
-  anotarN('sr-cambio', Math.max(Date.now(), leerN('sr-cambio') + 1)); anotarN('sr-subido', 0);
+  anotarN('sr2-cambio', Math.max(Date.now(), leerN('sr2-cambio') + 1)); anotarN('sr2-subido', 0);
   location.reload();
 };
 $('#enviar').onclick = () => {
   const [h, t] = prog();
-  $('#dlgtxt').textContent = h === t ? 'Están los ' + t + ' confirmados. ¡Gracias!' : `Confirmaste ${h} de ${t} guiones. Podés mandar lo que tengas y seguir después: queda guardado y lo ves en cualquier aparato.`;
+  $('#dlgtxt').textContent = h === t ? 'Están todas. ¡Gracias!' : `Respondiste ${h} de ${t}. Podés mandar lo que tengas y seguir después: ${NUBE ? 'queda guardado y lo ves en cualquier aparato.' : 'queda guardado en este dispositivo.'}`;
   $('#dlg').showModal();
 };
 $('#bClose').onclick = () => $('#dlg').close();
@@ -1334,7 +1542,7 @@ $('#bCopy').onclick = async () => {
 $('#bTxt').onclick = () => {
   const a = document.createElement('a');
   a.href = URL.createObjectURL(new Blob([textoTodo()], {type: 'text/plain;charset=utf-8'}));
-  a.download = 'guiones-sergio-rosa-octubre.txt'; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  a.download = 'respuestas-victor.txt'; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
 };
 
 /* tablero: pan y zoom */
@@ -1348,7 +1556,7 @@ const zoomAt = (f, cx, cy) => {
 const pts = new Map(); let last = null, pinch = null;
 vp.addEventListener('pointerdown', e => {
   if (document.body.classList.contains('list')) return;
-  if (e.target.closest('button,a,input,label,summary,select,iframe,pre,textarea,details,.beats,.cap,[data-ed]')) return;
+  if (e.target.closest('button,a,input,label,summary,select,iframe,pre,textarea,details,.beats,.cap')) return;
   vp.setPointerCapture(e.pointerId); pts.set(e.pointerId, [e.clientX, e.clientY]);
   last = [e.clientX, e.clientY]; vp.classList.add('drag');
 });
@@ -1387,12 +1595,12 @@ function setMode(m){
   document.body.classList.toggle('list', m === 'list');
   $('#mList').setAttribute('aria-pressed', m === 'list');
   $('#mBoard').setAttribute('aria-pressed', m !== 'list');
-  store.set('sr-mode', m, true);
+  store.set('sr2-mode', m, true);
   if (m !== 'list') apply();
 }
 $('#mBoard').onclick = () => setMode('board');
 $('#mList').onclick = () => setMode('list');
-setMode(store.get('sr-mode', innerWidth < 900 ? 'list' : 'board'));
+setMode(store.get('sr2-mode', innerWidth < 900 ? 'list' : 'board'));
 apply();
 if (NUBE) $('#dlgresp').textContent = 'Lo escrito se guarda en una planilla nuestra: si abrís esta página en otro aparato, aparece lo último. El respaldo queda por las dudas.';
 bajar();

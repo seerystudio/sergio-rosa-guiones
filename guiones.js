@@ -1,1737 +1,2894 @@
-/* Guiones de octubre 2026 · Sergio Rosa y Asociados (v6, 2026-10-12).
-   Fuente: vault-obsidian-git/clientes/sergio-rosa/REELS-2026-10.md.
-   beats: [tiempo, 'X', texto, quién habla, nota de validación (opcional)].
-   hooks: [marco, arranque, nota]. Notas «⭐ Heras» / «✗ Heras»: auditoría con el Sistema 3x30 y banco-ganchos,
-   ver AUDITORIA-HERAS-2026-10.md. Notas «Ganchos» / «Banquero» (v5): viral-hooks-expert y reel-scriptwriter,
-   ver AUDITORIA-BANQUERO-GANCHOS-2026-10.md. Ninguno lleva cifras legales. */
+/* Guiones de noviembre-diciembre 2026 · Sergio Rosa y Asociados. Lo genera armar-tablero.py: no editar a mano.
+   Fuente: vault-obsidian-git/clientes/sergio-rosa/REELS-2026-11.md. */
 window.GUIONES = {
-  "titulo": "Nueve guiones para octubre.",
-  "intro": [
-    "Estos son los videos de octubre: salen de una sola jornada de grabación y se publican martes y viernes, del 20 de octubre al 17 de noviembre. Cada fila es un formato: a la izquierda, un video de ejemplo; a la derecha, sus guiones.",
-    "Todos los textos se pueden cambiar: tocá cualquier frase y escribí encima. Se guarda solo, y lo cambiado queda marcado.",
-    "Cada guion trae su arranque y, abajo, entre veinte y veinticinco más para elegir. Si te gusta más otro, tocá «Este»: queda elegido y se ve arriba. También podés escribir el tuyo.",
-    "Lo marcado ⚠️ es lo que Sergio tiene que confirmar antes de publicar. Abajo de cada guion está el «Confirmanos».",
-    "Al final hay ocho ángulos para los próximos meses, cada uno con el video que lo inspiró. Marcá los que harías.",
-    "Lo que tocás se guarda solo: si abrís este link en otro aparato, aparece lo último. Cuando termines, tocá «Enviar» arriba."
-  ],
-  "reglas": [
-    "Cero cifras, plazos o artículos de ley, en audio y en placa. La única cifra es «treinta años», nunca «más de».",
-    "Nunca «especialistas» ni «gratis».",
-    "Cada video cierra pidiendo que comenten una de las cuatro palabras (CHOQUE, ART, DESPIDO, CONSULTA) o que manden un mensaje.",
-    "Sin nombres ni casos que se puedan reconocer.",
-    "La voz en off la hace quien filma."
-  ],
-  "hechos": {
-    "3B": "Publicado el 20-10 · 2.772 vistas · 6 seguidores nuevos · el mejor del mes",
-    "2A": "Publicado el 26-10 · 1.229 vistas · 4 compartidos",
-    "3A": "Publicado el 02-11 · 650 vistas · 1 seguidor nuevo",
-    "2B": "Publicado el 12-11 · 530 vistas · 1 comentario"
-  },
-  "refs": [
-    {
-      "n": 1,
-      "id": "Dbo8iYZR1M7",
-      "formato": "POV: la consulta",
-      "resumen": "La cámara es el que consulta. La voz en off habla desde atrás de la cámara y el de cámara le contesta mirándolo",
-      "cuenta": "@clemente.jimenez_",
-      "datos": "abogado, México · se toma la forma, no el texto",
-      "tags": [
-        "La cámara es el cliente",
-        "Voz en off",
-        "Escritorio"
+ "titulo": "Un reel por semana. Elegí cuál grabás.",
+ "intro": [
+  "Acá están los videos para lo que queda del año: trece temas, y cada uno en tres formatos distintos (A, B y C). Se publica uno por semana, así que no hace falta grabarlos todos: cada abogado del estudio elige los que quiere hacer.",
+  "Arriba, «Para grabar ahora», el orden que sugerimos si nadie elige otro. Abajo, «Para más adelante», el resto. Y al final, «Hechos», los cuatro que ya se publicaron, con sus números.",
+  "Cada versión tiene a la derecha el video que la inspiró. Tocá las letras A, B o C para cambiar de formato.",
+  "Todos los textos se pueden cambiar: tocá cualquier frase y escribí encima. Se guarda solo. Abajo de cada guion hay otros arranques y cierres para elegir.",
+  "Lo marcado «A validar» lo tiene que confirmar Sergio antes de publicar. Ninguno lleva cifras ni artículos de ley."
+ ],
+ "reglas": [
+  "Un reel por semana, los martes.",
+  "Todos cierran pidiendo un comentario con la palabra (CHOQUE, ART, DESPIDO o CONSULTA) o un mensaje.",
+  "Cuando un reel se graba, tocá «Marcar hecho» y pasa a la fila «Hechos»."
+ ],
+ "refs": [],
+ "tanda": {
+  "titulo": "Para grabar ahora",
+  "resumen": "El orden sugerido, uno por semana. Cada tema en tres formatos, con su referencia al lado. Abre en la versión recomendada",
+  "items": [
+   {
+    "r": "T01",
+    "tipo": "Pregunta y respuesta · Diego · DESPIDO",
+    "titulo": "Me echaron en diciembre: ¿y el aguinaldo?",
+    "meta": "Duración ≈35 s · Diego · cierra en DESPIDO",
+    "ej": "Dd2bqaeRFmN",
+    "ejde": "«¿Esto se denuncia o no?» · @clemente.jimenez_",
+    "nota": "Sergio de frente en el escritorio; Emanuel pregunta desde atrás de la cámara. Respuestas cortas, se corta seco entre pregunta y respuesta.",
+    "lineas": [
+     [
+      "0:00",
+      "E",
+      "Me echaron en diciembre. ¿Me tienen que pagar el aguinaldo?",
+      "Arranque · En pantalla: DESPIDO EN DICIEMBRE"
+     ],
+     [
+      "0:03",
+      "V",
+      "Sí. Aunque te echen antes de cobrarlo, la parte que ya trabajaste te la tienen que pagar.",
+      "A validar"
+     ],
+     [
+      "0:09",
+      "E",
+      "¿Y si renuncié yo?",
+      ""
+     ],
+     [
+      "0:10",
+      "V",
+      "También. Renuncies o te echen, esa parte va en la liquidación final.",
+      "A validar"
+     ],
+     [
+      "0:15",
+      "E",
+      "¿Y las vacaciones que no me tomé?",
+      ""
+     ],
+     [
+      "0:17",
+      "V",
+      "También entran. Y los días que trabajaste del mes.",
+      "A validar"
+     ],
+     [
+      "0:21",
+      "E",
+      "¿Y si me dicen que ya está todo pago?",
+      ""
+     ],
+     [
+      "0:23",
+      "V",
+      "Pedí la liquidación por escrito y no firmes nada hasta que alguien la revise.",
+      ""
+     ]
+    ],
+    "cierre": "Si te echaron este mes, comentá DESPIDO o mandanos un mensaje y la revisamos con vos.",
+    "hooks": [
+     "Me echaron en diciembre. ¿Me tienen que pagar el aguinaldo?",
+     "Si te echan en diciembre, esto te lo tienen que pagar igual.",
+     "¿Te despidieron justo antes de fin de año? Escuchá esto antes de firmar.",
+     "El aguinaldo no se pierde porque te echen. Te explico."
+    ],
+    "cierres": [
+     "Si te echaron este mes, comentá DESPIDO o mandanos un mensaje y la revisamos con vos.",
+     "Antes de firmar la liquidación, comentá DESPIDO o escribinos.",
+     "Mandáselo a alguien al que echaron este mes, y comentá DESPIDO si querés que la miremos."
+    ],
+    "hookIdx": 0,
+    "recomendacion": "grabar A — despido es el tema que más rinde en la cuenta, y la pregunta y respuesta sacó el mejor reel (2.772 vistas).",
+    "versiones": [
+     {
+      "v": "B",
+      "titulo": "Jamás firmes la liquidación de diciembre sin mirar esto",
+      "mecanica": "jamás",
+      "meta": "Duración ≈35 s",
+      "ej": "DeHHucjoZG8",
+      "ejde": "«Jamás te vayas de una empresa sin reclamar esto» · @juanmalorente_laboralista",
+      "nota": "De pie al lado de la ventana, plano medio. Corte con zoom y placa en cada número.",
+      "lineas": [
+       [
+        "0:00",
+        "V",
+        "Jamás firmes la liquidación de diciembre sin mirar esto.",
+        "Arranque · En pantalla: DICIEMBRE"
+       ],
+       [
+        "0:04",
+        "V",
+        "Renuncies o te echen, tu liquidación tiene que traer tres cosas.",
+        "A validar"
+       ],
+       [
+        "0:08",
+        "V",
+        "Uno: la parte del aguinaldo que ya trabajaste.",
+        "A validar · En pantalla: 1"
+       ],
+       [
+        "0:12",
+        "V",
+        "Dos: las vacaciones que no te tomaste.",
+        "A validar · En pantalla: 2"
+       ],
+       [
+        "0:16",
+        "V",
+        "Tres: los días que trabajaste del mes.",
+        "En pantalla: 3"
+       ],
+       [
+        "0:20",
+        "V",
+        "Si falta una, no firmes conforme.",
+        ""
+       ]
       ],
-      "mecanica": [
-        "El que mira se siente sentado del otro lado del escritorio: es la primera consulta antes de pedirla.",
-        "La frase de arranque es la que diría cualquiera, con sus palabras. Por eso frena el dedo.",
-        "El abogado contesta a una persona, no recita: se nota en la cara."
+      "cierre": "Si te vas este mes, comentá DESPIDO o mandanos un mensaje y la miramos antes de que firmes.",
+      "hooks": [
+       "Jamás firmes la liquidación de diciembre sin mirar esto.",
+       "Si te vas de un trabajo en diciembre, revisá estas tres cosas.",
+       "Tres cosas que tiene que traer tu liquidación de fin de año.",
+       "Antes de firmar en diciembre, mirá esto."
       ],
-      "guiones": [
-        {
-          "v": "A",
-          "tipo": "Mar 20-10 · Carlos · cierra en CHOQUE",
-          "titulo": "«Tuve un choque»",
-          "angulo": "Lo que traés el primer día hace que no se arranque de cero. Y si falta algo, se consigue.",
-          "dur": "≈42 s · a cámara + voz en off",
-          "plano": "A cámara del otro lado del escritorio, la cámara a la altura de quien se sienta enfrente. La voz en off hace del que consulta. En «vení que te explico» se levanta y la cámara lo sigue unos pasos: es el cambio de plano que sostiene la lista.",
-          "ojo": "Arranque y primeras líneas: guion tuyo, tal cual. La lista la confirma Sergio: es lo que el estudio pide de verdad. No asusta: si falta algo, se consigue.",
-          "hook": {
-            "quien": "Voz en off",
-            "dice": "Tuve un choque. Vengo a consultar qué se puede hacer."
-          },
-          "hooks": [
-            [
-              "Corte en el medio (el tuyo)",
-              "Tuve un choque. Vengo a consultar qué se puede hacer.",
-              "⭐ Heras: el tuyo. Le habla al que ya decidió consultar (nivel 2): convierte bien, pero el que no chocó se va. Probalo contra el de abajo."
-            ],
-            [
-              "Condicional · RUM",
-              "Si mañana te chocan, esta es la lista que vas a necesitar.",
-              "⭐ Heras: le habla al que todavía no chocó (nivel 0), que es casi toda la gente. Va antes de tu arranque, como frase de 2 segundos. · Ganchos (regla 3): decía «en el celular», pero la mitad de la lista son papeles; ahora promete lo que el cuerpo da."
-            ],
-            [
-              "Pregunta de afectado",
-              "¿Tenés fotos del choque en el celular? No las borres. Te explico por qué.",
-              "⭐ Heras: objeto universal y se entiende sin audio con la placa. · Ganchos (regla 3): el cuerpo ahora dice por qué (0:17)."
-            ],
-            [
-              "Pregunta de afectado",
-              "¿Te chocaron y no sabés qué llevarle al abogado?"
-            ],
-            [
-              "Lista",
-              "Cinco cosas que tenés que llevar a la primera consulta después de un choque."
-            ],
-            [
-              "Frase robada",
-              "No sabía que había que traer algo.",
-              "Lo dice la voz en off."
-            ],
-            [
-              "Contracorriente",
-              "Ir al abogado sin papeles no es grave. Pero te hace arrancar de cero."
-            ],
-            [
-              "Objeto en mano",
-              "[Levanta una carpeta vacía] Esto es lo que trae casi todo el mundo después de un choque."
-            ],
-            [
-              "Impacto visual",
-              "[Sin hablar] Apoya sobre el escritorio una foto del auto, un recibo y una póliza. Placa: LO QUE TENÉS QUE TRAER."
-            ],
-            [
-              "Advertencia",
-              "Si te chocaron esta semana, empezá a juntar esto hoy."
-            ],
-            [
-              "Secreto",
-              "Hay papeles que el primer día están en tu celular y a la semana ya no los encontrás."
-            ],
-            [
-              "Pregunta inducida",
-              "¿Qué tengo que traer?",
-              "Lo dice la voz en off."
-            ],
-            [
-              "Vulnerabilidad",
-              "Perdón, no traje nada. No sabía.",
-              "Lo dice la voz en off."
-            ],
-            [
-              "Lista",
-              "La lista que nadie te da después de un choque."
-            ],
-            [
-              "Error",
-              "Borrar las fotos del choque porque «ya está» es lo primero que se lamenta."
-            ],
-            [
-              "Frase robada",
-              "¿Y qué tengo que traer, el auto?",
-              "Lo dice la voz en off. Con humor."
-            ],
-            [
-              "Advertencia",
-              "Antes de ir a cualquier abogado por un choque, mirá esta lista."
-            ],
-            [
-              "Contracorriente",
-              "No hace falta tener todo. Hace falta saber qué juntar."
-            ],
-            [
-              "Pregunta inducida",
-              "¿Qué te pide un abogado cuando llegás por un choque?"
-            ],
-            [
-              "Confesión",
-              "Lo primero que pregunto cuando alguien viene por un choque no es cómo fue. Es qué trajo."
-            ],
-            [
-              "Error",
-              "El error de la primera consulta no es ir tarde. Es ir con las manos vacías.",
-              "✗ Heras: choca con el cierre del guion («si te falta algo, se consigue»): el cuerpo no cumple lo que promete el arranque."
-            ],
-            [
-              "Provocación",
-              "El abogado no adivina. Lo que no traés, hay que salir a buscarlo.",
-              "✗ Heras: suena a reto. El que mira se defiende en vez de identificarse."
-            ]
-          ],
-          "beats": [
-            [
-              "0:03",
-              "X",
-              "Okey. ¿Trajiste todos los papeles?",
-              "A cámara"
-            ],
-            [
-              "0:05",
-              "X",
-              "No, no… no sabía que había que traer.",
-              "Voz en off"
-            ],
-            [
-              "0:07",
-              "X",
-              "Okey, vení que te explico qué tenés que traer, para que no te pase de nuevo.",
-              "A cámara · se levanta, la cámara lo sigue"
-            ],
-            [
-              "0:11",
-              "X",
-              "Lo del otro: la patente, el nombre y la compañía de seguro. Si te lo pasó, una foto del registro y de la póliza.",
-              "A cámara",
-              "Sergio confirma la lista"
-            ],
-            [
-              "0:17",
-              "X",
-              "Fotos: de los dos autos, de cómo quedaron y del lugar. Y no las borres: esas no se vuelven a sacar.",
-              "A cámara"
-            ],
-            [
-              "0:21",
-              "X",
-              "Lo médico: la constancia de la guardia, los estudios y los recibos de lo que gastaste.",
-              "A cámara"
-            ],
-            [
-              "0:26",
-              "X",
-              "La denuncia que hiciste en tu seguro. Y si fue la policía, lo que te dieron.",
-              "A cámara",
-              "Sergio confirma"
-            ],
-            [
-              "0:30",
-              "X",
-              "Y si por el choque no pudiste ir a trabajar, traé tu recibo de sueldo, o algo que muestre cuánto cobrabas.",
-              "A cámara"
-            ],
-            [
-              "0:33",
-              "X",
-              "Tranquilo: si te falta algo, se consigue. Pero lo que traés el primer día es lo que hace que no arranquemos de cero.",
-              "A cámara"
-            ],
-            [
-              "0:38",
-              "X",
-              "Si te pasó un choque, comentá CHOQUE o mandanos un mensaje, y te decimos por dónde empezar.",
-              "A cámara · pide el comentario"
-            ],
-            [
-              "0:41",
-              "X",
-              "Y la próxima, ya sabés qué traer.",
-              "A cámara · cierra con el arranque"
-            ]
-          ],
-          "confirmar": "¿La lista es lo que el estudio pide de verdad?"
-        },
-        {
-          "v": "B",
-          "tipo": "Mar 10-11 · Carlos · cierra en CHOQUE",
-          "titulo": "«Me ofrecieron esto por el choque»",
-          "angulo": "Lo que te ofrecen se calculó mirando el auto. Lo que te corresponde se calcula mirándote a vos.",
-          "dur": "≈40 s · a cámara + voz en off",
-          "plano": "A cámara del otro lado del escritorio; la cámara a la altura de quien se sienta enfrente. Una hoja doblada hace de propuesta: ninguna cifra legible, nunca un papel real de un cliente.",
-          "ojo": "Ni una cifra en audio, placa ni papel. Va dos semanas después de «¿Firmar o no firmar?», porque los dos tocan la oferta del seguro, y tres después de «Tuve un choque».",
-          "hook": {
-            "quien": "Voz en off",
-            "dice": "...estuve un mes sin poder laburar. Y me ofrecieron esto."
-          },
-          "hooks": [
-            [
-              "Corte en el medio",
-              "...estuve un mes sin poder laburar. Y me ofrecieron esto.",
-              "Una mano deja el papel sobre el escritorio."
-            ],
-            [
-              "Contraste",
-              "Después de un choque hay dos cuentas: la del auto y la tuya. Te ofrecen una sola.",
-              "⭐ Heras: abre la deuda (¿cuál es la mía?) y no la cierra hasta 0:24."
-            ],
-            [
-              "Provocación",
-              "Vos no sos el auto. Y el seguro te está pagando como si lo fueras.",
-              "⭐ Heras: provocación con imagen concreta; es la frase que más se recuerda del guion."
-            ],
-            [
-              "Contracorriente",
-              "El taller te arregló el auto. ¿Quién te arregla el mes que no laburaste?",
-              "⭐ Heras: contraste que entiende un chico (auto vs. vos) y le habla al que tuvo cualquier choque, no solo al que tiene una oferta (nivel 1)."
-            ],
-            [
-              "Secreto",
-              "Si te chocaron y a los pocos días te llamó la aseguradora del otro para ofrecerte plata, con una condición: que firmes ahora. Eso tiene nombre.",
-              "✗ Ganchos (regla 3): promete un nombre que este cuerpo nunca dice. Solo va con el cuerpo de la variante B de septiembre, y solo si Sergio confirma cómo se llama; si no hay nombre, se saca «Eso tiene nombre». ⚠️"
-            ],
-            [
-              "Objeto en mano",
-              "[Sostiene el papel doblado] Esto te lo ofrecieron. Antes de firmarlo, mirá de dónde sale el número."
-            ],
-            [
-              "Contracorriente",
-              "El número que te ofrece el seguro no está mal hecho. Está hecho para otra cosa."
-            ],
-            [
-              "Pregunta de afectado",
-              "¿Te ofrecieron plata por el choque y te dijeron que era lo que había?"
-            ],
-            [
-              "Desmentido amable",
-              "Lo que te dijo el de la aseguradora no es mentira. Está incompleto."
-            ],
-            [
-              "Frase robada",
-              "Me dijeron que era lo que había.",
-              "Lo dice la voz en off."
-            ],
-            [
-              "Error",
-              "El error de agarrar lo primero no es aceptar poco. Es aceptar sin saber qué te estás perdiendo."
-            ],
-            [
-              "Lista",
-              "Cinco cosas que nadie mira cuando te ofrecen plata por un choque. Ninguna es el auto.",
-              "⚠️ los cinco factores se validan uno por uno"
-            ],
-            [
-              "Pregunta inducida",
-              "¿Cómo sé si lo que me ofrecen está bien?",
-              "Lo dice la voz en off."
-            ],
-            [
-              "Advertencia",
-              "Si todavía no firmaste lo que te ofrecieron por el choque, mirá esto primero."
-            ],
-            [
-              "Secreto",
-              "Te voy a decir cómo se calcula lo que te ofrecen. Nadie te lo explica en la llamada."
-            ],
-            [
-              "Vulnerabilidad",
-              "Necesitaba la plata, así que casi firmo.",
-              "Lo dice la voz en off."
-            ],
-            [
-              "Pregunta de afectado",
-              "¿Estuviste días sin poder laburar por un choque?"
-            ],
-            [
-              "Contraste",
-              "Chapa, pintura y repuestos tienen precio. Lo que te pasó a vos también, pero se calcula aparte."
-            ],
-            [
-              "Provocación",
-              "Si alguien te dice cuánto te corresponde sin verte, te está adivinando."
-            ],
-            [
-              "Impacto visual",
-              "[Sin hablar] Da vuelta el papel doblado y lo deja boca abajo. «Antes de mirar el número, mirá de dónde sale.»"
-            ],
-            [
-              "Error",
-              "Lo que más plata cuesta después de un choque se decide en una llamada.",
-              "✗ Heras: el cuerpo no habla de ninguna llamada: promete algo que no entrega."
-            ],
-            [
-              "Pregunta inducida",
-              "¿Por qué nadie me quiere decir un número?",
-              "✗ Heras: nivel 2-3: solo lo entiende el que ya está negociando."
-            ]
-          ],
-          "beats": [
-            [
-              "0:04",
-              "X",
-              "¿Y vos qué les dijiste?",
-              "A cámara"
-            ],
-            [
-              "0:06",
-              "X",
-              "Nada todavía. Me dijeron que era lo que había.",
-              "Voz en off"
-            ],
-            [
-              "0:09",
-              "X",
-              "Te voy a decir de dónde sale ese número, que es lo que nadie te explica.",
-              "A cámara"
-            ],
-            [
-              "0:13",
-              "X",
-              "Ese número lo calcularon mirando el auto. Chapa, pintura, repuestos.",
-              "A cámara",
-              "Sergio confirma"
-            ],
-            [
-              "0:18",
-              "X",
-              "Vos no sos el auto. El auto se arregló en el taller. El mes que no laburaste no se arregla ahí.",
-              "A cámara"
-            ],
-            [
-              "0:24",
-              "X",
-              "Lo tuyo se mira aparte: qué te quedó, cuánto tratamiento necesitás, cuántos días no pudiste laburar, qué edad tenés y de qué vivís.",
-              "A cámara",
-              "Sergio confirma los cinco, uno por uno"
-            ],
-            [
-              "0:32",
-              "X",
-              "Por eso no te puedo decir un número por Instagram. Y el que te lo dice sin verte, te está adivinando.",
-              "A cámara"
-            ],
-            [
-              "0:36",
-              "X",
-              "Si te ofrecieron algo y todavía no firmaste, comentá CHOQUE o mandanos un mensaje, y lo miramos antes de que firmes.",
-              "A cámara · pide el comentario"
-            ],
-            [
-              "0:39",
-              "X",
-              "Lo que te ofrecen sale de mirar el auto. Lo que te corresponde sale de mirarte a vos.",
-              "A cámara · cierra con el arranque"
-            ]
-          ],
-          "confirmar": "¿Lo marcado ⚠️ va tal como está?"
-        }
-      ]
-    },
-    {
-      "n": 2,
-      "id": "DeHHucjoZG8",
-      "formato": "Jamás / Sí, podés",
-      "resumen": "Una sola persona a cámara, en movimiento o al lado de una ventana. Arranca con una orden o con un «sí» que da permiso, tira una lista de tres y cierra con la palabra clave",
-      "cuenta": "@juanmalorente_laboralista",
-      "datos": "abogado laboralista, España · 1,2 M de vistas en 6 días, cientos de comentarios con «Consulta» (orgánico)",
-      "tags": [
-        "Le habla a todos",
-        "Lista de tres",
-        "Palabra clave en el cierre"
+      "cierres": [
+       "Si te vas este mes, comentá DESPIDO o mandanos un mensaje y la miramos antes de que firmes.",
+       "Guardalo para cuando te toque, y comentá DESPIDO si querés que la revisemos.",
+       "¿Te faltó alguna? Comentá DESPIDO o escribinos."
       ],
-      "mecanica": [
-        "El arranque le habla a cualquiera que trabaja: todos se van de un trabajo alguna vez, todos tienen algo que les duele.",
-        "Entra por lo que la persona quiere (cobrar lo que le toca), no por el problema.",
-        "Tres puntos que el que mira chequea con lo suyo, y una palabra para comentar. Publica todos los días y tiene entre 93 mil y 1,2 M en cada reel de las últimas dos semanas."
+      "hookIdx": 0
+     },
+     {
+      "v": "C",
+      "titulo": "Buscá esto en tu liquidación de diciembre",
+      "mecanica": "papel en la mesa",
+      "meta": "Duración ≈35 s",
+      "ej": "DeHp3Qyucg7",
+      "ejde": "«Esta cláusula» · @reyessulbaran.juridico",
+      "nota": "Cenital del escritorio: el papel sobre la mesa y la mano que marca cada parte. Voz del abogado. Ninguna cifra legible.",
+      "lineas": [
+       [
+        "0:00",
+        "V",
+        "Si te echan en diciembre, buscá esto en tu liquidación.",
+        "Arranque · la liquidación sobre la mesa, sin cifras legibles"
+       ],
+       [
+        "0:04",
+        "V",
+        "Acá: la parte del aguinaldo que ya trabajaste.",
+        "A validar · la mano marca la línea"
+       ],
+       [
+        "0:09",
+        "V",
+        "Acá: las vacaciones que no te tomaste.",
+        "A validar"
+       ],
+       [
+        "0:13",
+        "V",
+        "Y acá: los días que trabajaste del mes.",
+        ""
+       ],
+       [
+        "0:17",
+        "V",
+        "Si alguno no está, no firmes conforme. Traela y la miramos.",
+        ""
+       ]
       ],
-      "guiones": [
-        {
-          "v": "A",
-          "tipo": "Vie 23-10 · Diego · cierra en DESPIDO",
-          "titulo": "«Jamás te vayas de un trabajo sin cobrar esto»",
-          "angulo": "Te vayas como te vayas, hay una parte que siempre es tuya: la liquidación final.",
-          "dur": "≈34 s · a cámara",
-          "plano": "Una sola persona a cámara, de pie al lado de la ventana del estudio, celular en mano o a la altura de los ojos. Habla rápido y con energía, como en la referencia. Subtítulos palabra por palabra. Un cambio cada tres segundos (Banquero): en «uno», «dos» y «tres», corte con zoom y placa del número (1 · DÍAS TRABAJADOS · 2 · VACACIONES · 3 · AGUINALDO). Placa del arranque, que suma y no repite la voz: AUNQUE RENUNCIES.",
-          "ojo": "Es la fotocopiadora del mejor reel de la cuenta (despido, 2.661). De la referencia no se copia «lo más normal es que ganes»: no se promete resultado. Sin cifras ni fechas de ejemplo. Toca lo mismo que el veredicto de la renuncia del 03-11, pero desde otro lado: van a diez días.",
-          "hook": {
-            "quien": "A cámara",
-            "dice": "Jamás te vayas de un trabajo sin cobrar esto."
-          },
-          "hooks": [
-            [
-              "Orden (de la referencia)",
-              "Jamás te vayas de un trabajo sin cobrar esto.",
-              "⭐ Heras: nivel 0, todos se van de un trabajo alguna vez. Es la lógica del reel de 1,2 M."
-            ],
-            [
-              "Contracorriente",
-              "Aunque renuncies, hay plata que es tuya.",
-              "⭐ Heras: entra por el deseo y contradice lo que todos creen."
-            ],
-            [
-              "Advertencia",
-              "Si estás por renunciar, mirá esto antes.",
-              "⭐ Heras: le habla al que todavía no se fue (nivel 0-1)."
-            ],
-            [
-              "Pregunta de afectado",
-              "¿Renunciaste y te fuiste sin cobrar nada?"
-            ],
-            [
-              "Frase robada",
-              "Renuncié, así que no me toca nada."
-            ],
-            [
-              "Lista",
-              "Tres cosas que te tienen que pagar sí o sí cuando te vas de un trabajo."
-            ],
-            [
-              "Error",
-              "El error de irte de un trabajo: firmar el último recibo sin mirar estas tres cosas."
-            ],
-            [
-              "Secreto",
-              "No hablo de la indemnización. Hablo de lo que te deben aunque te vayas vos."
-            ],
-            [
-              "Contraste",
-              "Indemnización y liquidación final no son lo mismo. Y una de las dos te toca siempre.",
-              "✗ Ganchos (regla 2): dos palabras técnicas en el primer segundo. Adentro del guion sí van. ⚠️ validar"
-            ],
-            [
-              "Pregunta inducida",
-              "¿Qué te tienen que pagar si renunciás?"
-            ],
-            [
-              "Impacto visual",
-              "[Sin hablar] Da vuelta un recibo de sueldo y marca tres renglones con una birome. Placa: ESTO ES TUYO."
-            ],
-            [
-              "Advertencia",
-              "Se te termina el contrato: antes de irte, fijate que te paguen esto."
-            ],
-            [
-              "Frase robada",
-              "Me dijeron que como me fui yo, no me corresponde nada."
-            ],
-            [
-              "Contracorriente",
-              "Que te vayas vos no cambia esto."
-            ],
-            [
-              "Pregunta de afectado",
-              "¿Te pagaron las vacaciones que no te tomaste?"
-            ],
-            [
-              "Error",
-              "Mucha gente se va de un trabajo y deja plata adentro sin saberlo."
-            ],
-            [
-              "Secreto",
-              "Hay una plata que te deben el día que te vas, y casi nadie la reclama."
-            ],
-            [
-              "Advertencia",
-              "Antes de firmar tu último recibo, mirá esto."
-            ],
-            [
-              "Contraste",
-              "Te echen o te vayas: esto te lo tienen que pagar igual.",
-              "⚠️ validar"
-            ],
-            [
-              "Lista",
-              "Días trabajados, vacaciones y aguinaldo: si te vas, te los tienen que pagar.",
-              "✗ Heras: dice las tres cosas en el arranque; ya no queda nada por ver."
-            ],
-            [
-              "Provocación",
-              "Si te fuiste y no te pagaron esto, te regalaste.",
-              "✗ Heras: suena a reto."
-            ]
-          ],
-          "beats": [
-            [
-              "0:03",
-              "X",
-              "Te vayas como te vayas: si renunciás, si te echan o si se termina el contrato.",
-              "A cámara",
-              "Sergio confirma"
-            ],
-            [
-              "0:07",
-              "X",
-              "Esto siempre te corresponde, y mucha gente se va sin saberlo.",
-              "A cámara"
-            ],
-            [
-              "0:11",
-              "X",
-              "No hablo de la indemnización. Hablo de la liquidación final.",
-              "A cámara"
-            ],
-            [
-              "0:15",
-              "X",
-              "Uno: los días que trabajaste en el mes en que te vas.",
-              "A cámara"
-            ],
-            [
-              "0:19",
-              "X",
-              "Dos: las vacaciones que te quedaron sin tomar.",
-              "A cámara",
-              "Sergio confirma"
-            ],
-            [
-              "0:22",
-              "X",
-              "Tres: la parte del aguinaldo que venías juntando y todavía no cobraste.",
-              "A cámara",
-              "Sergio confirma"
-            ],
-            [
-              "0:27",
-              "X",
-              "Si te fuiste y no te lo pagaron, o no sabés si te lo pagaron bien, comentá DESPIDO o mandanos un mensaje, y lo revisamos.",
-              "A cámara · pide el comentario"
-            ],
-            [
-              "0:32",
-              "X",
-              "Te vayas como te vayas, esto es tuyo.",
-              "A cámara · cierra con el arranque"
-            ]
-          ],
-          "confirmar": "¿Lo marcado ⚠️ va tal como está?"
-        },
-        {
-          "v": "B",
-          "tipo": "Vie 06-11 · Roberto · cierra en ART",
-          "titulo": "«Sí: te pueden pagar por un dolor que te dejó el trabajo»",
-          "angulo": "No hace falta un accidente: lo que te gastó el trabajo también se reclama.",
-          "dur": "≈36 s · a cámara",
-          "plano": "Una sola persona a cámara, en movimiento o al lado de una ventana, mismo tono que la referencia. Cuenta los tres casos con los dedos. Subtítulos palabra por palabra. Corte con zoom en cada número y placa (1 · EL RUIDO · 2 · EL PESO · 3 · EL MISMO MOVIMIENTO): es el cambio cada tres segundos que pide Banquero. Placa del arranque: SIN ACCIDENTE.",
-          "ojo": "🔴 Cierra con ART, y hoy ManyChat le manda a quien comenta ART la guía de in itinere: antes de publicar, cambiar esa respuesta por un «te escribimos». Es la fotocopiadora del reel de enfermedades del 15-09 (2.072, el segundo mejor), en otro formato: Heras pide repetir el tema que funcionó.",
-          "hook": {
-            "quien": "A cámara",
-            "dice": "Sí: te pueden pagar por un dolor que te dejó el trabajo. Aunque nunca hayas tenido un accidente."
-          },
-          "hooks": [
-            [
-              "Sí, podés (de la referencia)",
-              "Sí: te pueden pagar por un dolor que te dejó el trabajo. Aunque nunca hayas tenido un accidente.",
-              "⭐ Heras: entra por el deseo (que te paguen) y le habla a todo el que trabaja. Es la lógica del reel de 475 mil. · Banquero: dura casi cuatro segundos; la placa SIN ACCIDENTE entra en el primero y sostiene el resto."
-            ],
-            [
-              "Pregunta inducida",
-              "¿Por qué la gente reclama cuando se corta un dedo y no cuando se queda sorda?",
-              "⭐ Heras: curiosidad pura y se entiende de chico."
-            ],
-            [
-              "Lista",
-              "Tres dolores que te puede pagar la ART aunque no hayas tenido ningún accidente.",
-              "⭐ Heras: deuda contable; el que mira cuenta cuáles le pasan."
-            ],
-            [
-              "Pregunta de afectado",
-              "¿En tu casa te dicen que tenés la tele muy fuerte?",
-              "⭐ Heras: era el mejor arranque de la fila anterior; acá entra como primer caso. · Ganchos (regla 3): si va este, después del arranque se salta a «Uno: laburaste años al lado de máquinas…». La tele y el oído van pegados."
-            ],
-            [
-              "Orden",
-              "Jamás te quedes con un dolor que te dejó el trabajo sin preguntar esto."
-            ],
-            [
-              "Contracorriente",
-              "La ART no es solo para el que se cayó de un andamio."
-            ],
-            [
-              "Pregunta de afectado",
-              "¿Te duele algo por tu trabajo y nunca tuviste un accidente?"
-            ],
-            [
-              "Frase robada",
-              "Si no me accidenté, la ART no me cubre nada."
-            ],
-            [
-              "Error",
-              "El error más común: creer que sin accidente no hay nada para reclamar."
-            ],
-            [
-              "Secreto",
-              "Lo que casi nadie sabe de la ART: no hace falta caerse para que responda.",
-              "⚠️ validar"
-            ],
-            [
-              "Impacto visual",
-              "[Sin hablar] Cuenta con los dedos: uno, dos, tres. Placa: 3 DOLORES QUE PAGA LA ART."
-            ],
-            [
-              "Frase robada",
-              "Es de grande, ya se me va a pasar."
-            ],
-            [
-              "Contracorriente",
-              "No hace falta un accidente. Alcanza con los años."
-            ],
-            [
-              "Pregunta inducida",
-              "¿Cuántos años llevás haciendo lo mismo en tu trabajo?"
-            ],
-            [
-              "Secreto",
-              "Hay enfermedades del trabajo que no duelen. Y por eso nadie las reclama.",
-              "⚠️ validar"
-            ],
-            [
-              "Advertencia",
-              "No te vayas de tu trabajo con un dolor sin preguntar esto."
-            ],
-            [
-              "Provocación",
-              "Si te duele por laburar, no es mala suerte. Es una enfermedad del trabajo.",
-              "⚠️ validar"
-            ],
-            [
-              "Advertencia",
-              "Si laburaste años con máquinas, cargando peso o haciendo el mismo movimiento, mirá esto."
-            ],
-            [
-              "Contraste",
-              "Accidente o desgaste: para la ART pueden contar igual.",
-              "✗ Heras: promete más de lo que el cuerpo sostiene sin validar."
-            ],
-            [
-              "Error",
-              "Esperar a jubilarte para ver qué pasa con ese dolor es el error.",
-              "✗ Heras: toca un plazo sin poder decirlo."
-            ]
-          ],
-          "beats": [
-            [
-              "0:05",
-              "X",
-              "Mucha gente cree que la ART es solo para el que se cayó de un andamio. Y se queda con el dolor, sin preguntar.",
-              "A cámara"
-            ],
-            [
-              "0:11",
-              "X",
-              "Te doy tres casos.",
-              "A cámara"
-            ],
-            [
-              "0:12",
-              "X",
-              "Uno: laburaste años al lado de máquinas y hoy escuchás menos.",
-              "A cámara",
-              "Sergio confirma"
-            ],
-            [
-              "0:17",
-              "X",
-              "Dos: cargaste peso todos los días y hoy la espalda no te da más.",
-              "A cámara",
-              "Sergio confirma"
-            ],
-            [
-              "0:22",
-              "X",
-              "Tres: hiciste el mismo movimiento miles de veces y hoy te duelen los hombros o las muñecas.",
-              "A cámara",
-              "Sergio confirma"
-            ],
-            [
-              "0:27",
-              "X",
-              "En los tres casos puede ser una enfermedad del trabajo, y la que tiene que responder es la ART.",
-              "A cámara",
-              "Sergio confirma"
-            ],
-            [
-              "0:32",
-              "X",
-              "Si te pasa alguno, comentá ART o mandanos un mensaje, y lo vemos.",
-              "A cámara · pide el comentario"
-            ],
-            [
-              "0:35",
-              "X",
-              "No hace falta un accidente. Alcanza con los años.",
-              "A cámara · cierra con el arranque"
-            ]
-          ],
-          "confirmar": "¿Lo marcado ⚠️ va tal como está?"
-        }
+      "cierre": "Si tenés tu liquidación en la mano, comentá DESPIDO o mandanos un mensaje.",
+      "hooks": [
+       "Si te echan en diciembre, buscá esto en tu liquidación.",
+       "Tu liquidación de fin de año tiene que tener estas tres líneas.",
+       "Agarrá tu liquidación y fijate si dice esto.",
+       "Esto es lo primero que miramos cuando nos traen una liquidación."
       ],
-      "extra": [
-        {
-          "id": "Dd1KV0LIqb4",
-          "formato": "«Sí, podés irte con indemnización»",
-          "cuenta": "@juanmalorente_laboralista",
-          "datos": "475 mil vistas · 752 comentarios",
-          "tags": [
-            "Arranca por el deseo",
-            "Tres casos"
-          ],
-          "mecanica": [
-            "Arranca con un «sí» que da permiso a lo que el que mira quiere hacer, y después lo sostiene con tres casos."
-          ]
-        }
-      ]
-    },
-    {
-      "n": 3,
-      "id": "Dd2bqaeRFmN",
-      "formato": "Pregunta y respuesta",
-      "resumen": "La voz en off pregunta desde atrás de la cámara, como lo diría la gente. El de cámara, de frente, contesta corto. Una pregunta, una respuesta, la siguiente",
-      "cuenta": "@clemente.jimenez_",
-      "datos": "abogado, México · «¿Esto se denuncia o no?» · cierra con «comentá LEGAL»",
-      "tags": [
-        "Pregunta en primera persona",
-        "Respuesta de una palabra",
-        "Palabra clave"
+      "cierres": [
+       "Si tenés tu liquidación en la mano, comentá DESPIDO o mandanos un mensaje.",
+       "Sacale una foto y escribinos: la miramos.",
+       "¿No encontrás alguna? Comentá DESPIDO o escribinos."
       ],
-      "mecanica": [
-        "Cada caso lo dice la gente con sus palabras («un amigo me debe plata…») y la respuesta es corta.",
-        "Mientras quede una pregunta, el que mira se queda a ver si está la suya.",
-        "Cierra con una palabra para comentar, como los nuestros."
-      ],
-      "guiones": [
-        {
-          "v": "A",
-          "tipo": "Mar 27-10 · Mónica / amplio · cierra en CONSULTA",
-          "titulo": "¿Firmar o no firmar?",
-          "angulo": "Después de cinco «no firmes», el único «sí»: cuando un abogado lo revisó.",
-          "dur": "≈33 s · a cámara + voz en off",
-          "plano": "La voz en off pregunta desde atrás de la cámara. El de cámara, de frente, contesta. Nada más. Placa fija arriba desde el primer segundo: UNA SOLA VEZ TE DIGO QUE SÍ. Abre la deuda sin sumar una palabra al audio (Ganchos, regla 1) y se paga en «Ahí sí».",
-          "ojo": "Guion tuyo, tal cual, puesto en pregunta y respuesta. Única corrección: la palabra clave (decía FIRMA, que no es una de las cuatro).",
-          "hook": {
-            "quien": "Voz en off",
-            "dice": "El seguro me ofrece plata a los 3 días del choque. ¿Firmo?"
-          },
-          "hooks": [
-            [
-              "Pregunta (el tuyo)",
-              "El seguro me ofrece plata a los 3 días del choque. ¿Firmo?",
-              "Arranque de la pregunta y respuesta. 🟡 Tiene un número («3 días») y la regla es cero cifras. No es un plazo legal, es la situación, pero si preferís: «a los pocos días»."
-            ],
-            [
-              "Pregunta",
-              "Me pusieron un papel adelante y me dicen que es un trámite. ¿Firmo?",
-              "⭐ Heras: le pasó a todo el mundo alguna vez (nivel 0-1), no solo al que chocó."
-            ],
-            [
-              "Pregunta",
-              "Me dicen que si no firmo hoy, después es peor. ¿Firmo?",
-              "⭐ Heras: la presión del otro lado se reconoce en un segundo."
-            ],
-            [
-              "Pregunta",
-              "Me chocaron y ya me quieren hacer firmar algo.",
-              "⭐ Heras: corta y sin jerga."
-            ],
-            [
-              "Pregunta",
-              "Me ofrecen efectivo en mano para cerrar todo ya. ¿Agarro?"
-            ],
-            [
-              "Pregunta",
-              "La ART me pide que firme el alta, y me sigue doliendo. ¿Firmo?"
-            ],
-            [
-              "Pregunta",
-              "Me hacen firmar sin un abogado. ¿Está bien?"
-            ],
-            [
-              "Pregunta",
-              "Ya me hicieron la cuenta. ¿Firmo?"
-            ],
-            [
-              "Pregunta",
-              "¿Firmo o no firmo?",
-              "✗ Heras: sin la situación no alude a nadie."
-            ]
-          ],
-          "beats": [
-            [
-              "0:03",
-              "X",
-              "No firmes todavía.",
-              "A cámara · responde"
-            ],
-            [
-              "0:05",
-              "X",
-              "Me piden que firme antes de terminar el tratamiento.",
-              "Voz en off · pregunta"
-            ],
-            [
-              "0:08",
-              "X",
-              "No firmes.",
-              "A cámara · responde",
-              "Sergio confirma"
-            ],
-            [
-              "0:10",
-              "X",
-              "La ART me pide que firme el alta, y me sigue doliendo.",
-              "Voz en off · pregunta"
-            ],
-            [
-              "0:13",
-              "X",
-              "No firmes conforme.",
-              "A cámara · responde",
-              "Sergio confirma"
-            ],
-            [
-              "0:15",
-              "X",
-              "Me ofrecen efectivo en mano para cerrar todo ya.",
-              "Voz en off · pregunta"
-            ],
-            [
-              "0:18",
-              "X",
-              "Alerta.",
-              "A cámara · responde"
-            ],
-            [
-              "0:20",
-              "X",
-              "Me hacen firmar sin un abogado.",
-              "Voz en off · pregunta"
-            ],
-            [
-              "0:23",
-              "X",
-              "No firmes.",
-              "A cámara · responde",
-              "Sergio confirma"
-            ],
-            [
-              "0:25",
-              "X",
-              "Ya me hicieron la cuenta y la revisó un abogado.",
-              "Voz en off · pregunta"
-            ],
-            [
-              "0:28",
-              "X",
-              "Ahí sí.",
-              "A cámara · responde"
-            ],
-            [
-              "0:30",
-              "X",
-              "Todo esto es matizable. Antes de firmar algo, comentá CONSULTA o mandanos un mensaje, y te decimos.",
-              "A cámara · pide el comentario"
-            ]
-          ],
-          "confirmar": "¿Los seis veredictos van tal como están?"
-        },
-        {
-          "v": "B",
-          "tipo": "Mar 03-11 · Diego · cierra en DESPIDO",
-          "titulo": "Despidos",
-          "angulo": "Qué te corresponde depende de cómo te quedaste sin trabajo. Siete casos.",
-          "dur": "≈38 s · a cámara + voz en off",
-          "plano": "La voz en off pregunta desde atrás de la cámara. El de cámara, de frente, contesta. Nada más. Placa fija arriba desde el primer segundo: SIETE CASOS. ¿CUÁL ES EL TUYO? El que mira se queda esperando el suyo (Ganchos: identificación).",
-          "ojo": "Guion tuyo, tal cual, puesto en pregunta y respuesta. Única corrección: la renuncia (la liquidación final sí le corresponde).",
-          "hook": {
-            "quien": "Voz en off",
-            "dice": "Me echaron sin causa después de 5 años."
-          },
-          "hooks": [
-            [
-              "Pregunta (el tuyo)",
-              "Me echaron sin causa después de 5 años.",
-              "Arranque de la pregunta y respuesta. 🟡 Tiene un número («5 años»): no es un plazo legal, pero si preferís, «después de años». O el ⭐ de abajo."
-            ],
-            [
-              "Pregunta",
-              "Me echaron. ¿Me corresponde algo?",
-              "⭐ Heras: quedarse sin trabajo es el miedo de toda la familia (nivel 0)."
-            ],
-            [
-              "Pregunta",
-              "Renuncié yo. ¿Me toca algo?",
-              "Sirve, pero ya no es ⭐: abre con lo mismo que «Jamás te vayas…», que sale diez días antes. Adentro del guion va igual."
-            ],
-            [
-              "Pregunta",
-              "Me dijeron que no me corresponde nada.",
-              "⭐ Heras: frase que el que la escuchó reconoce en un segundo."
-            ],
-            [
-              "Pregunta",
-              "Me despidieron justo después de un accidente en el trabajo."
-            ],
-            [
-              "Pregunta",
-              "Me echaron estando de licencia médica."
-            ],
-            [
-              "Pregunta",
-              "Me quieren arreglar por izquierda."
-            ],
-            [
-              "Pregunta",
-              "Me liquidaron mal las vacaciones y el aguinaldo."
-            ],
-            [
-              "Pregunta",
-              "Me echaron por faltar."
-            ]
-          ],
-          "beats": [
-            [
-              "0:03",
-              "X",
-              "Te corresponde indemnización.",
-              "A cámara · responde"
-            ],
-            [
-              "0:05",
-              "X",
-              "Me despidieron justo después de un accidente en el trabajo.",
-              "Voz en off · pregunta"
-            ],
-            [
-              "0:08",
-              "X",
-              "Te corresponde, y más.",
-              "A cámara · responde",
-              "Sergio confirma el «y más». Si no: «Te corresponde. Y ojo con cómo te lo liquidan.»"
-            ],
-            [
-              "0:10",
-              "X",
-              "Renuncié yo.",
-              "Voz en off · pregunta"
-            ],
-            [
-              "0:13",
-              "X",
-              "Indemnización no. La liquidación final, sí.",
-              "A cámara · responde",
-              "Corregido · Sergio confirma"
-            ],
-            [
-              "0:15",
-              "X",
-              "Me echaron estando de licencia médica.",
-              "Voz en off · pregunta"
-            ],
-            [
-              "0:18",
-              "X",
-              "Depende. Prestá atención.",
-              "A cámara · responde"
-            ],
-            [
-              "0:20",
-              "X",
-              "Me ofrecen arreglar por izquierda para no pagarme la indemnización.",
-              "Voz en off · pregunta"
-            ],
-            [
-              "0:23",
-              "X",
-              "Ojo.",
-              "A cámara · responde"
-            ],
-            [
-              "0:25",
-              "X",
-              "Me liquidaron mal las vacaciones y el aguinaldo.",
-              "Voz en off · pregunta"
-            ],
-            [
-              "0:28",
-              "X",
-              "Te corresponde el reclamo.",
-              "A cámara · responde"
-            ],
-            [
-              "0:30",
-              "X",
-              "Me echaron por faltar sin avisar varias veces.",
-              "Voz en off · pregunta"
-            ],
-            [
-              "0:33",
-              "X",
-              "Depende del caso.",
-              "A cámara · responde"
-            ],
-            [
-              "0:35",
-              "X",
-              "Todo esto es matizable. Comentá DESPIDO o mandanos un mensaje, y lo revisamos.",
-              "A cámara · pide el comentario"
-            ]
-          ],
-          "confirmar": "¿Los siete veredictos van tal como están?"
-        }
-      ],
-      "extra": [
-        {
-          "id": "Dceix_ep00o",
-          "formato": "El «Veredictos» de la cuenta",
-          "cuenta": "@estudiojuridicosergiorosa",
-          "datos": "25-08 · 1.212 vistas · mismo formato, sin palabra clave",
-          "tags": [
-            "Lo que ya salió"
-          ],
-          "mecanica": [
-            "El anterior de este formato. Cerró con «Seguinos»: estos dos cierran con palabra clave."
-          ]
-        }
-      ]
-    },
-    {
-      "n": 4,
-      "id": "DdSDh_hD9SU",
-      "formato": "El pizarrón",
-      "resumen": "Combina dos referencias: de @laboralista.ok, la promesa «te muestro» y una lista que el que mira chequea solo; de @derechosart, la cuenta escrita a mano, ítem por ítem",
-      "cuenta": "@laboralista.ok",
-      "datos": "«Facturás, pero trabajás para uno solo» · explica en un pizarrón · 3.958 vistas",
-      "tags": [
-        "Se escribe mientras se habla",
-        "Lista que se chequea",
-        "Se guarda"
-      ],
-      "mecanica": [
-        "Lo que se escribe en el pizarrón es el contenido: el que mira lee aunque no tenga audio.",
-        "Cada renglón nuevo abre la pregunta de cuál es el siguiente. Hasta el último no se va.",
-        "De la otra referencia (@laboralista.ok, monotributo encubierto, 3.958 vistas) se toma el «te muestro» y que el que mira pueda chequear lo suyo con la lista."
-      ],
-      "guiones": [
-        {
-          "v": "A",
-          "tipo": "Vie 30-10 · Roberto · cierra en CONSULTA",
-          "titulo": "La cuenta de la ART",
-          "angulo": "La cuenta la hace la ART, pero revisarla te toca a vos: tiene partes, y si falta una, cobrás menos.",
-          "dur": "≈38 s · a cámara",
-          "plano": "A cámara, parado al lado del pizarrón del estudio, fibrón en mano: escribe cada renglón mientras lo dice. Plano que entre el pizarrón entero. Antes de grabar, borrar todo lo que haya de otros casos.",
-          "ojo": "En el pizarrón no va ni un número: ni porcentajes, ni montos, ni la fórmula. Solo las palabras. Cerca del carrusel del 25-09 («depende de tu sueldo, tu edad y la incapacidad»): este va más allá y es una lista para revisar.",
-          "hook": {
-            "quien": "A cámara",
-            "dice": "Si te lastimás trabajando, la plata que te corresponde sale de esta cuenta."
-          },
-          "hooks": [
-            [
-              "Condicional · RUM",
-              "Si te lastimás trabajando, la plata que te corresponde sale de esta cuenta.",
-              "⭐ Heras: le habla a cualquiera que trabaja (nivel 0-1), no solo al que ya tiene la oferta. El pizarrón se lee sin audio."
-            ],
-            [
-              "Impacto visual",
-              "[Sin hablar] Pizarrón en blanco. Escribe LA CUENTA DE LA ART y la subraya dos veces.",
-              "⭐ Heras: impacto visual: el gesto de escribir frena el dedo antes de que haya audio."
-            ],
-            [
-              "Pregunta de afectado",
-              "¿La ART te pasó un número? Te muestro qué tiene que tener esa cuenta.",
-              "Era el arranque: queda como alternativa. Le habla solo al que ya tiene una oferta de la ART (nivel 2)."
-            ],
-            [
-              "Lista",
-              "Cinco cosas que tiene que tener la cuenta de la ART. Si falta una, cobrás menos."
-            ],
-            [
-              "Promesa (de @laboralista.ok)",
-              "Te muestro en treinta segundos si la cuenta de la ART está completa.",
-              "✗ Banquero: «treinta segundos» es una cifra (la única permitida es «treinta años») y el video dura casi cuarenta: promete algo que no cumple."
-            ],
-            [
-              "Objeto en mano",
-              "[Destapa el fibrón frente al pizarrón] Esta es la cuenta que nadie te muestra."
-            ],
-            [
-              "Frase robada",
-              "La cuenta la hizo la ART, ellos saben."
-            ],
-            [
-              "Secreto",
-              "La cuenta de tu indemnización tiene cinco partes. Casi nadie revisa la última."
-            ],
-            [
-              "Error",
-              "El error no es aceptar la cuenta de la ART. Es aceptarla sin saber de qué está hecha."
-            ],
-            [
-              "Pregunta de afectado",
-              "¿Te lastimaste trabajando y ya te ofrecieron plata?"
-            ],
-            [
-              "Desmentido amable",
-              "La cuenta de la ART no está mal hecha. Puede estar incompleta."
-            ],
-            [
-              "Pregunta inducida",
-              "¿De qué está hecha una indemnización por accidente de trabajo?"
-            ],
-            [
-              "Advertencia",
-              "Antes de firmar la propuesta de la ART, mirá este pizarrón."
-            ],
-            [
-              "Provocación",
-              "Si no sabés cómo se hace la cuenta, la cuenta la hace el otro."
-            ],
-            [
-              "Lista",
-              "Lo que ganabas, tu edad, la incapacidad… y dos más que casi nadie mira.",
-              "✗ Ganchos (reglas 1 y 2): dice tres de las cinco en el arranque y mete «incapacidad» en el primer segundo."
-            ],
-            [
-              "Secreto",
-              "El último renglón de este pizarrón es el que más se olvida."
-            ],
-            [
-              "Contracorriente",
-              "Tu indemnización no es un número. Es una cuenta. Y se puede revisar."
-            ],
-            [
-              "Advertencia",
-              "Si te lastimaste trabajando, guardá este pizarrón."
-            ],
-            [
-              "Error",
-              "Mirar solo el total es el error. Hay que mirar las partes."
-            ],
-            [
-              "Pregunta inducida",
-              "¿Cuánto te corresponde si te lastimaste trabajando? No te digo un número: te digo de qué está hecho."
-            ],
-            [
-              "Pregunta de afectado",
-              "¿Te dijeron un porcentaje de incapacidad y no sabés qué significa?",
-              "✗ Heras: jerga y nivel 2: no pasa el 5/50."
-            ],
-            [
-              "Frase robada",
-              "Me dijeron que es lo que marca la ley.",
-              "✗ Heras: sin contexto no se entiende de qué ley ni de qué cosa."
-            ]
-          ],
-          "beats": [
-            [
-              "0:04",
-              "X",
-              "Si falta algo, cobrás menos. Vamos de a uno.",
-              "A cámara · escribe arriba: LA CUENTA DE LA ART"
-            ],
-            [
-              "0:07",
-              "X",
-              "Uno: lo que ganabas. Y ojo, no solo el básico.",
-              "A cámara · escribe 1 · LO QUE GANABAS",
-              "Sergio confirma"
-            ],
-            [
-              "0:12",
-              "X",
-              "Dos: tu edad.",
-              "A cámara · escribe 2 · TU EDAD",
-              "Sergio confirma"
-            ],
-            [
-              "0:14",
-              "X",
-              "Tres: lo que te quedó del accidente, lo que llaman incapacidad. Ese número lo pone el médico de la ART, y se puede discutir.",
-              "A cámara · escribe 3 · LO QUE TE QUEDÓ",
-              "Sergio confirma"
-            ],
-            [
-              "0:20",
-              "X",
-              "Cuatro: si te pasó trabajando, y no yendo o volviendo, va algo más.",
-              "A cámara · escribe 4 · SI FUE TRABAJANDO",
-              "Sergio confirma"
-            ],
-            [
-              "0:25",
-              "X",
-              "Y cinco, la que más se olvida: que la cuenta esté al día hasta el día que te pagan.",
-              "A cámara · escribe 5 · AL DÍA",
-              "Sergio confirma"
-            ],
-            [
-              "0:30",
-              "X",
-              "La cuenta la hace la ART. Revisarla te toca a vos.",
-              "A cámara · subraya la lista"
-            ],
-            [
-              "0:33",
-              "X",
-              "Cuando te llegue la propuesta, comentá CONSULTA o mandanos un mensaje, y revisamos que estén las cinco.",
-              "A cámara · pide el comentario"
-            ],
-            [
-              "0:36",
-              "X",
-              "Si falta una, no es un detalle. Es plata que no cobraste.",
-              "A cámara · cierra con el arranque"
-            ]
-          ],
-          "confirmar": "¿Las cinco partes de la cuenta van tal como están?"
-        }
-      ],
-      "extra": [
-        {
-          "id": "DdZ0CkdxVgL",
-          "formato": "«La cuenta escrita a mano»",
-          "cuenta": "@derechosart",
-          "datos": "12,3 mil vistas · el mejor de esa cuenta en el mes",
-          "tags": [
-            "La cuenta, ítem por ítem"
-          ],
-          "mecanica": [
-            "De acá sale el contenido: lo que tiene que tener la cuenta, escrito mientras se explica."
-          ]
-        }
-      ]
-    },
-    {
-      "n": 5,
-      "id": "DaTxtkvuAlz",
-      "formato": "Contestando un comentario",
-      "resumen": "A cámara, con el comentario de un seguidor pegado en pantalla. Lo lee, contesta lo que le preocupa en tres o cuatro frases y cierra pidiendo la próxima pregunta",
-      "cuenta": "@nahuelaltieri",
-      "datos": "abogado laboralista, Argentina · 15,8 mil seguidores · contesta comentarios con reels todas las semanas",
-      "tags": [
-        "La pregunta es real",
-        "Respuesta corta",
-        "Pide la próxima pregunta"
-      ],
-      "mecanica": [
-        "Arranca con la pregunta de un seguidor en pantalla, con sus palabras: el que mira se reconoce en la duda.",
-        "Contesta lo que le preocupa a esa persona, no todo el tema. Cuatro frases y una «muy importante» al final.",
-        "Cierra con «si tenés dudas, preguntame y hacemos una respuesta como esta»: cada video trae los comentarios del siguiente."
-      ],
-      "extra": [
-        {
-          "id": "DeFPP7GJcEv",
-          "formato": "«¿Podrían partir los autos?»",
-          "cuenta": "@nahuelaltieri",
-          "datos": "8.903 vistas · el más visto de sus últimos reels",
-          "tags": [
-            "Comentario en pantalla"
-          ],
-          "mecanica": [
-            "El comentario ocupa la pantalla desde el primer segundo, encima de la imagen de un expediente."
-          ]
-        }
-      ],
-      "guiones": [
-        {
-          "v": "A",
-          "tipo": "Vie 13-11 · Roberto · cierra en CONSULTA",
-          "titulo": "«Trabajo en negro y me lastimé»",
-          "angulo": "Que no te hayan registrado no borra que te lastimaste trabajando.",
-          "dur": "≈34 s · a cámara",
-          "plano": "A cámara, en el escritorio o de pie con la biblioteca atrás. El comentario aparece pegado en pantalla desde el primer segundo: se usa la función de Instagram «responder con un reel». Placas: SIN REGISTRAR NO ES SIN DERECHOS · MENSAJES · FOTOS · TESTIGOS · CONSULTA.",
-          "ojo": "🔴 El comentario tiene que ser real: se responde con la función de Instagram a uno que alguien dejó de verdad en el perfil. Si no hay, se dice «nos preguntan seguido» sin mostrar captura. Nunca un comentario inventado ni una cuenta armada para preguntar. Es R-01 del banco, que quedó sin grabar en agosto.",
-          "hook": {
-            "quien": "A cámara · lee el comentario",
-            "dice": "Trabajo en negro y me lastimé laburando. ¿Puedo reclamar algo?"
-          },
-          "hooks": [
-            [
-              "Comentario (el propuesto)",
-              "Trabajo en negro y me lastimé laburando. ¿Puedo reclamar algo?",
-              "⭐ Ganchos: identificación. Es la pregunta que el que mira no se anima a hacer."
-            ],
-            [
-              "Contracorriente",
-              "Estar en negro no te deja sin nada. Me lo preguntaron acá abajo.",
-              "⭐ Ganchos: contradice lo que casi todos creen."
-            ],
-            [
-              "Comentario",
-              "Estoy en negro. Si me accidento, ¿me cubre alguien?",
-              "⭐ Le habla al que todavía no se lastimó (nivel 0)."
-            ],
-            [
-              "Comentario",
-              "Me lastimé en el trabajo pero no estaba registrado. ¿Ya fue?"
-            ],
-            [
-              "Pregunta inducida",
-              "¿Si no estabas registrado, quién se hace cargo cuando te lastimás?"
-            ],
-            [
-              "Advertencia",
-              "Si laburás en negro, mirá esto antes de que te pase algo."
-            ],
-            [
-              "Frase robada",
-              "«Si estaba en negro, no tengo derecho a nada.» Eso no es así."
-            ],
-            [
-              "Error",
-              "El error del que trabaja en negro: creer que no puede ni preguntar."
-            ],
-            [
-              "Pregunta de afectado",
-              "¿Laburás sin recibo de sueldo?"
-            ],
-            [
-              "Contraste",
-              "En negro o registrado: si te lastimaste trabajando, te lastimaste trabajando."
-            ],
-            [
-              "Secreto",
-              "Lo que no te dice el que no te registró: eso juega en su contra.",
-              "⚠️ validar"
-            ],
-            [
-              "Lista",
-              "Tres cosas que sirven para mostrar que trabajabas ahí, aunque estuvieras en negro."
-            ],
-            [
-              "Impacto visual",
-              "[Sin hablar] El comentario en pantalla, grande. Lo señala y asiente. Recién ahí habla."
-            ],
-            [
-              "Provocación",
-              "Que no te hayan registrado es problema del que no te registró. No tuyo.",
-              "⚠️ validar"
-            ],
-            [
-              "Provocación",
-              "Si te lastimaste en negro, tu jefe tiene un problema.",
-              "✗ Ganchos: suena a amenaza y promete un resultado."
-            ]
-          ],
-          "beats": [
-            [
-              "0:04",
-              "X",
-              "Es la pregunta que más vergüenza da hacer. Y casi todos se la contestan solos: «no, porque estaba en negro».",
-              "A cámara"
-            ],
-            [
-              "0:10",
-              "X",
-              "Y se quedan en la casa con la lesión, sin preguntar.",
-              "A cámara"
-            ],
-            [
-              "0:13",
-              "X",
-              "Que no te hayan registrado no borra que te lastimaste trabajando.",
-              "A cámara",
-              "Sergio confirma"
-            ],
-            [
-              "0:17",
-              "X",
-              "Y eso no juega a favor del que no te registró.",
-              "A cámara",
-              "Sergio confirma"
-            ],
-            [
-              "0:21",
-              "X",
-              "Lo que importa es poder mostrar que trabajabas ahí: mensajes, fotos, testigos, lo que te pagaban.",
-              "A cámara",
-              "Sergio confirma"
-            ],
-            [
-              "0:27",
-              "X",
-              "Si te pasó, comentá CONSULTA o mandanos un mensaje, y lo vemos. Y si tenés otra pregunta, dejala abajo: la contestamos así.",
-              "A cámara · pide el comentario"
-            ],
-            [
-              "0:33",
-              "X",
-              "En negro no quiere decir sin derechos.",
-              "A cámara · cierra con el arranque",
-              "Sergio confirma"
-            ]
-          ],
-          "confirmar": "¿Lo marcado ⚠️ va tal como está?"
-        },
-        {
-          "v": "B",
-          "tipo": "Mar 17-11 · amplio · cierra en CONSULTA",
-          "titulo": "«¿Y esto cuánto tarda?»",
-          "angulo": "Nadie te puede decir cuánto tarda sin ver tu caso. Sí se puede decir qué lo estira, y eso se evita.",
-          "dur": "≈35 s · a cámara",
-          "plano": "Igual que el de al lado: a cámara, con el comentario pegado en pantalla desde el primer segundo. Placas: ¿CUÁNTO TARDA? · 1 · ARRANCAR TARDE · 2 · SIN PAPELES · 3 · SIN CONSTANCIA · CONSULTA.",
-          "ojo": "🔴 El comentario tiene que ser real (ver el de al lado). Ni un plazo, ni «meses», ni «años» en audio o placa. Es la segunda pregunta que más se hace y casi nadie contesta (investigación de julio, hueco #9). Toca lo de llevar papeles de «Tuve un choque» desde otro lado.",
-          "hook": {
-            "quien": "A cámara · lee el comentario",
-            "dice": "¿Y esto cuánto tarda?"
-          },
-          "hooks": [
-            [
-              "Comentario (el propuesto)",
-              "¿Y esto cuánto tarda?",
-              "⭐ Ganchos: la pregunta que todos tienen y nadie contesta."
-            ],
-            [
-              "Contracorriente",
-              "No te voy a decir cuánto tarda. Te voy a decir qué lo estira.",
-              "⭐ Ganchos: rompe lo que el que mira espera y abre la lista."
-            ],
-            [
-              "Comentario",
-              "Necesito saber si puedo esperar. ¿Cuánto tarda un reclamo?"
-            ],
-            [
-              "Comentario",
-              "Me dijeron que esto lleva años. ¿Es así?",
-              "Ojo: se contesta sin dar un tiempo."
-            ],
-            [
-              "Lista",
-              "Tres cosas que hacen que un reclamo tarde más. Las tres se pueden evitar.",
-              "⭐ Ganchos: deuda contable y promesa que el cuerpo cumple."
-            ],
-            [
-              "Pregunta inducida",
-              "¿Por qué hay reclamos que se estiran y otros no?"
-            ],
-            [
-              "Advertencia",
-              "Si te pasó algo y estás esperando a ver si se pasa, mirá esto."
-            ],
-            [
-              "Pregunta de afectado",
-              "¿Tenés miedo de que esto dure una eternidad?"
-            ],
-            [
-              "Secreto",
-              "Lo que más estira un reclamo no pasa en el juzgado. Pasa antes de llegar.",
-              "⚠️ validar"
-            ],
-            [
-              "Frase robada",
-              "«Si voy a un abogado, esto se estira para siempre.»"
-            ],
-            [
-              "Error",
-              "El error que más estira un reclamo se comete la primera semana."
-            ],
-            [
-              "Impacto visual",
-              "[Sin hablar] Un reloj de arena sobre el escritorio. Lo da vuelta. Placa: ¿CUÁNTO TARDA?"
-            ],
-            [
-              "Provocación",
-              "El que te dice cuánto tarda sin ver tu caso, te está adivinando.",
-              "✗ Ganchos: repite el remate de «Me ofrecieron esto»."
-            ]
-          ],
-          "beats": [
-            [
-              "0:03",
-              "X",
-              "Te voy a ser honesto: nadie te puede decir un tiempo sin ver tu caso. Desconfiá del que te lo dice de entrada.",
-              "A cámara"
-            ],
-            [
-              "0:09",
-              "X",
-              "Lo que sí te puedo decir es qué lo hace más largo. Son tres cosas, y las tres se pueden evitar.",
-              "A cámara"
-            ],
-            [
-              "0:14",
-              "X",
-              "Uno: arrancar tarde. Esperar a ver si se pasa.",
-              "A cámara"
-            ],
-            [
-              "0:17",
-              "X",
-              "Dos: llegar sin papeles. Después hay que salir a buscarlos.",
-              "A cámara"
-            ],
-            [
-              "0:21",
-              "X",
-              "Tres: ir a la guardia y no pedir la constancia. Después cuesta mucho más mostrar lo que te pasó.",
-              "A cámara",
-              "Sergio confirma"
-            ],
-            [
-              "0:27",
-              "X",
-              "Si te pasó algo, comentá CONSULTA o mandanos un mensaje, y arrancamos bien. Y si tenés otra pregunta, dejala abajo.",
-              "A cámara · pide el comentario"
-            ],
-            [
-              "0:33",
-              "X",
-              "No te digo cuánto tarda. Te digo cómo no hacerlo más largo.",
-              "A cámara · cierra con el arranque"
-            ]
-          ],
-          "confirmar": "¿Las tres cosas que estiran un reclamo van así?"
-        }
-      ]
-    }
-  ],
-  "ideas": {
-    "n": 6,
-    "titulo": "Ángulos para los próximos meses",
-    "resumen": "Ocho ideas que salieron de mirar qué le funcionó a otros estudios en el último mes. Se toma la idea, no el texto. Marcá las que harías",
-    "items": [
-      {
-        "id": "DdtaTBCBdhL",
-        "formato": "Ibas de acompañante",
-        "cuenta": "@shinyaabogados",
-        "datos": "4.674 vistas · su mejor orgánico del mes (sus picos de 150 mil son pauta)",
-        "tags": [
-          "Carlos",
-          "CHOQUE",
-          "Dos personas"
-        ],
-        "mecanica": [
-          "Arranca con una pregunta que solo se hace el que iba sentado al lado.",
-          "Saca la culpa de encima: el reclamo no es contra tu amigo."
-        ],
-        "ideas": [
-          "Creencia: «iba con mi cuñado, no le voy a hacer juicio a la familia».",
-          "Reencuadre: el reclamo no va contra el que manejaba, va contra su seguro ⚠️.",
-          "Arranque: «¿Ibas de acompañante y chocaron? Esto es para vos.»"
-        ],
-        "pide": "Que Sergio lo confirme. Plano fijo, cualquier jornada."
-      },
-      {
-        "id": "Dd_dLxHxzwJ",
-        "formato": "Lo que firmás en el acta",
-        "cuenta": "@shinyaabogados",
-        "datos": "1.848 vistas · comentarios reales",
-        "tags": [
-          "Carlos",
-          "CHOQUE",
-          "Recién pasó"
-        ],
-        "mecanica": [
-          "Entra por la frase del policía: «firmá acá, que es un trámite».",
-          "Dice qué hacer en el momento: que el papel diga lo que vos contás."
-        ],
-        "ideas": [
-          "Creencia: «lo que firmo en la comisaría no importa».",
-          "Reencuadre: lo que quedó escrito ese día es lo primero que se lee después ⚠️.",
-          "Arranque: «¿Te hicieron firmar el acta del choque sin leerla?»"
-        ],
-        "pide": "Que Sergio lo confirme. Es el momento más urgente del banco de Carlos."
-      },
-      {
-        "id": "DdSDh_hD9SU",
-        "formato": "Facturás, pero trabajás para uno solo",
-        "cuenta": "@laboralista.ok",
-        "datos": "3.958 vistas",
-        "tags": [
-          "Diego",
-          "DESPIDO",
-          "Lista que se guarda"
-        ],
-        "mecanica": [
-          "Promete un diagnóstico rápido.",
-          "Tres puntos que el que mira chequea solo: horario fijo, jefe, sueldo parecido todos los meses."
-        ],
-        "ideas": [
-          "Ya está en el banco: «estoy hace años como monotributista pero laburo solo para ellos».",
-          "Reencuadre: cómo te facturan no es lo mismo que cómo trabajás ⚠️.",
-          "Arranque: «¿Le facturás todos los meses a la misma empresa?»"
-        ],
-        "pide": "Que Sergio valide los tres puntos. Cierra en guardado. Su mecánica («te muestro» + lista para chequear) ya se usó en el pizarrón de octubre; el tema queda libre."
-      },
-      {
-        "id": "Dd4pkZDRPRL",
-        "formato": "El caso insólito",
-        "cuenta": "@derechosart",
-        "datos": "6.887 vistas · se comparte",
-        "tags": [
-          "Anécdota",
-          "Se comparte",
-          "Conexión"
-        ],
-        "mecanica": [
-          "Arranca con un despido ridículo: «la echaron por tomar mate».",
-          "La anécdota hace el trabajo; el derecho entra en una línea."
-        ],
-        "ideas": [
-          "Un caso real que Sergio pueda contar sin datos que identifiquen a nadie.",
-          "Sin montos: la regla de cero cifras sigue.",
-          "Arranque: «Lo echaron por…» y el motivo más raro que haya visto el estudio."
-        ],
-        "pide": "Que Sergio tenga una anécdota contable. Si no hay, no se hace."
-      },
-      {
-        "id": "Dd7fGi3BqFe",
-        "formato": "Lo más raro que nos pidieron",
-        "cuenta": "@abogada_laboralok",
-        "datos": "10,5 mil vistas · comentarios de gente y de colegas",
-        "tags": [
-          "Conexión",
-          "Escritorio",
-          "Se discute"
-        ],
-        "mecanica": [
-          "La abogada cuenta el pedido más insólito de un cliente.",
-          "No explica una ley: cuenta una escena. Por eso la discuten."
-        ],
-        "ideas": [
-          "Humaniza el estudio sin mostrar a nadie.",
-          "Arranque: «Lo más raro que me pidieron en treinta años de estudio.»",
-          "Sin nombres, sin datos y sin reírse del cliente: el pedido tiene que ser comprensible."
-        ],
-        "pide": "Una anécdota real de alguien del estudio."
-      },
-      {
-        "id": "Dbl_rc5BJA3",
-        "formato": "Registrado a medias",
-        "cuenta": "@abogados_laboralistas",
-        "datos": "79,2 mil vistas en agosto · no se pudo confirmar si fue pauta",
-        "tags": [
-          "Diego",
-          "Placa con la situación exacta",
-          "Lee un papel"
-        ],
-        "mecanica": [
-          "La situación entera va en la placa del primer segundo.",
-          "La abogada lee un papel a cámara."
-        ],
-        "ideas": [
-          "Creencia: «una parte la cobro en negro, eso no cuenta» (ya está en el banco).",
-          "Reencuadre: lo que cobrás sin recibo también es parte de lo que ganás ⚠️.",
-          "Arranque: «¿Tu recibo dice media jornada y trabajás todo el día?»"
-        ],
-        "pide": "Que Sergio lo confirme. De la placa original no se copian las horas."
-      },
-      {
-        "id": "Dd1KV0LIqb4",
-        "formato": "Te podés ir con indemnización aunque no te echen",
-        "cuenta": "@juanmalorente_laboralista",
-        "datos": "475 mil vistas · 752 comentarios",
-        "tags": [
-          "Diego",
-          "Arranca por el deseo",
-          "El más delicado"
-        ],
-        "mecanica": [
-          "Arranca con un «sí, podés» y lo sostiene con tres casos: te cambian el horario, las tareas o te bajan el sueldo."
-        ],
-        "ideas": [
-          "Creencia: «si me voy yo, me voy sin nada» (en el banco: «no toda renuncia que se firma nació como renuncia»).",
-          "En Argentina no es renunciar: es intimar y considerarse despedido ⚠️. Hay que contarlo sin decir «renunciá».",
-          "Arranque: «Sí: te podés ir de tu trabajo con indemnización aunque no te echen.» ⚠️"
-        ],
-        "pide": "Que Sergio lo valide con cuidado: es el tema más delicado del banco. Si vuelve bien, es el más fuerte de la lista."
-      },
-      {
-        "id": "DcKKfpFxpRy",
-        "formato": "La palabra que nadie te explica",
-        "cuenta": "@carabajalabogados",
-        "datos": "173 mil vistas, con comentarios de gente preguntando por su caso",
-        "tags": [
-          "Roberto",
-          "Una palabra por video",
-          "Barato"
-        ],
-        "mecanica": [
-          "Toma un término técnico y lo explica en una frase: qué es y por qué te importa.",
-          "Cierra con «antes de aceptar cualquier oferta, escribime»."
-        ],
-        "ideas": [
-          "Un término por video: el alta, la incapacidad, in itinere, enfermedad profesional, el telegrama.",
-          "Arranque: «¿Te dijeron “incapacidad” y no entendiste nada?»",
-          "Sin números ni porcentajes."
-        ],
-        "pide": "Que Sergio valide cada definición. Una palabra, veinte segundos."
-      }
+      "hookIdx": 0
+     }
     ]
+   },
+   {
+    "r": "T02",
+    "tipo": "Pregunta y respuesta · Diego · DESPIDO",
+    "titulo": "No me renuevan el contrato para enero",
+    "meta": "Duración ≈35 s · Diego · cierra en DESPIDO",
+    "ej": "Dd2bqaeRFmN",
+    "ejde": "«¿Esto se denuncia o no?» · @clemente.jimenez_",
+    "nota": "Sergio de frente en el escritorio; Emanuel pregunta desde atrás de la cámara. Respuestas cortas, se corta seco entre pregunta y respuesta.",
+    "lineas": [
+     [
+      "0:00",
+      "E",
+      "Me dijeron que no me renuevan el contrato para enero.",
+      "Arranque"
+     ],
+     [
+      "0:03",
+      "V",
+      "Primero fijate qué firmaste. Muchos contratos que dicen «a plazo» en realidad no lo son.",
+      "A validar"
+     ],
+     [
+      "0:09",
+      "E",
+      "¿Y cómo me doy cuenta?",
+      ""
+     ],
+     [
+      "0:10",
+      "V",
+      "Si hacés lo mismo que un empleado fijo y te renuevan una y otra vez, eso hay que mirarlo.",
+      "A validar"
+     ],
+     [
+      "0:16",
+      "E",
+      "¿Y me corresponde algo?",
+      ""
+     ],
+     [
+      "0:17",
+      "V",
+      "Como mínimo, la liquidación final. Y según el caso, puede haber más.",
+      "A validar"
+     ]
+    ],
+    "cierre": "Si te avisaron que no te renuevan, comentá DESPIDO o mandanos un mensaje y miramos tu contrato.",
+    "hooks": [
+     "Me dijeron que no me renuevan el contrato para enero.",
+     "Si no te renuevan el contrato, escuchá esto antes de irte.",
+     "«Se terminó el contrato» no siempre es tan simple.",
+     "¿Te avisaron que en enero no seguís? Mirá esto."
+    ],
+    "cierres": [
+     "Si te avisaron que no te renuevan, comentá DESPIDO o mandanos un mensaje y miramos tu contrato.",
+     "Traé el contrato y lo vemos: comentá DESPIDO o escribinos.",
+     "Mandáselo a alguien con contrato que vence en diciembre."
+    ],
+    "hookIdx": 0,
+    "recomendacion": "grabar B — el formato «¿es verdad?» todavía no se usó y la pregunta es la que se escucha en esta época.",
+    "versiones": [
+     {
+      "v": "B",
+      "titulo": "¿Es verdad que si tengo contrato a plazo no me pagan nada?",
+      "mecanica": "¿es verdad?",
+      "meta": "Duración ≈35 s",
+      "ej": "DfDWRLStGwO",
+      "ejde": "«¿Ya no hay multas con la Ley Bases?» · @ani.petratti.abogada",
+      "nota": "Sentado a una mesa con el celular en la mano, como si leyera la pregunta. La pregunta en una caja en el primer cuadro; papeles de b-roll a la mitad.",
+      "lineas": [
+       [
+        "0:00",
+        "E",
+        "Doctor, ¿es verdad que si tengo contrato a plazo no me tienen que pagar nada?",
+        "Arranque · la pregunta en una caja"
+       ],
+       [
+        "0:04",
+        "V",
+        "Te lo respondo porque me lo preguntan mucho en esta época. Sí y no.",
+        ""
+       ],
+       [
+        "0:08",
+        "V",
+        "Que se termine el plazo no es lo mismo que te echen.",
+        "A validar"
+       ],
+       [
+        "0:12",
+        "V",
+        "Pero la liquidación final te la tienen que pagar igual.",
+        "A validar"
+       ],
+       [
+        "0:16",
+        "V",
+        "Y si te renovaron muchas veces haciendo lo mismo, puede que el contrato no sea a plazo.",
+        "A validar"
+       ],
+       [
+        "0:22",
+        "V",
+        "No alcanza con saber qué dice el contrato. Hay que saber cómo trabajaste.",
+        ""
+       ]
+      ],
+      "cierre": "Si te vence el contrato, comentá DESPIDO o mandanos un mensaje y lo vemos.",
+      "hooks": [
+       "Doctor, ¿es verdad que si tengo contrato a plazo no me tienen que pagar nada?",
+       "¿Es verdad que cuando se termina el contrato no te pagan nada?",
+       "Te lo respondo porque me lo preguntan mucho en diciembre.",
+       "Sí y no. Te explico qué pasa cuando no te renuevan."
+      ],
+      "cierres": [
+       "Si te vence el contrato, comentá DESPIDO o mandanos un mensaje y lo vemos.",
+       "Comentá DESPIDO y te escribimos por privado.",
+       "¿Te renovaron más de una vez? Contanos por mensaje."
+      ],
+      "hookIdx": 0
+     },
+     {
+      "v": "C",
+      "titulo": "El mensaje de «para enero no te renovamos»",
+      "mecanica": "chat en pantalla",
+      "meta": "Duración ≈35 s",
+      "ej": "DU5r_mnDkj5",
+      "ejde": "Consultas por WhatsApp · @estudiojuridicoarancibia",
+      "nota": "El chat en pantalla, armado en edición con nombres inventados; el abogado lo lee y explica.",
+      "lineas": [
+       [
+        "0:00",
+        "C",
+        "Encargado: Hola, te aviso que para enero no te renovamos.",
+        "Arranque"
+       ],
+       [
+        "0:03",
+        "C",
+        "Vos: ¿Y qué me pagan?",
+        ""
+       ],
+       [
+        "0:05",
+        "C",
+        "Encargado: Nada, se terminó el contrato.",
+        ""
+       ],
+       [
+        "0:07",
+        "V",
+        "Esa última respuesta no es tan así.",
+        ""
+       ],
+       [
+        "0:10",
+        "V",
+        "Aunque se termine el contrato, la liquidación final te la tienen que pagar.",
+        "A validar"
+       ],
+       [
+        "0:15",
+        "V",
+        "Y si te renovaron una y otra vez, hay que ver si de verdad era a plazo.",
+        "A validar"
+       ],
+       [
+        "0:20",
+        "V",
+        "Guardá ese chat.",
+        ""
+       ]
+      ],
+      "cierre": "Si te mandaron un mensaje así, comentá DESPIDO o mandanos una captura y lo vemos.",
+      "hooks": [
+       "«Para enero no te renovamos.» ¿Te llegó este mensaje?",
+       "Si tu encargado te escribió esto, no le contestes todavía.",
+       "Este chat se repite mucho en diciembre.",
+       "«Nada, se terminó el contrato.» No es tan así."
+      ],
+      "cierres": [
+       "Si te mandaron un mensaje así, comentá DESPIDO o mandanos una captura y lo vemos.",
+       "Guardá el chat y escribinos.",
+       "Comentá DESPIDO y te escribimos por privado."
+      ],
+      "hookIdx": 0
+     }
+    ]
+   },
+   {
+    "r": "T03",
+    "tipo": "Cadena de repreguntas · Diego · DESPIDO",
+    "titulo": "No fui al control médico de la empresa",
+    "meta": "Duración ≈32 s · Diego · cierra en DESPIDO",
+    "ej": "Dez56Kxx_Rf",
+    "ejde": "«¿Lo puedo sancionar?» · @ani.petratti.abogada",
+    "nota": "Sentado, plano medio. La primera pregunta en una caja arriba; las repreguntas en off, cortas. Respuestas de una o dos frases.",
+    "lineas": [
+     [
+      "0:00",
+      "E",
+      "Doctor, no fui al control médico que me mandó la empresa. ¿Me pueden echar?",
+      "Arranque · la pregunta en una caja"
+     ],
+     [
+      "0:04",
+      "V",
+      "Cuidado. Primero fijate si te avisaron bien: cuándo, dónde y por qué medio.",
+      "A validar"
+     ],
+     [
+      "0:09",
+      "E",
+      "¿Y si me avisaron bien y no fui?",
+      ""
+     ],
+     [
+      "0:11",
+      "V",
+      "Justificá por qué no fuiste, por escrito, y pedí que te vuelvan a citar.",
+      "A validar"
+     ],
+     [
+      "0:16",
+      "E",
+      "¿Y con una sola falta me pueden despedir?",
+      ""
+     ],
+     [
+      "0:18",
+      "V",
+      "No debería ser automático.",
+      "A validar"
+     ],
+     [
+      "0:20",
+      "E",
+      "¿Y si el médico de la empresa dice una cosa y el mío otra?",
+      ""
+     ],
+     [
+      "0:23",
+      "V",
+      "Ahí no lo decide la empresa sola.",
+      "A validar"
+     ],
+     [
+      "0:26",
+      "V",
+      "No improvises: primero guardá todo por escrito, después decidís.",
+      ""
+     ]
+    ],
+    "cierre": "Si te pasó, comentá DESPIDO o mandanos un mensaje y lo vemos.",
+    "hooks": [
+     "Doctor, no fui al control médico que me mandó la empresa. ¿Me pueden echar?",
+     "No fuiste al control médico. Cuidado con lo que hacés ahora.",
+     "¿Te pueden despedir por faltar a un control médico?",
+     "Te mandaron un médico a tu casa y no estabas. ¿Y ahora?"
+    ],
+    "cierres": [
+     "Si te pasó, comentá DESPIDO o mandanos un mensaje y lo vemos.",
+     "No improvises: comentá DESPIDO o escribinos.",
+     "Mandáselo a alguien que está de licencia."
+    ],
+    "hookIdx": 0,
+    "recomendacion": "grabar A — es el formato de la referencia tal cual, del lado del trabajador.",
+    "versiones": [
+     {
+      "v": "B",
+      "titulo": "¿Te pueden echar por no ir al control médico?",
+      "mecanica": "pregunta en placa",
+      "meta": "Duración ≈35 s",
+      "ej": "De7zcEUIAs5",
+      "ejde": "«¿Quién cobra la indemnización cuando fallece el trabajador?» · @derechosart (128 mil, 13 veces su normal)",
+      "nota": "La pregunta escrita grande desde el primer cuadro; el abogado contesta de frente, plano cerrado.",
+      "lineas": [
+       [
+        "0:00",
+        "P",
+        "¿TE PUEDEN ECHAR POR NO IR AL CONTROL MÉDICO?",
+        "Arranque"
+       ],
+       [
+        "0:03",
+        "V",
+        "Depende. Y casi nunca es tan automático como te dicen.",
+        "A validar"
+       ],
+       [
+        "0:07",
+        "V",
+        "Si no te avisaron bien, no podés faltar a algo que no sabías.",
+        "A validar"
+       ],
+       [
+        "0:12",
+        "V",
+        "Si te avisaron y no fuiste, justificalo por escrito.",
+        "A validar"
+       ],
+       [
+        "0:16",
+        "V",
+        "Y si los médicos no coinciden, no lo decide la empresa sola.",
+        "A validar"
+       ]
+      ],
+      "cierre": "Si te pasó, comentá DESPIDO o mandanos un mensaje.",
+      "hooks": [
+       "¿Te pueden echar por no ir al control médico?",
+       "Faltar al control médico no es lo mismo que faltar al trabajo.",
+       "Lo que nadie te dice del control médico.",
+       "Si estás de licencia, esto te conviene saberlo."
+      ],
+      "cierres": [
+       "Si te pasó, comentá DESPIDO o mandanos un mensaje.",
+       "Guardalo por si te toca.",
+       "Comentá DESPIDO y te escribimos por privado."
+      ],
+      "hookIdx": 0
+     },
+     {
+      "v": "C",
+      "titulo": "No fuiste al control médico: cuatro casos",
+      "mecanica": "cuatro casos animado",
+      "meta": "Duración ≈35 s",
+      "ej": "DfM2TRWIZWI",
+      "ejde": "«¿Siempre es culpa del de atrás?» · @futuroseguro.ok",
+      "nota": "Todo en motion graphics (la receta del R-17, ónix y dorado): cada caso con su etiqueta y el veredicto abajo. Sergio recortado entra al costado al principio y al final; la voz se graba aparte.",
+      "lineas": [
+       [
+        "0:00",
+        "V",
+        "No fuiste al control médico. Mirá estos cuatro casos.",
+        "Arranque · Sergio entra al costado"
+       ],
+       [
+        "0:04",
+        "P",
+        "CASO 1 · Te avisaron mal → No te pueden sancionar por algo que no sabías.",
+        "A validar"
+       ],
+       [
+        "0:10",
+        "P",
+        "CASO 2 · Te avisaron bien y justificaste → Pedí otra fecha, por escrito.",
+        "A validar"
+       ],
+       [
+        "0:16",
+        "P",
+        "CASO 3 · Una sola falta sin justificar → No debería ser automático.",
+        "A validar"
+       ],
+       [
+        "0:22",
+        "P",
+        "CASO 4 · Faltás siempre → Ahí el riesgo es real.",
+        "A validar"
+       ]
+      ],
+      "cierre": "¿En cuál estás? Comentá DESPIDO o mandanos un mensaje.",
+      "hooks": [
+       "No fuiste al control médico. Mirá estos cuatro casos.",
+       "Faltaste al control médico: en cuál de estos cuatro casos estás.",
+       "Cuatro casos de control médico y qué pasa en cada uno.",
+       "¿Te pueden echar por el control médico? Depende del caso."
+      ],
+      "cierres": [
+       "¿En cuál estás? Comentá DESPIDO o mandanos un mensaje.",
+       "Mandáselo a alguien que está de licencia.",
+       "Comentá DESPIDO y te escribimos."
+      ],
+      "hookIdx": 0
+     }
+    ]
+   },
+   {
+    "r": "T04",
+    "tipo": "¿es verdad? · Diego · CONSULTA",
+    "titulo": "Ley Bases y trabajo en negro",
+    "meta": "Duración ≈32 s · Diego · cierra en CONSULTA",
+    "ej": "DfDWRLStGwO",
+    "ejde": "«¿Ya no hay multas con la Ley Bases?» · @ani.petratti.abogada",
+    "nota": "Sentado a una mesa con el celular en la mano, como si leyera la pregunta. La pregunta en una caja en el primer cuadro; papeles de b-roll a la mitad.",
+    "lineas": [
+     [
+      "0:00",
+      "E",
+      "Doctor, ¿es verdad que con la Ley Bases si trabajás en negro ya no podés reclamar nada?",
+      "Arranque · la pregunta en una caja"
+     ],
+     [
+      "0:05",
+      "V",
+      "Te lo respondo porque me lo preguntan mucho. Sí y no.",
+      ""
+     ],
+     [
+      "0:08",
+      "V",
+      "Lo que cambió: (Sergio lo dice en una frase).",
+      "🔒 Sergio explica la reforma"
+     ],
+     [
+      "0:14",
+      "V",
+      "Lo que sigue igual: (Sergio, en otra).",
+      "🔒 Sergio explica la reforma"
+     ],
+     [
+      "0:20",
+      "V",
+      "Lo que se fue es la multa. El derecho a reclamar, no.",
+      "A validar"
+     ],
+     [
+      "0:25",
+      "V",
+      "No alcanza con saber que la ley cambió. Hay que saber en qué cambió y qué sigue igual.",
+      ""
+     ]
+    ],
+    "cierre": "Si trabajás o trabajaste en negro, comentá CONSULTA o mandanos un mensaje.",
+    "hooks": [
+     "Doctor, ¿es verdad que con la Ley Bases si trabajás en negro ya no podés reclamar nada?",
+     "Te lo respondo porque me lo preguntan mucho: la Ley Bases y el trabajo en negro.",
+     "Con la Ley Bases cambió algo. No lo que te dijeron.",
+     "Sí y no. Lo que cambió y lo que sigue igual."
+    ],
+    "cierres": [
+     "Si trabajás o trabajaste en negro, comentá CONSULTA o mandanos un mensaje.",
+     "Comentá CONSULTA y te escribimos por privado.",
+     "Mandáselo a alguien que trabaja sin estar anotado."
+    ],
+    "hookIdx": 0,
+    "recomendacion": "grabar A — es el formato de la referencia tal cual. 🔒 No se graba hasta que Sergio explique qué cambió con la reforma.",
+    "versiones": [
+     {
+      "v": "B",
+      "titulo": "Ley Bases: lo que cambió y lo que sigue igual",
+      "mecanica": "pizarrón",
+      "meta": "Duración ≈35 s",
+      "ej": "DdSDh_hD9SU",
+      "ejde": "El pizarrón · @laboralista.ok",
+      "nota": "Plano entero; escribe en el pizarrón mientras explica. Pizarrón limpio y fibrón que se lea.",
+      "lineas": [
+       [
+        "0:00",
+        "V",
+        "Te dijeron que con la Ley Bases ya no podés reclamar si trabajabas en negro. Te muestro.",
+        "Arranque · pizarrón con dos columnas"
+       ],
+       [
+        "0:05",
+        "V",
+        "De este lado, lo que cambió.",
+        "🔒 Sergio completa la columna"
+       ],
+       [
+        "0:12",
+        "V",
+        "De este, lo que sigue igual.",
+        "🔒 Sergio completa la columna"
+       ],
+       [
+        "0:20",
+        "V",
+        "Lo que se fue es la multa. El derecho a reclamar, no.",
+        "A validar"
+       ]
+      ],
+      "cierre": "Si te pasó, comentá CONSULTA o mandanos un mensaje.",
+      "hooks": [
+       "Te dijeron que con la Ley Bases ya no podés reclamar. Te muestro.",
+       "Ley Bases: lo que cambió y lo que sigue igual, en un pizarrón.",
+       "Dos columnas para entender la Ley Bases si trabajás en negro.",
+       "Esto es lo que cambió. Y esto, lo que no."
+      ],
+      "cierres": [
+       "Si te pasó, comentá CONSULTA o mandanos un mensaje.",
+       "Guardalo y comentá CONSULTA si tenés dudas.",
+       "Comentá CONSULTA y te escribimos."
+      ],
+      "hookIdx": 0
+     },
+     {
+      "v": "C",
+      "titulo": "«Leí que con la Ley Bases ya no hay multas»",
+      "mecanica": "contestando un comentario",
+      "meta": "Duración ≈35 s",
+      "ej": "DaTxtkvuAlz",
+      "ejde": "Contestando un comentario · @nahuelaltieri",
+      "nota": "El comentario en pantalla al principio; el abogado lo lee y contesta de frente.",
+      "lineas": [
+       [
+        "0:00",
+        "P",
+        "Comentario: «Leí que con la Ley Bases ya no hay multas. ¿Entonces no puedo reclamar?»",
+        "Arranque"
+       ],
+       [
+        "0:04",
+        "V",
+        "Buena pregunta, porque es lo que más se escucha.",
+        ""
+       ],
+       [
+        "0:07",
+        "V",
+        "Que no haya multa no quiere decir que no puedas reclamar.",
+        "🔒 A validar"
+       ],
+       [
+        "0:12",
+        "V",
+        "(Sergio: qué se sigue pudiendo reclamar, en una frase.)",
+        "🔒 Sergio explica la reforma"
+       ],
+       [
+        "0:18",
+        "V",
+        "Y si tenés otra pregunta, dejala abajo: la contestamos así.",
+        ""
+       ]
+      ],
+      "cierre": "Comentá CONSULTA o mandanos un mensaje con tu caso.",
+      "hooks": [
+       "«Leí que con la Ley Bases ya no hay multas. ¿Entonces no puedo reclamar?»",
+       "Te contesto este comentario porque lo leo todos los días.",
+       "Que no haya multa no quiere decir esto.",
+       "Respuesta a un comentario sobre la Ley Bases."
+      ],
+      "cierres": [
+       "Comentá CONSULTA o mandanos un mensaje con tu caso.",
+       "Dejá tu pregunta abajo y la contestamos así.",
+       "Comentá CONSULTA y te escribimos."
+      ],
+      "hookIdx": 0
+     }
+    ]
+   },
+   {
+    "r": "T05",
+    "tipo": "Pregunta y respuesta · Roberto · ART",
+    "titulo": "Volví de la ART y me quieren echar",
+    "meta": "Duración ≈35 s · Roberto · cierra en ART",
+    "ej": "Dd2bqaeRFmN",
+    "ejde": "«¿Esto se denuncia o no?» · @clemente.jimenez_",
+    "nota": "Sergio de frente en el escritorio; Emanuel pregunta desde atrás de la cámara. Respuestas cortas, se corta seco entre pregunta y respuesta.",
+    "lineas": [
+     [
+      "0:00",
+      "E",
+      "Volví al trabajo después de la ART y me quieren echar.",
+      "Arranque"
+     ],
+     [
+      "0:03",
+      "V",
+      "Lo primero: que te hayan dado el alta no quiere decir que estés como antes.",
+      ""
+     ],
+     [
+      "0:07",
+      "E",
+      "¿Me pueden despedir?",
+      ""
+     ],
+     [
+      "0:08",
+      "V",
+      "Pueden, pero no les sale gratis. Y si es por el accidente, eso se mira con lupa.",
+      "A validar"
+     ],
+     [
+      "0:14",
+      "E",
+      "¿Y si me cambian de puesto?",
+      ""
+     ],
+     [
+      "0:15",
+      "V",
+      "Si no podés hacer lo de antes, te tienen que dar tareas que puedas hacer.",
+      "A validar"
+     ],
+     [
+      "0:20",
+      "E",
+      "¿Qué hago?",
+      ""
+     ],
+     [
+      "0:21",
+      "V",
+      "No firmes nada y guardá todo: el alta, los estudios y los mensajes.",
+      ""
+     ]
+    ],
+    "cierre": "Si volviste de la ART y te pasa esto, comentá ART o mandanos un mensaje.",
+    "hooks": [
+     "Volví al trabajo después de la ART y me quieren echar.",
+     "Te dieron el alta y te quieren despedir. Escuchá esto.",
+     "Que te den el alta no quiere decir que estés como antes.",
+     "Volver de la ART y que te echen no es lo mismo que un despido cualquiera."
+    ],
+    "cierres": [
+     "Si volviste de la ART y te pasa esto, comentá ART o mandanos un mensaje.",
+     "Comentá ART y te escribimos por privado.",
+     "Mandáselo a un compañero que volvió de la ART."
+    ],
+    "hookIdx": 0,
+    "recomendacion": "grabar A — la pregunta y respuesta es el formato que mejor rindió; la referencia (#bajamedica de juanmalorente) sacó 369 mil. Antes de publicar: arreglar el ManyChat de ART (todavía manda la guía de in itinere).",
+    "versiones": [
+     {
+      "v": "B",
+      "titulo": "Volví de la ART y me cambiaron de puesto",
+      "mecanica": "cadena de repreguntas",
+      "meta": "Duración ≈35 s",
+      "ej": "Dez56Kxx_Rf",
+      "ejde": "«¿Lo puedo sancionar?» · @ani.petratti.abogada",
+      "nota": "Sentado, plano medio. La primera pregunta en una caja arriba; las repreguntas en off, cortas. Respuestas de una o dos frases.",
+      "lineas": [
+       [
+        "0:00",
+        "E",
+        "Doctor, volví de la ART y me cambiaron de puesto.",
+        "Arranque · la pregunta en una caja"
+       ],
+       [
+        "0:03",
+        "V",
+        "Cuidado. Si es porque no podés hacer lo de antes, puede corresponder.",
+        "A validar"
+       ],
+       [
+        "0:08",
+        "E",
+        "¿Y si me pagan menos?",
+        ""
+       ],
+       [
+        "0:09",
+        "V",
+        "Eso no. Que te muevan no es que te bajen el sueldo.",
+        "A validar"
+       ],
+       [
+        "0:13",
+        "E",
+        "¿Y si me echan?",
+        ""
+       ],
+       [
+        "0:14",
+        "V",
+        "Si es por el accidente, eso se mira con lupa.",
+        "A validar"
+       ],
+       [
+        "0:18",
+        "V",
+        "No improvises: guardá el alta y los mensajes, después decidís.",
+        ""
+       ]
+      ],
+      "cierre": "Si te pasó, comentá ART o mandanos un mensaje.",
+      "hooks": [
+       "Doctor, volví de la ART y me cambiaron de puesto.",
+       "Te dieron el alta y te movieron de puesto. ¿Y el sueldo?",
+       "Volviste de la ART. Tres preguntas que te vas a hacer.",
+       "Lo que te pueden cambiar y lo que no cuando volvés de la ART."
+      ],
+      "cierres": [
+       "Si te pasó, comentá ART o mandanos un mensaje.",
+       "No improvises: comentá ART o escribinos.",
+       "Mandáselo a un compañero que volvió de la ART."
+      ],
+      "hookIdx": 0
+     },
+     {
+      "v": "C",
+      "titulo": "«Me dieron el alta y a la semana me echaron»",
+      "mecanica": "contestando un comentario",
+      "meta": "Duración ≈35 s",
+      "ej": "DaTxtkvuAlz",
+      "ejde": "Contestando un comentario · @nahuelaltieri",
+      "nota": "El comentario en pantalla al principio; el abogado lo lee y contesta de frente.",
+      "lineas": [
+       [
+        "0:00",
+        "P",
+        "Comentario: «Me dieron el alta y a la semana me echaron. ¿Es legal?»",
+        "Arranque"
+       ],
+       [
+        "0:04",
+        "V",
+        "Te contesto porque esto pasa más de lo que creés.",
+        ""
+       ],
+       [
+        "0:07",
+        "V",
+        "Que te den el alta no cierra lo que tenés que reclamarle a la ART.",
+        "A validar"
+       ],
+       [
+        "0:12",
+        "V",
+        "Y que te echen después no borra lo que te pasó trabajando.",
+        ""
+       ],
+       [
+        "0:16",
+        "V",
+        "Son dos cosas distintas, y se pueden reclamar las dos.",
+        "A validar"
+       ]
+      ],
+      "cierre": "Si te pasó, comentá ART o mandanos un mensaje y lo vemos.",
+      "hooks": [
+       "«Me dieron el alta y a la semana me echaron. ¿Es legal?»",
+       "Te contesto este comentario porque pasa más de lo que creés.",
+       "El alta y el despido son dos cosas distintas.",
+       "Te echaron después de la ART. Esto no se borra."
+      ],
+      "cierres": [
+       "Si te pasó, comentá ART o mandanos un mensaje y lo vemos.",
+       "Dejá tu pregunta abajo y la contestamos así.",
+       "Comentá ART y te escribimos."
+      ],
+      "hookIdx": 0
+     }
+    ]
+   },
+   {
+    "r": "T06",
+    "tipo": "Contestando un comentario · Roberto · CONSULTA",
+    "titulo": "Trabajo en negro y me lastimé",
+    "meta": "Duración ≈35 s · Roberto · cierra en CONSULTA",
+    "ej": "DaTxtkvuAlz",
+    "ejde": "Contestando un comentario · @nahuelaltieri",
+    "nota": "El comentario en pantalla al principio; el abogado lo lee y contesta de frente.",
+    "lineas": [
+     [
+      "0:00",
+      "V",
+      "Trabajo en negro y me lastimé laburando. ¿Puedo reclamar algo?",
+      "Arranque"
+     ],
+     [
+      "0:04",
+      "V",
+      "Es la pregunta que más vergüenza da hacer. Y casi todos se la contestan solos: «no, porque estaba en negro».",
+      ""
+     ],
+     [
+      "0:10",
+      "V",
+      "Y se quedan en la casa con la lesión, sin preguntar.",
+      ""
+     ],
+     [
+      "0:13",
+      "V",
+      "Que no te hayan registrado no borra que te lastimaste trabajando.",
+      "A validar · Sergio confirma"
+     ],
+     [
+      "0:17",
+      "V",
+      "Y eso no juega a favor del que no te registró.",
+      "A validar · Sergio confirma"
+     ],
+     [
+      "0:21",
+      "V",
+      "Lo que importa es poder mostrar que trabajabas ahí: mensajes, fotos, testigos, lo que te pagaban.",
+      "A validar · Sergio confirma"
+     ],
+     [
+      "0:27",
+      "V",
+      "Si te pasó, comentá CONSULTA o mandanos un mensaje, y lo vemos. Y si tenés otra pregunta, dejala abajo: la contestamos así.",
+      ""
+     ],
+     [
+      "0:33",
+      "V",
+      "En negro no quiere decir sin derechos.",
+      "A validar · Sergio confirma"
+     ]
+    ],
+    "cierre": "Si te pasó, comentá CONSULTA o mandanos un mensaje, y lo vemos.",
+    "hooks": [
+     "Trabajo en negro y me lastimé laburando. ¿Puedo reclamar algo?",
+     "Estar en negro no te deja sin nada. Me lo preguntaron acá abajo.",
+     "Estoy en negro. Si me accidento, ¿me cubre alguien?",
+     "Me lastimé en el trabajo pero no estaba registrado. ¿Ya fue?",
+     "¿Si no estabas registrado, quién se hace cargo cuando te lastimás?",
+     "Si laburás en negro, mirá esto antes de que te pase algo.",
+     "«Si estaba en negro, no tengo derecho a nada.» Eso no es así.",
+     "El error del que trabaja en negro: creer que no puede ni preguntar."
+    ],
+    "cierres": [
+     "Si te pasó, comentá CONSULTA o mandanos un mensaje, y lo vemos.",
+     "Dejá tu pregunta abajo: la contestamos así.",
+     "Comentá CONSULTA y te escribimos por privado."
+    ],
+    "hookIdx": 0,
+    "recomendacion": "grabar A — ya está guionado (R-01 de octubre).",
+    "versiones": [
+     {
+      "v": "B",
+      "titulo": "Me caí en la obra y estoy en negro",
+      "mecanica": "POV",
+      "meta": "Duración ≈35 s",
+      "ej": "Dbo8iYZR1M7",
+      "ejde": "POV: la consulta",
+      "nota": "Cámara a la altura de quien se sienta enfrente; Emanuel pregunta en off y el abogado contesta a cámara.",
+      "lineas": [
+       [
+        "0:00",
+        "E",
+        "Trabajo en negro y me caí de una escalera en la obra.",
+        "Arranque"
+       ],
+       [
+        "0:03",
+        "V",
+        "¿Te atendieron? ¿Tenés algo de la guardia?",
+        ""
+       ],
+       [
+        "0:05",
+        "E",
+        "Sí, pero el patrón dice que no puedo reclamar porque no estoy anotado.",
+        ""
+       ],
+       [
+        "0:09",
+        "V",
+        "Eso no es así. Que no te hayan registrado no juega a su favor.",
+        "A validar"
+       ],
+       [
+        "0:14",
+        "V",
+        "Juntá los mensajes, las fotos, los testigos y cómo te pagaban.",
+        "A validar"
+       ],
+       [
+        "0:19",
+        "V",
+        "Con eso se muestra que trabajabas ahí.",
+        ""
+       ]
+      ],
+      "cierre": "Si te pasó, comentá CONSULTA o mandanos un mensaje.",
+      "hooks": [
+       "Trabajo en negro y me caí de una escalera en la obra.",
+       "«No podés reclamar porque no estás anotado.» No es así.",
+       "Te lastimaste trabajando en negro. Lo primero que te preguntamos.",
+       "Vino a consultar porque el patrón le dijo que no podía reclamar."
+      ],
+      "cierres": [
+       "Si te pasó, comentá CONSULTA o mandanos un mensaje.",
+       "Comentá CONSULTA y te escribimos por privado.",
+       "Mandáselo a alguien que trabaja en una obra."
+      ],
+      "hookIdx": 0
+     },
+     {
+      "v": "C",
+      "titulo": "Sí: podés reclamar aunque trabajes en negro",
+      "mecanica": "sí, podés",
+      "meta": "Duración ≈35 s",
+      "ej": "Dd1KV0LIqb4",
+      "ejde": "«Sí, podés irte con indemnización» · @juanmalorente_laboralista",
+      "nota": "De pie al lado de la ventana, plano medio. Corte con zoom y placa en cada número.",
+      "lineas": [
+       [
+        "0:00",
+        "V",
+        "Sí: podés reclamar aunque trabajes en negro.",
+        "Arranque · En pantalla: AUNQUE ESTÉS EN NEGRO"
+       ],
+       [
+        "0:04",
+        "V",
+        "Lo que hay que mostrar es que trabajabas ahí. Tres formas.",
+        "A validar"
+       ],
+       [
+        "0:08",
+        "V",
+        "Uno: los mensajes con el patrón.",
+        "En pantalla: 1"
+       ],
+       [
+        "0:11",
+        "V",
+        "Dos: fotos y testigos.",
+        "En pantalla: 2"
+       ],
+       [
+        "0:14",
+        "V",
+        "Tres: cómo te pagaban.",
+        "En pantalla: 3"
+       ]
+      ],
+      "cierre": "Si te lastimaste trabajando en negro, comentá CONSULTA o mandanos un mensaje.",
+      "hooks": [
+       "Sí: podés reclamar aunque trabajes en negro.",
+       "Trabajar en negro no te deja sin derechos.",
+       "Tres cosas que sirven para mostrar que trabajabas ahí.",
+       "Sí, podés. Aunque no estés anotado."
+      ],
+      "cierres": [
+       "Si te lastimaste trabajando en negro, comentá CONSULTA o mandanos un mensaje.",
+       "Guardalo y comentá CONSULTA si te pasó.",
+       "Mandáselo a alguien que trabaja sin estar anotado."
+      ],
+      "hookIdx": 0
+     }
+    ]
+   },
+   {
+    "r": "T07",
+    "tipo": "Pregunta en placa · Mónica · CONSULTA",
+    "titulo": "¿Quién cobra si el trabajador fallece?",
+    "meta": "Duración ≈30 s · Mónica · cierra en CONSULTA",
+    "ej": "De7zcEUIAs5",
+    "ejde": "«¿Quién cobra la indemnización cuando fallece el trabajador?» · @derechosart (128 mil, 13 veces su normal)",
+    "nota": "La pregunta escrita grande desde el primer cuadro; el abogado contesta de frente, plano cerrado.",
+    "lineas": [
+     [
+      "0:00",
+      "P",
+      "SI UN TRABAJADOR FALLECE POR UN ACCIDENTE DE TRABAJO, ¿QUIÉN COBRA?",
+      "Arranque"
+     ],
+     [
+      "0:03",
+      "V",
+      "Es una pregunta que nadie se hace hasta que le toca.",
+      ""
+     ],
+     [
+      "0:06",
+      "V",
+      "Su familia puede reclamar.",
+      "A validar"
+     ],
+     [
+      "0:09",
+      "V",
+      "(Sergio: quiénes, en una frase.)",
+      "A validar"
+     ],
+     [
+      "0:14",
+      "V",
+      "Y no hace falta que haya sido en el lugar de trabajo: también cuenta el camino.",
+      "A validar"
+     ],
+     [
+      "0:19",
+      "V",
+      "Si te pasó con alguien de tu familia, no lo dejes pasar.",
+      ""
+     ]
+    ],
+    "cierre": "Si te pasó, comentá CONSULTA o mandanos un mensaje. Te escribimos por privado.",
+    "hooks": [
+     "Si un trabajador fallece por un accidente de trabajo, ¿quién cobra?",
+     "Es una pregunta que nadie se hace hasta que le toca.",
+     "Si pasa lo peor, la familia también puede reclamar.",
+     "¿Quién cobra cuando el trabajador ya no está?"
+    ],
+    "cierres": [
+     "Si te pasó, comentá CONSULTA o mandanos un mensaje. Te escribimos por privado.",
+     "Mandáselo a alguien que lo necesite.",
+     "Escribinos por privado y lo vemos con tiempo."
+    ],
+    "hookIdx": 0,
+    "recomendacion": "grabar A — es la mecánica del reel que más rindió en el rubro este mes (@derechosart, 128 mil, 13 veces su normal); el único para Mónica.",
+    "versiones": [
+     {
+      "v": "B",
+      "titulo": "Mi papá falleció en un accidente de trabajo",
+      "mecanica": "pregunta y respuesta",
+      "meta": "Duración ≈35 s",
+      "ej": "Dd2bqaeRFmN",
+      "ejde": "«¿Esto se denuncia o no?» · @clemente.jimenez_",
+      "nota": "Sergio de frente en el escritorio; Emanuel pregunta desde atrás de la cámara. Respuestas cortas, se corta seco entre pregunta y respuesta.",
+      "lineas": [
+       [
+        "0:00",
+        "E",
+        "Mi papá falleció en un accidente de trabajo. ¿Podemos reclamar algo?",
+        "Arranque · tono sobrio, sin música arriba"
+       ],
+       [
+        "0:04",
+        "V",
+        "Lo siento mucho. Y sí: la familia puede reclamar.",
+        "A validar"
+       ],
+       [
+        "0:08",
+        "E",
+        "¿Quiénes?",
+        ""
+       ],
+       [
+        "0:09",
+        "V",
+        "(Sergio, en una frase.)",
+        "A validar"
+       ],
+       [
+        "0:14",
+        "E",
+        "¿Hay apuro?",
+        ""
+       ],
+       [
+        "0:15",
+        "V",
+        "Los reclamos tienen plazo. Mejor consultarlo con tiempo.",
+        "A validar"
+       ]
+      ],
+      "cierre": "Si te pasó, mandanos un mensaje o comentá CONSULTA. Te escribimos por privado.",
+      "hooks": [
+       "Mi papá falleció en un accidente de trabajo. ¿Podemos reclamar algo?",
+       "Si perdiste a alguien en un accidente de trabajo, esto te importa.",
+       "La familia también puede reclamar.",
+       "Una pregunta difícil, con una respuesta corta."
+      ],
+      "cierres": [
+       "Si te pasó, mandanos un mensaje o comentá CONSULTA. Te escribimos por privado.",
+       "Escribinos por privado, sin apuro.",
+       "Mandáselo a quien lo necesite."
+      ],
+      "hookIdx": 0
+     },
+     {
+      "v": "C",
+      "titulo": "¿Es verdad que la familia no puede reclamar?",
+      "mecanica": "¿es verdad?",
+      "meta": "Duración ≈35 s",
+      "ej": "DfDWRLStGwO",
+      "ejde": "«¿Ya no hay multas con la Ley Bases?» · @ani.petratti.abogada",
+      "nota": "Sentado a una mesa con el celular en la mano, como si leyera la pregunta. La pregunta en una caja en el primer cuadro; papeles de b-roll a la mitad.",
+      "lineas": [
+       [
+        "0:00",
+        "E",
+        "Doctor, ¿es verdad que si el trabajador fallece la familia no puede reclamar nada?",
+        "Arranque · la pregunta en una caja"
+       ],
+       [
+        "0:05",
+        "V",
+        "Te lo respondo porque me lo preguntan mucho. No.",
+        "A validar"
+       ],
+       [
+        "0:08",
+        "V",
+        "La familia puede reclamar. (Sergio: quiénes.)",
+        "A validar"
+       ],
+       [
+        "0:14",
+        "V",
+        "Y cuenta aunque haya sido en el camino al trabajo.",
+        "A validar"
+       ],
+       [
+        "0:18",
+        "V",
+        "Lo que no hay que hacer es dejarlo pasar: los reclamos tienen plazo.",
+        "A validar"
+       ]
+      ],
+      "cierre": "Si te pasó, comentá CONSULTA o mandanos un mensaje.",
+      "hooks": [
+       "Doctor, ¿es verdad que si el trabajador fallece la familia no puede reclamar nada?",
+       "¿Es verdad que la familia se queda sin nada?",
+       "Te lo respondo porque me lo preguntan mucho.",
+       "No. Y te explico por qué."
+      ],
+      "cierres": [
+       "Si te pasó, comentá CONSULTA o mandanos un mensaje.",
+       "Escribinos por privado.",
+       "Mandáselo a quien lo necesite."
+      ],
+      "hookIdx": 0
+     }
+    ]
+   },
+   {
+    "r": "T08",
+    "tipo": "Cuatro casos animado · Carlos · CHOQUE",
+    "titulo": "¿Siempre es culpa del que choca de atrás?",
+    "meta": "Duración ≈32 s · Carlos · cierra en CHOQUE",
+    "ej": "DfM2TRWIZWI",
+    "ejde": "«¿Siempre es culpa del de atrás?» · @futuroseguro.ok",
+    "nota": "Todo en motion graphics (la receta del R-17, ónix y dorado): cada caso con su etiqueta y el veredicto abajo. Sergio recortado entra al costado al principio y al final; la voz se graba aparte.",
+    "lineas": [
+     [
+      "0:00",
+      "E",
+      "Me chocaste de atrás, la culpa es tuya.",
+      "Arranque · otra voz, en off · dos autos animados"
+     ],
+     [
+      "0:03",
+      "V",
+      "Casi siempre, sí. Pero mirá estos cuatro casos.",
+      "Sergio entra al costado"
+     ],
+     [
+      "0:06",
+      "P",
+      "CASO 1 · El de adelante tira marcha atrás y te pega → responde él.",
+      "A validar"
+     ],
+     [
+      "0:11",
+      "P",
+      "CASO 2 · Te chocan de atrás y te empujan contra el de adelante → responde el que empezó la cadena.",
+      "A validar"
+     ],
+     [
+      "0:17",
+      "P",
+      "CASO 3 · El de adelante frena de golpe, sin motivo → la culpa puede ser compartida.",
+      "A validar"
+     ],
+     [
+      "0:22",
+      "P",
+      "CASO 4 · Frena por el semáforo, un peatón o un perro → la culpa es tuya: tenías que mantener la distancia.",
+      "A validar"
+     ]
+    ],
+    "cierre": "Si te chocaron y te dicen que la culpa es tuya, comentá CHOQUE o mandanos un mensaje. Y mandáselo a ese amigo que maneja pegado.",
+    "hooks": [
+     "Me chocaste de atrás, la culpa es tuya.",
+     "¿Siempre es culpa del que choca de atrás? Casi siempre. Pero mirá estos cuatro casos.",
+     "Cuatro choques de atrás y quién paga en cada uno.",
+     "Si chocás de atrás, no siempre es tuya la culpa."
+    ],
+    "cierres": [
+     "Si te chocaron y te dicen que la culpa es tuya, comentá CHOQUE o mandanos un mensaje. Y mandáselo a ese amigo que maneja pegado.",
+     "Mandáselo a ese amigo que maneja pegado.",
+     "¿En cuál te pasó? Comentá CHOQUE o escribinos."
+    ],
+    "hookIdx": 0,
+    "recomendacion": "grabar A — tránsito tuvo cero reels el ciclo pasado y el animado ya tiene receta (R-17).",
+    "versiones": [
+     {
+      "v": "B",
+      "titulo": "Me chocaron de atrás y dicen que frené de golpe",
+      "mecanica": "pregunta y respuesta",
+      "meta": "Duración ≈35 s",
+      "ej": "Dd2bqaeRFmN",
+      "ejde": "«¿Esto se denuncia o no?» · @clemente.jimenez_",
+      "nota": "Sergio de frente en el escritorio; Emanuel pregunta desde atrás de la cámara. Respuestas cortas, se corta seco entre pregunta y respuesta.",
+      "lineas": [
+       [
+        "0:00",
+        "E",
+        "Me chocaron de atrás y el otro dice que frené de golpe.",
+        "Arranque"
+       ],
+       [
+        "0:03",
+        "V",
+        "Casi siempre, el que choca de atrás es el responsable.",
+        "A validar"
+       ],
+       [
+        "0:07",
+        "E",
+        "¿Y si de verdad frené?",
+        ""
+       ],
+       [
+        "0:08",
+        "V",
+        "Si frenaste por algo, el semáforo o alguien que cruzaba, sigue siendo de él: tenía que mantener la distancia.",
+        "A validar"
+       ],
+       [
+        "0:15",
+        "E",
+        "¿Y si frené sin motivo?",
+        ""
+       ],
+       [
+        "0:16",
+        "V",
+        "Ahí la culpa puede ser compartida.",
+        "A validar"
+       ],
+       [
+        "0:19",
+        "V",
+        "Por eso: sacá fotos de cómo quedaron los autos antes de moverlos.",
+        ""
+       ]
+      ],
+      "cierre": "Si te chocaron de atrás, comentá CHOQUE o mandanos un mensaje.",
+      "hooks": [
+       "Me chocaron de atrás y el otro dice que frené de golpe.",
+       "«Frenaste de golpe.» Lo que te dicen cuando te chocan de atrás.",
+       "Te chocaron de atrás y te quieren pasar la culpa.",
+       "Frenar no te hace culpable. Depende de por qué."
+      ],
+      "cierres": [
+       "Si te chocaron de atrás, comentá CHOQUE o mandanos un mensaje.",
+       "Comentá CHOQUE y te escribimos por privado.",
+       "Mandáselo a alguien que maneja todos los días."
+      ],
+      "hookIdx": 0
+     },
+     {
+      "v": "C",
+      "titulo": "¿Siempre es culpa del que choca de atrás?",
+      "mecanica": "pregunta en placa",
+      "meta": "Duración ≈35 s",
+      "ej": "De7zcEUIAs5",
+      "ejde": "«¿Quién cobra la indemnización cuando fallece el trabajador?» · @derechosart (128 mil, 13 veces su normal)",
+      "nota": "La pregunta escrita grande desde el primer cuadro; el abogado contesta de frente, plano cerrado.",
+      "lineas": [
+       [
+        "0:00",
+        "P",
+        "¿SIEMPRE ES CULPA DEL QUE CHOCA DE ATRÁS?",
+        "Arranque"
+       ],
+       [
+        "0:03",
+        "V",
+        "Casi siempre, sí. Pero hay casos que conviene conocer.",
+        "A validar"
+       ],
+       [
+        "0:07",
+        "V",
+        "Si el de adelante tira marcha atrás, responde él.",
+        "A validar"
+       ],
+       [
+        "0:11",
+        "V",
+        "Si te empujan contra el de adelante, responde el que empezó.",
+        "A validar"
+       ],
+       [
+        "0:15",
+        "V",
+        "Y si frenó de golpe sin motivo, la culpa puede ser compartida.",
+        "A validar"
+       ]
+      ],
+      "cierre": "Si te pasó, comentá CHOQUE o mandanos un mensaje.",
+      "hooks": [
+       "¿Siempre es culpa del que choca de atrás?",
+       "Casi siempre, sí. Pero no siempre.",
+       "Tres casos en los que la culpa no es del de atrás.",
+       "Chocaste de atrás. ¿Seguro que es tuya la culpa?"
+      ],
+      "cierres": [
+       "Si te pasó, comentá CHOQUE o mandanos un mensaje.",
+       "Mandáselo a ese amigo que maneja pegado.",
+       "Comentá CHOQUE y te escribimos."
+      ],
+      "hookIdx": 0
+     }
+    ]
+   },
+   {
+    "r": "T09",
+    "tipo": "Pov · Carlos · CHOQUE",
+    "titulo": "Qué traer a la primera consulta después de un choque",
+    "meta": "Duración ≈42 s · Carlos · cierra en CHOQUE",
+    "ej": "Dbo8iYZR1M7",
+    "ejde": "POV: la consulta",
+    "nota": "Cámara a la altura de quien se sienta enfrente; Emanuel pregunta en off y el abogado contesta a cámara.",
+    "lineas": [
+     [
+      "0:00",
+      "E",
+      "Tuve un choque. Vengo a consultar qué se puede hacer.",
+      "Arranque"
+     ],
+     [
+      "0:03",
+      "V",
+      "Okey. ¿Trajiste todos los papeles?",
+      ""
+     ],
+     [
+      "0:05",
+      "E",
+      "No, no… no sabía que había que traer.",
+      ""
+     ],
+     [
+      "0:07",
+      "V",
+      "Okey, vení que te explico qué tenés que traer, para que no te pase de nuevo.",
+      ""
+     ],
+     [
+      "0:11",
+      "V",
+      "Lo del otro: la patente, el nombre y la compañía de seguro. Si te lo pasó, una foto del registro y de la póliza.",
+      "A validar · Sergio confirma la lista"
+     ],
+     [
+      "0:17",
+      "V",
+      "Fotos: de los dos autos, de cómo quedaron y del lugar. Y no las borres: esas no se vuelven a sacar.",
+      ""
+     ],
+     [
+      "0:21",
+      "V",
+      "Lo médico: la constancia de la guardia, los estudios y los recibos de lo que gastaste.",
+      ""
+     ],
+     [
+      "0:26",
+      "V",
+      "La denuncia que hiciste en tu seguro. Y si fue la policía, lo que te dieron.",
+      "A validar · Sergio confirma"
+     ],
+     [
+      "0:30",
+      "V",
+      "Y si por el choque no pudiste ir a trabajar, traé tu recibo de sueldo, o algo que muestre cuánto cobrabas.",
+      ""
+     ],
+     [
+      "0:33",
+      "V",
+      "Tranquilo: si te falta algo, se consigue. Pero lo que traés el primer día es lo que hace que no arranquemos de cero.",
+      ""
+     ],
+     [
+      "0:38",
+      "V",
+      "Si te pasó un choque, comentá CHOQUE o mandanos un mensaje, y te decimos por dónde empezar.",
+      ""
+     ],
+     [
+      "0:41",
+      "V",
+      "Y la próxima, ya sabés qué traer.",
+      ""
+     ]
+    ],
+    "cierre": "Si te pasó un choque, comentá CHOQUE o mandanos un mensaje, y te decimos por dónde empezar.",
+    "hooks": [
+     "Tuve un choque. Vengo a consultar qué se puede hacer.",
+     "Si mañana te chocan, esta es la lista que vas a necesitar.",
+     "¿Tenés fotos del choque en el celular? No las borres. Te explico por qué.",
+     "¿Te chocaron y no sabés qué llevarle al abogado?",
+     "Cinco cosas que tenés que llevar a la primera consulta después de un choque.",
+     "No sabía que había que traer algo.",
+     "Ir al abogado sin papeles no es grave. Pero te hace arrancar de cero.",
+     "[Levanta una carpeta vacía] Esto es lo que trae casi todo el mundo después de un choque."
+    ],
+    "cierres": [
+     "Si te pasó un choque, comentá CHOQUE o mandanos un mensaje, y te decimos por dónde empezar.",
+     "Guardalo para cuando te toque.",
+     "Mandáselo a alguien que maneja todos los días."
+    ],
+    "hookIdx": 0,
+    "recomendacion": "grabar A — ya está guionado (C-17 de octubre); el POV todavía no se usó en la cuenta.",
+    "versiones": [
+     {
+      "v": "B",
+      "titulo": "Lo que tenés que juntar después de un choque, contra reloj",
+      "mecanica": "60 segundos",
+      "meta": "Duración ≈45 s",
+      "ej": "DexDbW7JAl7",
+      "ejde": "«6 objections in 60 seconds» · @wolfofwallst",
+      "nota": "Escritorio con la notebook adelante y un reloj de 60 segundos corriendo que se ve todo el video. Se graba de corrido. La palabra clave de cada respuesta, grande en dorado.",
+      "lineas": [
+       [
+        "0:00",
+        "V",
+        "Lo que tenés que juntar después de un choque, antes de que se termine el reloj.",
+        "Arranque · reloj en 01:00"
+       ],
+       [
+        "0:04",
+        "V",
+        "Fotos de los dos autos y del lugar.",
+        "En pantalla: FOTOS"
+       ],
+       [
+        "0:08",
+        "V",
+        "Patente, nombre y seguro del otro.",
+        "En pantalla: EL OTRO"
+       ],
+       [
+        "0:12",
+        "V",
+        "La denuncia en tu seguro.",
+        "A validar · En pantalla: DENUNCIA"
+       ],
+       [
+        "0:16",
+        "V",
+        "La constancia de la guardia y los recibos de lo que gastaste.",
+        "En pantalla: GUARDIA"
+       ],
+       [
+        "0:21",
+        "V",
+        "Si alguien vio todo, su teléfono.",
+        "En pantalla: TESTIGOS"
+       ],
+       [
+        "0:25",
+        "V",
+        "Y si no pudiste trabajar, tu recibo de sueldo.",
+        "En pantalla: RECIBO"
+       ]
+      ],
+      "cierre": "Si te pasó, comentá CHOQUE o mandanos un mensaje y te decimos por dónde empezar.",
+      "hooks": [
+       "Lo que tenés que juntar después de un choque, antes de que se termine el reloj.",
+       "Seis cosas después de un choque, en sesenta segundos.",
+       "Te chocaron. Tenés un minuto: juntá esto.",
+       "Contra reloj: lo que no podés no tener después de un choque."
+      ],
+      "cierres": [
+       "Si te pasó, comentá CHOQUE o mandanos un mensaje y te decimos por dónde empezar.",
+       "Guardalo para cuando te toque.",
+       "Mandáselo a alguien que maneja todos los días."
+      ],
+      "hookIdx": 0
+     },
+     {
+      "v": "C",
+      "titulo": "Lo que hay que traer, uno por uno sobre la mesa",
+      "mecanica": "papel en la mesa",
+      "meta": "Duración ≈35 s",
+      "ej": "DeHp3Qyucg7",
+      "ejde": "«Esta cláusula» · @reyessulbaran.juridico",
+      "nota": "Cenital del escritorio: el papel sobre la mesa y la mano que marca cada parte. Voz del abogado. Ninguna cifra legible.",
+      "lineas": [
+       [
+        "0:00",
+        "V",
+        "Esto es lo que nos tenés que traer después de un choque.",
+        "Arranque · escritorio vacío"
+       ],
+       [
+        "0:03",
+        "V",
+        "Las fotos de los autos y del lugar.",
+        "La mano deja las fotos impresas"
+       ],
+       [
+        "0:07",
+        "V",
+        "Los datos del otro y de su seguro.",
+        "Un papel con datos tapados"
+       ],
+       [
+        "0:11",
+        "V",
+        "La denuncia que hiciste.",
+        "A validar"
+       ],
+       [
+        "0:15",
+        "V",
+        "La constancia de la guardia y los recibos.",
+        ""
+       ],
+       [
+        "0:19",
+        "V",
+        "Y si no pudiste trabajar, tu recibo de sueldo.",
+        ""
+       ],
+       [
+        "0:23",
+        "V",
+        "Si te falta algo, se consigue. Pero con esto no arrancamos de cero.",
+        ""
+       ]
+      ],
+      "cierre": "Si te pasó, comentá CHOQUE o mandanos un mensaje.",
+      "hooks": [
+       "Esto es lo que nos tenés que traer después de un choque.",
+       "Lo que tiene que haber sobre esta mesa el primer día.",
+       "Seis papeles que hacen que no arranquemos de cero.",
+       "Después de un choque, esto vale oro."
+      ],
+      "cierres": [
+       "Si te pasó, comentá CHOQUE o mandanos un mensaje.",
+       "Guardalo para cuando te toque.",
+       "Comentá CHOQUE y te escribimos por privado."
+      ],
+      "hookIdx": 0
+     }
+    ]
+   },
+   {
+    "r": "T10",
+    "tipo": "Pov · Carlos · CHOQUE",
+    "titulo": "Lo que te ofrece el seguro",
+    "meta": "Duración ≈40 s · Carlos · cierra en CHOQUE",
+    "ej": "Dbo8iYZR1M7",
+    "ejde": "POV: la consulta",
+    "nota": "Cámara a la altura de quien se sienta enfrente; Emanuel pregunta en off y el abogado contesta a cámara.",
+    "lineas": [
+     [
+      "0:00",
+      "E",
+      "...estuve un mes sin poder laburar. Y me ofrecieron esto.",
+      "Arranque"
+     ],
+     [
+      "0:04",
+      "V",
+      "¿Y vos qué les dijiste?",
+      ""
+     ],
+     [
+      "0:06",
+      "E",
+      "Nada todavía. Me dijeron que era lo que había.",
+      ""
+     ],
+     [
+      "0:09",
+      "V",
+      "Te voy a decir de dónde sale ese número, que es lo que nadie te explica.",
+      ""
+     ],
+     [
+      "0:13",
+      "V",
+      "Ese número lo calcularon mirando el auto. Chapa, pintura, repuestos.",
+      "A validar · Sergio confirma"
+     ],
+     [
+      "0:18",
+      "V",
+      "Vos no sos el auto. El auto se arregló en el taller. El mes que no laburaste no se arregla ahí.",
+      ""
+     ],
+     [
+      "0:24",
+      "V",
+      "Lo tuyo se mira aparte: qué te quedó, cuánto tratamiento necesitás, cuántos días no pudiste laburar, qué edad tenés y de qué vivís.",
+      "A validar · Sergio confirma los cinco, uno por uno"
+     ],
+     [
+      "0:32",
+      "V",
+      "Por eso no te puedo decir un número por Instagram. Y el que te lo dice sin verte, te está adivinando.",
+      ""
+     ],
+     [
+      "0:36",
+      "V",
+      "Si te ofrecieron algo y todavía no firmaste, comentá CHOQUE o mandanos un mensaje, y lo miramos antes de que firmes.",
+      ""
+     ],
+     [
+      "0:39",
+      "V",
+      "Lo que te ofrecen sale de mirar el auto. Lo que te corresponde sale de mirarte a vos.",
+      ""
+     ]
+    ],
+    "cierre": "Si te ofrecieron algo y todavía no firmaste, comentá CHOQUE o mandanos un mensaje, y lo miramos antes de que firmes.",
+    "hooks": [
+     "...estuve un mes sin poder laburar. Y me ofrecieron esto.",
+     "Después de un choque hay dos cuentas: la del auto y la tuya. Te ofrecen una sola.",
+     "Vos no sos el auto. Y el seguro te está pagando como si lo fueras.",
+     "El taller te arregló el auto. ¿Quién te arregla el mes que no laburaste?",
+     "[Sostiene el papel doblado] Esto te lo ofrecieron. Antes de firmarlo, mirá de dónde sale el número.",
+     "El número que te ofrece el seguro no está mal hecho. Está hecho para otra cosa.",
+     "¿Te ofrecieron plata por el choque y te dijeron que era lo que había?",
+     "Lo que te dijo el de la aseguradora no es mentira. Está incompleto."
+    ],
+    "cierres": [
+     "Si te ofrecieron algo y todavía no firmaste, comentá CHOQUE o mandanos un mensaje, y lo miramos antes de que firmes.",
+     "Comentá CHOQUE y te escribimos por privado.",
+     "Mandáselo a alguien al que le acaban de ofrecer algo."
+    ],
+    "hookIdx": 0,
+    "recomendacion": "grabar A — ya está guionado (C-16 de octubre).",
+    "versiones": [
+     {
+      "v": "B",
+      "titulo": "El mensaje del seguro",
+      "mecanica": "chat en pantalla",
+      "meta": "Duración ≈35 s",
+      "ej": "DU5r_mnDkj5",
+      "ejde": "Consultas por WhatsApp · @estudiojuridicoarancibia",
+      "nota": "El chat en pantalla, armado en edición con nombres inventados; el abogado lo lee y explica.",
+      "lineas": [
+       [
+        "0:00",
+        "C",
+        "Seguro: Te ofrecemos cerrar hoy. (el monto, borroneado)",
+        "Arranque · sin cifra legible"
+       ],
+       [
+        "0:03",
+        "C",
+        "Vos: ¿Y eso por qué?",
+        ""
+       ],
+       [
+        "0:05",
+        "C",
+        "Seguro: Es lo que corresponde por los daños.",
+        ""
+       ],
+       [
+        "0:07",
+        "V",
+        "Ese número lo calcularon mirando el auto.",
+        "A validar"
+       ],
+       [
+        "0:11",
+        "V",
+        "¿Y tu lesión? ¿Y los días que no fuiste a trabajar? Eso se mira aparte.",
+        "A validar"
+       ],
+       [
+        "0:17",
+        "V",
+        "Antes de contestar «dale», que alguien lo mire.",
+        ""
+       ]
+      ],
+      "cierre": "Si te llegó un mensaje así, comentá CHOQUE o mandanos una captura y lo vemos.",
+      "hooks": [
+       "«Te ofrecemos cerrar hoy.» ¿Te llegó este mensaje?",
+       "Si el seguro te escribió esto, no contestes todavía.",
+       "«Es lo que corresponde.» No siempre.",
+       "Este mensaje llega a los pocos días del choque."
+      ],
+      "cierres": [
+       "Si te llegó un mensaje así, comentá CHOQUE o mandanos una captura y lo vemos.",
+       "Guardá el chat y escribinos.",
+       "Comentá CHOQUE y te escribimos por privado."
+      ],
+      "hookIdx": 0
+     },
+     {
+      "v": "C",
+      "titulo": "¿Es verdad que lo que te ofrece el seguro es lo que te corresponde?",
+      "mecanica": "¿es verdad?",
+      "meta": "Duración ≈35 s",
+      "ej": "DfDWRLStGwO",
+      "ejde": "«¿Ya no hay multas con la Ley Bases?» · @ani.petratti.abogada",
+      "nota": "Sentado a una mesa con el celular en la mano, como si leyera la pregunta. La pregunta en una caja en el primer cuadro; papeles de b-roll a la mitad.",
+      "lineas": [
+       [
+        "0:00",
+        "E",
+        "Doctor, ¿es verdad que lo que te ofrece el seguro es lo que te corresponde?",
+        "Arranque · la pregunta en una caja"
+       ],
+       [
+        "0:04",
+        "V",
+        "Te lo respondo porque me lo preguntan mucho. No necesariamente.",
+        "A validar"
+       ],
+       [
+        "0:08",
+        "V",
+        "Lo que te ofrecen sale de mirar el auto.",
+        "A validar"
+       ],
+       [
+        "0:12",
+        "V",
+        "Lo que te corresponde sale de mirarte a vos: la lesión, el tratamiento y los días que no trabajaste.",
+        "A validar"
+       ],
+       [
+        "0:19",
+        "V",
+        "Son dos cuentas distintas.",
+        ""
+       ]
+      ],
+      "cierre": "Si te ofrecieron algo, comentá CHOQUE o mandanos un mensaje antes de firmar.",
+      "hooks": [
+       "Doctor, ¿es verdad que lo que te ofrece el seguro es lo que te corresponde?",
+       "¿Es verdad que el seguro te paga lo justo?",
+       "Lo que te ofrecen y lo que te corresponde son dos cuentas distintas.",
+       "Te lo respondo porque me lo preguntan mucho."
+      ],
+      "cierres": [
+       "Si te ofrecieron algo, comentá CHOQUE o mandanos un mensaje antes de firmar.",
+       "Comentá CHOQUE y te escribimos por privado.",
+       "Mandáselo a alguien que acaba de chocar."
+      ],
+      "hookIdx": 0
+     }
+    ]
+   },
+   {
+    "r": "T11",
+    "tipo": "Solo vs con abogado · Carlos · CHOQUE",
+    "titulo": "Arreglar con el seguro: solo o con abogado",
+    "meta": "Duración ≈35 s · Carlos · cierra en CHOQUE",
+    "ej": "DfDWqalkdn_",
+    "ejde": "«Arreglar con el seguro: solo vs con abogado» · @dc.legalstudio",
+    "nota": "Dos personas del estudio de pie frente a la biblioteca, «SIN ABOGADO» y «CON ABOGADO» fijos arriba de cada una. Charlan entre ellas; al final una habla a cámara.",
+    "lineas": [
+     [
+      "0:00",
+      "S",
+      "Me ofrecieron una plata rápido y firmé.",
+      "Arranque · arriba: SIN ABOGADO / CON ABOGADO"
+     ],
+     [
+      "0:03",
+      "K",
+      "A mí me ofrecieron lo mismo, pero mi abogado lo rechazó en el acto.",
+      ""
+     ],
+     [
+      "0:07",
+      "K",
+      "Me mandó al médico para documentar la lesión.",
+      "A validar"
+     ],
+     [
+      "0:10",
+      "S",
+      "Yo con eso no llegué a pagar ni los repuestos. Y la kinesio me salió de mi bolsillo.",
+      ""
+     ],
+     [
+      "0:16",
+      "K",
+      "Yo no puse un peso. Reclamamos los gastos médicos y los días que no pude ir a trabajar.",
+      "A validar · «no puse un peso» depende de cómo cobra el estudio"
+     ],
+     [
+      "0:23",
+      "V",
+      "La aseguradora no es tu amiga. Es una empresa, y su negocio es pagarte lo menos posible.",
+      "A cámara"
+     ]
+    ],
+    "cierre": "Antes de firmar, comentá CHOQUE o mandanos un mensaje.",
+    "hooks": [
+     "Me ofrecieron una plata rápido y firmé.",
+     "Mismo choque, mismo seguro, dos decisiones distintas.",
+     "Arreglar con el seguro: solo o con abogado.",
+     "Los dos tuvieron el mismo choque. Uno firmó."
+    ],
+    "cierres": [
+     "Antes de firmar, comentá CHOQUE o mandanos un mensaje.",
+     "La aseguradora no es tu amiga: comentá CHOQUE o escribinos.",
+     "Mandáselo a alguien que está por firmar."
+    ],
+    "hookIdx": 0,
+    "recomendacion": "grabar A — es el formato de la referencia tal cual; dos personas en cámara (las colaboraciones son lo que más rinde en la cuenta).",
+    "versiones": [
+     {
+      "v": "B",
+      "titulo": "El seguro me ofrece arreglar rápido. ¿Acepto?",
+      "mecanica": "cadena de repreguntas",
+      "meta": "Duración ≈35 s",
+      "ej": "Dez56Kxx_Rf",
+      "ejde": "«¿Lo puedo sancionar?» · @ani.petratti.abogada",
+      "nota": "Sentado, plano medio. La primera pregunta en una caja arriba; las repreguntas en off, cortas. Respuestas de una o dos frases.",
+      "lineas": [
+       [
+        "0:00",
+        "E",
+        "Doctor, el seguro me ofrece arreglar rápido. ¿Acepto?",
+        "Arranque · la pregunta en una caja"
+       ],
+       [
+        "0:03",
+        "V",
+        "Cuidado. Primero fijate qué incluye.",
+        ""
+       ],
+       [
+        "0:06",
+        "E",
+        "¿Y si necesito la plata ya?",
+        ""
+       ],
+       [
+        "0:08",
+        "V",
+        "Lo entiendo. Pero lo que firmás hoy después no se vuelve a abrir.",
+        "A validar"
+       ],
+       [
+        "0:13",
+        "E",
+        "¿Y la kinesio quién la paga?",
+        ""
+       ],
+       [
+        "0:15",
+        "V",
+        "Eso también se reclama, igual que los días que no fuiste a trabajar.",
+        "A validar"
+       ],
+       [
+        "0:20",
+        "V",
+        "No improvises: primero que lo mire alguien, después decidís.",
+        ""
+       ]
+      ],
+      "cierre": "Si te ofrecieron arreglar, comentá CHOQUE o mandanos un mensaje.",
+      "hooks": [
+       "Doctor, el seguro me ofrece arreglar rápido. ¿Acepto?",
+       "Te ofrecen arreglar rápido. Tres preguntas antes de aceptar.",
+       "«¿Y si necesito la plata ya?» Te contesto.",
+       "Arreglar rápido con el seguro: lo que nadie te pregunta."
+      ],
+      "cierres": [
+       "Si te ofrecieron arreglar, comentá CHOQUE o mandanos un mensaje.",
+       "No improvises: comentá CHOQUE o escribinos.",
+       "Mandáselo a alguien que está por firmar."
+      ],
+      "hookIdx": 0
+     },
+     {
+      "v": "C",
+      "titulo": "Jamás arregles con el seguro sin revisar esto",
+      "mecanica": "jamás",
+      "meta": "Duración ≈35 s",
+      "ej": "DeHHucjoZG8",
+      "ejde": "«Jamás te vayas de una empresa sin reclamar esto» · @juanmalorente_laboralista",
+      "nota": "De pie al lado de la ventana, plano medio. Corte con zoom y placa en cada número.",
+      "lineas": [
+       [
+        "0:00",
+        "V",
+        "Jamás arregles con el seguro sin revisar esto.",
+        "Arranque"
+       ],
+       [
+        "0:03",
+        "V",
+        "Uno: si incluye tu lesión, no solo el auto.",
+        "A validar · En pantalla: 1"
+       ],
+       [
+        "0:07",
+        "V",
+        "Dos: si incluye lo que gastaste en médicos y remedios.",
+        "A validar · En pantalla: 2"
+       ],
+       [
+        "0:11",
+        "V",
+        "Tres: si incluye los días que no pudiste trabajar.",
+        "A validar · En pantalla: 3"
+       ],
+       [
+        "0:15",
+        "V",
+        "Si falta una, no firmes.",
+        ""
+       ]
+      ],
+      "cierre": "Si estás por arreglar, comentá CHOQUE o mandanos un mensaje.",
+      "hooks": [
+       "Jamás arregles con el seguro sin revisar esto.",
+       "Tres cosas que tiene que incluir el arreglo con el seguro.",
+       "Antes de firmar con el seguro, mirá estas tres.",
+       "Si el arreglo no dice esto, no firmes."
+      ],
+      "cierres": [
+       "Si estás por arreglar, comentá CHOQUE o mandanos un mensaje.",
+       "Guardalo para cuando te toque.",
+       "Mandáselo a alguien que está por firmar."
+      ],
+      "hookIdx": 0
+     }
+    ]
+   },
+   {
+    "r": "T12",
+    "tipo": "60 segundos · amplio · CONSULTA",
+    "titulo": "Las excusas para no consultar",
+    "meta": "Duración ≈40 s · amplio · cierra en CONSULTA",
+    "ej": "DexDbW7JAl7",
+    "ejde": "«6 objections in 60 seconds» · @wolfofwallst",
+    "nota": "Escritorio con la notebook adelante y un reloj de 60 segundos corriendo que se ve todo el video. Se graba de corrido. La palabra clave de cada respuesta, grande en dorado.",
+    "lineas": [
+     [
+      "0:00",
+      "V",
+      "Seis excusas para no consultar, en sesenta segundos.",
+      "Arranque · reloj en 01:00"
+     ],
+     [
+      "0:03",
+      "E",
+      "Lo voy a pensar.",
+      ""
+     ],
+     [
+      "0:04",
+      "V",
+      "¿Qué querés pensar? ¿Si tenés caso? Eso te lo decimos nosotros.",
+      ""
+     ],
+     [
+      "0:08",
+      "E",
+      "Un abogado es caro.",
+      ""
+     ],
+     [
+      "0:09",
+      "V",
+      "Caro es firmar lo primero que te ofrecen.",
+      "A validar · sin prometer nada de honorarios"
+     ],
+     [
+      "0:12",
+      "E",
+      "Lo hablo con mi señora.",
+      ""
+     ],
+     [
+      "0:13",
+      "V",
+      "Buenísimo. Vengan los dos y lo vemos juntos.",
+      ""
+     ],
+     [
+      "0:16",
+      "E",
+      "No es el momento.",
+      ""
+     ],
+     [
+      "0:17",
+      "V",
+      "¿Qué tiene que pasar para que sea el momento? Los reclamos tienen plazo.",
+      "A validar"
+     ],
+     [
+      "0:21",
+      "E",
+      "Mandame información.",
+      ""
+     ],
+     [
+      "0:22",
+      "V",
+      "¿Qué querés saber? Te lo digo ahora, más rápido que un mail.",
+      ""
+     ],
+     [
+      "0:25",
+      "E",
+      "Lo arreglo solo con el seguro.",
+      ""
+     ],
+     [
+      "0:27",
+      "V",
+      "Perfecto. ¿Y cómo vas a saber si lo que te ofrecen es poco?",
+      ""
+     ],
+     [
+      "0:30",
+      "V",
+      "Cada excusa es una duda disfrazada.",
+      ""
+     ]
+    ],
+    "cierre": "Comentá CONSULTA o mandanos un mensaje, y la duda te la sacamos hoy.",
+    "hooks": [
+     "Seis excusas para no consultar, en sesenta segundos.",
+     "Seis excusas que escuchamos todas las semanas. Tengo un minuto.",
+     "«Lo voy a pensar.» Y otras cinco, contra reloj.",
+     "Un minuto, seis excusas, seis respuestas."
+    ],
+    "cierres": [
+     "Comentá CONSULTA o mandanos un mensaje, y la duda te la sacamos hoy.",
+     "¿Cuál de las seis es la tuya? Comentá CONSULTA o escribinos.",
+     "Mandáselo a alguien que lo viene pensando hace meses."
+    ],
+    "hookIdx": 0,
+    "recomendacion": "grabar A — es el formato que más te gustó y se graba en una sola toma.",
+    "versiones": [
+     {
+      "v": "B",
+      "titulo": "¿Y si lo pienso un tiempo?",
+      "mecanica": "cadena de repreguntas",
+      "meta": "Duración ≈35 s",
+      "ej": "Dez56Kxx_Rf",
+      "ejde": "«¿Lo puedo sancionar?» · @ani.petratti.abogada",
+      "nota": "Sentado, plano medio. La primera pregunta en una caja arriba; las repreguntas en off, cortas. Respuestas de una o dos frases.",
+      "lineas": [
+       [
+        "0:00",
+        "E",
+        "Doctor, ¿y si lo pienso un tiempo?",
+        "Arranque · la pregunta en una caja"
+       ],
+       [
+        "0:03",
+        "V",
+        "Cuidado: los reclamos tienen plazo.",
+        "A validar"
+       ],
+       [
+        "0:06",
+        "E",
+        "¿Y si sale caro?",
+        ""
+       ],
+       [
+        "0:07",
+        "V",
+        "Caro es firmar lo primero que te ofrecen.",
+        ""
+       ],
+       [
+        "0:10",
+        "E",
+        "¿Y si no tengo caso?",
+        ""
+       ],
+       [
+        "0:11",
+        "V",
+        "Te lo decimos y listo.",
+        ""
+       ],
+       [
+        "0:13",
+        "V",
+        "No improvises: primero preguntá, después decidís.",
+        ""
+       ]
+      ],
+      "cierre": "Comentá CONSULTA o mandanos un mensaje.",
+      "hooks": [
+       "Doctor, ¿y si lo pienso un tiempo?",
+       "Las tres dudas antes de consultar, contestadas.",
+       "¿Y si no tengo caso? Te contesto.",
+       "Lo estás pensando hace meses. Escuchá esto."
+      ],
+      "cierres": [
+       "Comentá CONSULTA o mandanos un mensaje.",
+       "No improvises: comentá CONSULTA o escribinos.",
+       "Mandáselo a alguien que lo viene pensando."
+      ],
+      "hookIdx": 0
+     },
+     {
+      "v": "C",
+      "titulo": "El que lo pensó y el que consultó",
+      "mecanica": "solo vs con abogado",
+      "meta": "Duración ≈35 s",
+      "ej": "DfDWqalkdn_",
+      "ejde": "«Arreglar con el seguro: solo vs con abogado» · @dc.legalstudio",
+      "nota": "Dos personas del estudio de pie frente a la biblioteca, «SIN ABOGADO» y «CON ABOGADO» fijos arriba de cada una. Charlan entre ellas; al final una habla a cámara.",
+      "lineas": [
+       [
+        "0:00",
+        "S",
+        "Yo lo estoy pensando.",
+        "Arranque · arriba: LO PENSÓ / CONSULTÓ"
+       ],
+       [
+        "0:02",
+        "K",
+        "Yo ya consulté.",
+        ""
+       ],
+       [
+        "0:04",
+        "S",
+        "Es que me da miedo que salga caro.",
+        ""
+       ],
+       [
+        "0:06",
+        "K",
+        "A mí me dijeron primero si tenía caso. Después hablamos de lo otro.",
+        "A validar"
+       ],
+       [
+        "0:11",
+        "S",
+        "Y mientras, el seguro me sigue llamando.",
+        ""
+       ],
+       [
+        "0:14",
+        "K",
+        "A mí ya no: ahora hablan con mi abogado.",
+        ""
+       ],
+       [
+        "0:17",
+        "V",
+        "Pensarlo está bien. Pero los reclamos tienen plazo.",
+        "A cámara · A validar"
+       ]
+      ],
+      "cierre": "Comentá CONSULTA o mandanos un mensaje.",
+      "hooks": [
+       "Yo lo estoy pensando. Yo ya consulté.",
+       "Mismo accidente: uno lo pensó, el otro consultó.",
+       "Los dos tenían la misma duda. Uno preguntó.",
+       "Lo que pasa mientras lo pensás."
+      ],
+      "cierres": [
+       "Comentá CONSULTA o mandanos un mensaje.",
+       "Mandáselo a alguien que lo viene pensando.",
+       "Comentá CONSULTA y te escribimos por privado."
+      ],
+      "hookIdx": 0
+     }
+    ]
+   },
+   {
+    "r": "T13",
+    "tipo": "Jamás · amplio · CONSULTA",
+    "titulo": "Trabajar un feriado",
+    "meta": "Duración ≈35 s · amplio · cierra en CONSULTA",
+    "ej": "DeHHucjoZG8",
+    "ejde": "«Jamás te vayas de una empresa sin reclamar esto» · @juanmalorente_laboralista",
+    "nota": "De pie al lado de la ventana, plano medio. Corte con zoom y placa en cada número.",
+    "lineas": [
+     [
+      "0:00",
+      "V",
+      "Jamás trabajes un feriado sin saber esto.",
+      "Arranque"
+     ],
+     [
+      "0:03",
+      "V",
+      "Uno: no se paga como un día normal.",
+      "A validar · En pantalla: 1"
+     ],
+     [
+      "0:07",
+      "V",
+      "Dos: tiene que figurar aparte en tu recibo.",
+      "A validar · En pantalla: 2"
+     ],
+     [
+      "0:11",
+      "V",
+      "Tres: si no te lo pagaron bien, se puede reclamar.",
+      "A validar · En pantalla: 3"
+     ]
+    ],
+    "cierre": "Si trabajaste un feriado y no te lo pagaron bien, comentá CONSULTA o mandanos un mensaje.",
+    "hooks": [
+     "Jamás trabajes un feriado sin saber esto.",
+     "Si te toca trabajar el feriado, mirá esto.",
+     "Tres cosas que tiene que tener tu recibo si trabajaste un feriado.",
+     "El feriado no se paga como un día normal."
+    ],
+    "cierres": [
+     "Si trabajaste un feriado y no te lo pagaron bien, comentá CONSULTA o mandanos un mensaje.",
+     "Mandáselo a alguien que trabaja el feriado.",
+     "Guardalo para el próximo feriado."
+    ],
+    "hookIdx": 0,
+    "recomendacion": "grabar A — es la fila «Jamás» que ya se usó con Lucía; solo tiene sentido publicarlo antes de un feriado. Si nadie lo elige para antes del fin de semana largo de diciembre, vuelve al banco.",
+    "versiones": [
+     {
+      "v": "B",
+      "titulo": "¿Te pueden hacer trabajar un feriado?",
+      "mecanica": "pregunta en placa",
+      "meta": "Duración ≈35 s",
+      "ej": "De7zcEUIAs5",
+      "ejde": "«¿Quién cobra la indemnización cuando fallece el trabajador?» · @derechosart (128 mil, 13 veces su normal)",
+      "nota": "La pregunta escrita grande desde el primer cuadro; el abogado contesta de frente, plano cerrado.",
+      "lineas": [
+       [
+        "0:00",
+        "P",
+        "¿TE PUEDEN HACER TRABAJAR UN FERIADO?",
+        "Arranque"
+       ],
+       [
+        "0:03",
+        "V",
+        "Depende del trabajo. Pero si lo trabajás, no se paga como un día cualquiera.",
+        "A validar"
+       ],
+       [
+        "0:08",
+        "V",
+        "Tiene que figurar en tu recibo.",
+        "A validar"
+       ],
+       [
+        "0:11",
+        "V",
+        "Y si no te lo pagaron bien, se puede reclamar.",
+        "A validar"
+       ]
+      ],
+      "cierre": "Si te pasó, comentá CONSULTA o mandanos un mensaje.",
+      "hooks": [
+       "¿Te pueden hacer trabajar un feriado?",
+       "Te toca trabajar el feriado. Esto te tienen que pagar.",
+       "El feriado trabajado no es un día más.",
+       "Antes del fin de semana largo, mirá esto."
+      ],
+      "cierres": [
+       "Si te pasó, comentá CONSULTA o mandanos un mensaje.",
+       "Mandáselo a alguien que trabaja el feriado.",
+       "Guardalo para el próximo feriado."
+      ],
+      "hookIdx": 0
+     },
+     {
+      "v": "C",
+      "titulo": "Me pagaron el feriado como un día normal",
+      "mecanica": "pregunta y respuesta",
+      "meta": "Duración ≈35 s",
+      "ej": "Dd2bqaeRFmN",
+      "ejde": "«¿Esto se denuncia o no?» · @clemente.jimenez_",
+      "nota": "Sergio de frente en el escritorio; Emanuel pregunta desde atrás de la cámara. Respuestas cortas, se corta seco entre pregunta y respuesta.",
+      "lineas": [
+       [
+        "0:00",
+        "E",
+        "Me hicieron trabajar el feriado y me lo pagaron como un día normal.",
+        "Arranque"
+       ],
+       [
+        "0:03",
+        "V",
+        "Eso no está bien. El feriado trabajado se paga distinto.",
+        "A validar"
+       ],
+       [
+        "0:07",
+        "E",
+        "¿Y cómo me doy cuenta?",
+        ""
+       ],
+       [
+        "0:08",
+        "V",
+        "Fijate en tu recibo: tiene que figurar aparte.",
+        "A validar"
+       ],
+       [
+        "0:11",
+        "E",
+        "¿Y si no figura?",
+        ""
+       ],
+       [
+        "0:12",
+        "V",
+        "Se puede reclamar. Guardá el recibo.",
+        "A validar"
+       ]
+      ],
+      "cierre": "Si te pasó, comentá CONSULTA o mandanos un mensaje.",
+      "hooks": [
+       "Me hicieron trabajar el feriado y me lo pagaron como un día normal.",
+       "Trabajaste el feriado. ¿Te lo pagaron bien?",
+       "El feriado trabajado se paga distinto. Te explico.",
+       "Fijate esto en tu recibo después del feriado."
+      ],
+      "cierres": [
+       "Si te pasó, comentá CONSULTA o mandanos un mensaje.",
+       "Comentá CONSULTA y te escribimos por privado.",
+       "Mandáselo a alguien que trabajó el feriado."
+      ],
+      "hookIdx": 0
+     }
+    ]
+   },
+   {
+    "r": "B-G3",
+    "tipo": "Pregunta y respuesta · Diego · DESPIDO",
+    "titulo": "Despidos",
+    "meta": "Publicado el 20-10 · 2.772 vistas · 6 seguidores nuevos · el mejor de la cuenta",
+    "ej": "DeuyEQRp-cp",
+    "ejde": "El reel publicado",
+    "nota": "",
+    "lineas": [
+     [
+      "0:00",
+      "E",
+      "Me echaron sin causa después de 5 años.",
+      "Arranque"
+     ],
+     [
+      "0:03",
+      "V",
+      "Te corresponde indemnización.",
+      ""
+     ],
+     [
+      "0:05",
+      "E",
+      "Me despidieron justo después de un accidente en el trabajo.",
+      ""
+     ],
+     [
+      "0:08",
+      "V",
+      "Te corresponde, y más.",
+      "A validar · Sergio confirma el «y más». Si no: «Te corresponde. Y ojo con cómo te lo liquidan.»"
+     ],
+     [
+      "0:10",
+      "E",
+      "Renuncié yo.",
+      ""
+     ],
+     [
+      "0:13",
+      "V",
+      "Indemnización no. La liquidación final, sí.",
+      "A validar · Corregido · Sergio confirma"
+     ],
+     [
+      "0:15",
+      "E",
+      "Me echaron estando de licencia médica.",
+      ""
+     ],
+     [
+      "0:18",
+      "V",
+      "Depende. Prestá atención.",
+      ""
+     ],
+     [
+      "0:20",
+      "E",
+      "Me ofrecen arreglar por izquierda para no pagarme la indemnización.",
+      ""
+     ],
+     [
+      "0:23",
+      "V",
+      "Ojo.",
+      ""
+     ],
+     [
+      "0:25",
+      "E",
+      "Me liquidaron mal las vacaciones y el aguinaldo.",
+      ""
+     ],
+     [
+      "0:28",
+      "V",
+      "Te corresponde el reclamo.",
+      ""
+     ],
+     [
+      "0:30",
+      "E",
+      "Me echaron por faltar sin avisar varias veces.",
+      ""
+     ],
+     [
+      "0:33",
+      "V",
+      "Depende del caso.",
+      ""
+     ],
+     [
+      "0:35",
+      "V",
+      "Todo esto es matizable. Comentá DESPIDO o mandanos un mensaje, y lo revisamos.",
+      ""
+     ]
+    ],
+    "cierre": "Comentá DESPIDO o mandanos un mensaje.",
+    "hooks": [],
+    "cierres": [],
+    "hookIdx": 0,
+    "versiones": []
+   },
+   {
+    "r": "D-08",
+    "tipo": "Jamás · Diego · DESPIDO",
+    "titulo": "Jamás te vayas de un trabajo sin cobrar esto",
+    "meta": "Publicado el 26-10 · 1.229 vistas · 4 compartidos",
+    "ej": "De-KjTUpS4c",
+    "ejde": "El reel publicado",
+    "nota": "",
+    "lineas": [
+     [
+      "0:00",
+      "V",
+      "Jamás te vayas de un trabajo sin cobrar esto.",
+      "Arranque"
+     ],
+     [
+      "0:03",
+      "V",
+      "Te vayas como te vayas: si renunciás, si te echan o si se termina el contrato.",
+      "A validar · Sergio confirma"
+     ],
+     [
+      "0:07",
+      "V",
+      "Esto siempre te corresponde, y mucha gente se va sin saberlo.",
+      ""
+     ],
+     [
+      "0:11",
+      "V",
+      "No hablo de la indemnización. Hablo de la liquidación final.",
+      ""
+     ],
+     [
+      "0:15",
+      "V",
+      "Uno: los días que trabajaste en el mes en que te vas.",
+      ""
+     ],
+     [
+      "0:19",
+      "V",
+      "Dos: las vacaciones que te quedaron sin tomar.",
+      "A validar · Sergio confirma"
+     ],
+     [
+      "0:22",
+      "V",
+      "Tres: la parte del aguinaldo que venías juntando y todavía no cobraste.",
+      "A validar · Sergio confirma"
+     ],
+     [
+      "0:27",
+      "V",
+      "Si te fuiste y no te lo pagaron, o no sabés si te lo pagaron bien, comentá DESPIDO o mandanos un mensaje, y lo revisamos.",
+      ""
+     ],
+     [
+      "0:32",
+      "V",
+      "Te vayas como te vayas, esto es tuyo.",
+      ""
+     ]
+    ],
+    "cierre": "Comentá DESPIDO o mandanos un mensaje.",
+    "hooks": [],
+    "cierres": [],
+    "hookIdx": 0,
+    "versiones": []
+   },
+   {
+    "r": "B-G4",
+    "tipo": "Pregunta y respuesta · Mónica · CONSULTA",
+    "titulo": "¿Firmar o no firmar?",
+    "meta": "Publicado el 02-11 · 650 vistas · 1 seguidor nuevo",
+    "ej": "DfQK3ctBpza",
+    "ejde": "El reel publicado",
+    "nota": "",
+    "lineas": [
+     [
+      "0:00",
+      "E",
+      "El seguro me ofrece plata a los 3 días del choque. ¿Firmo?",
+      "Arranque"
+     ],
+     [
+      "0:03",
+      "V",
+      "No firmes todavía.",
+      ""
+     ],
+     [
+      "0:05",
+      "E",
+      "Me piden que firme antes de terminar el tratamiento.",
+      ""
+     ],
+     [
+      "0:08",
+      "V",
+      "No firmes.",
+      "A validar · Sergio confirma"
+     ],
+     [
+      "0:10",
+      "E",
+      "La ART me pide que firme el alta, y me sigue doliendo.",
+      ""
+     ],
+     [
+      "0:13",
+      "V",
+      "No firmes conforme.",
+      "A validar · Sergio confirma"
+     ],
+     [
+      "0:15",
+      "E",
+      "Me ofrecen efectivo en mano para cerrar todo ya.",
+      ""
+     ],
+     [
+      "0:18",
+      "V",
+      "Alerta.",
+      ""
+     ],
+     [
+      "0:20",
+      "E",
+      "Me hacen firmar sin un abogado.",
+      ""
+     ],
+     [
+      "0:23",
+      "V",
+      "No firmes.",
+      "A validar · Sergio confirma"
+     ],
+     [
+      "0:25",
+      "E",
+      "Ya me hicieron la cuenta y la revisó un abogado.",
+      ""
+     ],
+     [
+      "0:28",
+      "V",
+      "Ahí sí.",
+      ""
+     ],
+     [
+      "0:30",
+      "V",
+      "Todo esto es matizable. Antes de firmar algo, comentá CONSULTA o mandanos un mensaje, y te decimos.",
+      ""
+     ]
+    ],
+    "cierre": "Comentá CONSULTA o mandanos un mensaje.",
+    "hooks": [],
+    "cierres": [],
+    "hookIdx": 0,
+    "versiones": []
+   },
+   {
+    "r": "R-17",
+    "tipo": "Sí, podés · Roberto · ART",
+    "titulo": "No hace falta un accidente",
+    "meta": "Publicado el 12-11 · 530 vistas a los 4 días",
+    "ej": "Dfp3W1nBWJN",
+    "ejde": "El reel publicado",
+    "nota": "",
+    "lineas": [
+     [
+      "0:00",
+      "V",
+      "Sí: te pueden pagar por un dolor que te dejó el trabajo. Aunque nunca hayas tenido un accidente.",
+      "Arranque"
+     ],
+     [
+      "0:05",
+      "V",
+      "Mucha gente cree que la ART es solo para el que se cayó de un andamio. Y se queda con el dolor, sin preguntar.",
+      ""
+     ],
+     [
+      "0:11",
+      "V",
+      "Te doy tres casos.",
+      ""
+     ],
+     [
+      "0:12",
+      "V",
+      "Uno: laburaste años al lado de máquinas y hoy escuchás menos.",
+      "A validar · Sergio confirma"
+     ],
+     [
+      "0:17",
+      "V",
+      "Dos: cargaste peso todos los días y hoy la espalda no te da más.",
+      "A validar · Sergio confirma"
+     ],
+     [
+      "0:22",
+      "V",
+      "Tres: hiciste el mismo movimiento miles de veces y hoy te duelen los hombros o las muñecas.",
+      "A validar · Sergio confirma"
+     ],
+     [
+      "0:27",
+      "V",
+      "En los tres casos puede ser una enfermedad del trabajo, y la que tiene que responder es la ART.",
+      "A validar · Sergio confirma"
+     ],
+     [
+      "0:32",
+      "V",
+      "Si te pasa alguno, comentá ART o mandanos un mensaje, y lo vemos.",
+      ""
+     ],
+     [
+      "0:35",
+      "V",
+      "No hace falta un accidente. Alcanza con los años.",
+      ""
+     ]
+    ],
+    "cierre": "Comentá ART o mandanos un mensaje.",
+    "hooks": [],
+    "cierres": [],
+    "hookIdx": 0,
+    "versiones": []
+   }
+  ],
+  "variaciones": []
+ },
+ "jornada": {
+  "orden": [
+   "T01",
+   "T12",
+   "T08",
+   "T07",
+   "T02",
+   "T09"
+  ],
+  "porque": {
+   "T01": "Semana del 24-11. Despido es lo que más rinde en la cuenta, y diciembre lo pide.",
+   "T12": "Semana del 01-12. El formato que más te gustó; se graba en una sola toma.",
+   "T08": "Semana del 08-12. Tránsito tuvo cero reels el ciclo pasado; antes de las rutas de las fiestas.",
+   "T07": "Semana del 15-12. La mecánica del reel que más rindió en el rubro este mes; el único para Mónica.",
+   "T02": "Semana del 22-12. Despido otra vez, justo antes de fin de año.",
+   "T09": "Semana del 29-12. Ya guionado (C-17)."
   }
+ },
+ "hechos": [
+  "B-G3",
+  "D-08",
+  "B-G4",
+  "R-17"
+ ]
 };
