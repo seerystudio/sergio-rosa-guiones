@@ -136,6 +136,11 @@ body.editing [data-ed]:focus{outline:2px solid var(--naranja);background:#fff}
 .acciones button{border:1px solid rgba(0,0,0,.18);background:transparent;border-radius:100px;padding:7px 14px;font-size:13px;font-weight:600;color:#141414}
 .acciones button:hover{border-color:var(--naranja);color:var(--naranja)}
 .acciones .reset[hidden]{display:none}
+.acciones .bhecho{border-color:#1F7A3A;color:#1F7A3A}
+.acciones .bhecho:hover{background:#EAF5EE;color:#1F7A3A;border-color:#1F7A3A}
+.acciones .bhecho[aria-pressed="true"]{background:#1F7A3A;color:#fff}
+.tag-hecho{display:inline-block;margin:0 0 10px;padding:4px 12px;border-radius:100px;background:#1F7A3A;color:#fff;font-size:11.5px;font-weight:700;letter-spacing:.02em}
+.card.g.esHecho{opacity:.86}
 #editar[aria-pressed="true"]{border-color:var(--naranja);background:var(--naranja);color:#fff}
 .aviso-ed{display:none;position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:60;background:var(--naranja);color:#fff;border-radius:100px;padding:9px 16px;font-size:13px;font-weight:600;max-width:calc(100% - 32px);text-align:center}
 body.editing .aviso-ed{display:block}
@@ -433,7 +438,7 @@ details.hks li.no:hover{opacity:1}
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <div class="alerta" id="alerta" hidden>Este navegador no está guardando lo que escribís (puede ser una ventana privada). Antes de cerrar, tocá «Enviar» o bajate un respaldo.</div>
 
-<script src="guiones.js?v=2026-10-12d"></script>
+<script src="guiones.js?v=2026-11-16"></script>
 <script>
 const D = window.GUIONES;
 const $ = s => document.querySelector(s);
@@ -441,7 +446,7 @@ const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;
 /* guardado: todo en localStorage de este navegador y, si hay NUBE, también en la planilla de Google.
    Si falla, se avisa en vez de callarse. */
 const NUBE = 'https://script.google.com/macros/s/AKfycbxgjYt2q3iZXebWQTGmeCoIkdg6bAyGNUPSIwTy47F43D51ED09QDCZU1WNqTMlQp31qw/exec', TABLERO = 'sergio-rosa-guiones';
-const CLAVES = ['sr-resp', 'sr-fijo', 'sr-conf', 'sr-hkx', 'sr-perfil', 'sr-piezas', 'sr-ed'];
+const CLAVES = ['sr-resp', 'sr-fijo', 'sr-conf', 'sr-hkx', 'sr-perfil', 'sr-piezas', 'sr-ed', 'sr-hecho'];
 const DONDE = NUBE ? 'Guardado' : 'Guardado en este dispositivo';
 let tToast;
 const hora = (h = new Date()) => String(h.getHours()).padStart(2,'0') + ':' + String(h.getMinutes()).padStart(2,'0');
@@ -499,7 +504,7 @@ async function bajar(){
     if (o.estado && o.fecha > leerN('sr-cambio') && !huboCambio){
       CLAVES.forEach(k => { if (k in o.estado) localStorage.setItem(k, JSON.stringify(o.estado[k])); else localStorage.removeItem(k); });
       anotarN('sr-cambio', o.fecha); anotarN('sr-subido', o.fecha);
-      resp = store.get('sr-resp', {}); fijo = store.get('sr-fijo', {}); conf = store.get('sr-conf', {}); hkx = store.get('sr-hkx', {}); ed = store.get('sr-ed', {});
+      resp = store.get('sr-resp', {}); fijo = store.get('sr-fijo', {}); conf = store.get('sr-conf', {}); hkx = store.get('sr-hkx', {}); ed = store.get('sr-ed', {}); hecho = store.get('sr-hecho', {});
       perfil = cargarPerfil(store.get('sr-perfil', {})); delete perfil.foto;
       piezas = store.get(PZK, []);
       render(); despuesDeRender(); if (!document.body.classList.contains('list')) apply();
@@ -520,6 +525,9 @@ let conf = store.get('sr-conf', {});
 let hkx = store.get('sr-hkx', {});
 /* textos cambiados a mano: id → texto. Lo que no está acá se ve como viene en guiones.js */
 let ed = store.get('sr-ed', {});
+/* reels ya hechos: los de guiones.js (hechos) vienen marcados; lo que se toca acá (true/false) manda */
+let hecho = store.get('sr-hecho', {});
+const esHecho = k => k in hecho ? !!hecho[k] : !!(D.hechos || {})[k];
 const T = (id, txt) => id in ed ? ed[id] : (txt == null ? '' : String(txt));
 const PO = (() => { const x = document.createElement('div'); try { x.contentEditable = 'plaintext-only'; } catch { return false; } return x.contentEditable === 'plaintext-only'; })();
 const E = (id, txt) => `<span class="ed${id in ed ? ' cambiado' : ''}" contenteditable="${PO ? 'plaintext-only' : 'true'}" spellcheck="false" data-ed="${esc(id)}" data-o="${esc(txt == null ? '' : txt)}">${esc(T(id, txt))}</span>`;
@@ -570,8 +578,9 @@ function renderScript(r, g){
       </div></div>`).join('');
   const h = hechas(key, g), t = nV(g), c = conf[key], hk = elegido(key, g);
   const hooks = g.hooks ? `<details class="hks"><summary>${g.hooks.length} arranques más · o escribí el tuyo</summary><ol data-hkl="${key}">${hooksList(key, g)}</ol><div class="hkadd"><textarea data-hkin="${key}" rows="2" aria-label="Tu propio arranque" placeholder="Escribí tu propio arranque…"></textarea><button type="button" data-hkadd="${key}">Agregar</button></div></details>` : '';
-  return `<article class="card g" data-v="${g.v}" data-k="${key}">
+  return `<article class="card g${esHecho(key) ? ' esHecho' : ''}" data-v="${g.v}" data-k="${key}">
     <header>
+      ${esHecho(key) ? `<span class="tag-hecho">✓ ${esc((D.hechos || {})[key] || 'Hecho')}</span>` : ''}
       <span class="var">${E(key + ':tipo', g.tipo)}</span>
       <h3>${E(key + ':titulo', g.titulo)}</h3>
       <p class="angle">${E(key + ':angulo', g.angulo)}</p>
@@ -588,7 +597,7 @@ function renderScript(r, g){
     ${g.ojo ? `<div class="sec"><div class="warn">${E(key + ':ojo', g.ojo)}</div></div>` : ''}
     ${g.confirmar ? `<div class="sec"><div class="conf"><div><b>Confirmanos:</b> ${E(key + ':confirmar', g.confirmar)}</div>
       <div class="op">${['Sí, va así', 'No, cambiarlo', 'Lo hablamos'].map(o => `<button type="button" data-conf="${key}" aria-pressed="${c === o}">${o}</button>`).join('')}</div></div></div>` : ''}
-    <div class="sec acciones"><button type="button" data-copiarcar="${key}">Copiar el guion</button></div>
+    <div class="sec acciones"><button type="button" data-copiarcar="${key}">Copiar el guion</button><button type="button" class="bhecho" data-hecho="${key}" aria-pressed="${esHecho(key)}">${esHecho(key) ? '✓ Hecho · desmarcar' : 'Marcar hecho'}</button></div>
   </article>`;
 }
 
@@ -1062,6 +1071,22 @@ document.addEventListener('click', e => {
   }
 });
 
+function renderHechos(){
+  const listos = [];
+  D.refs.forEach(r => r.guiones.forEach(g => { if (esHecho(r.n + g.v)) listos.push(renderScript(r, g)); }));
+  return `<section class="row" id="rH">
+    <div class="row-title"><span class="n">✓</span><span class="f">Hechos</span><span class="m">Los reels que ya se grabaron y publicaron. «Desmarcar» los devuelve a su fila</span></div>
+    <div class="scripts">${listos.join('') || '<p class="vacio">Todavía no hay ninguno. Cuando un reel se publique, tocá «Marcar hecho» y pasa acá.</p>'}</div>
+  </section>`;
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest && e.target.closest('[data-hecho]'); if (!b) return;
+  const k = b.dataset.hecho;
+  hecho[k] = !esHecho(k);
+  store.set('sr-hecho', hecho);
+  render(); despuesDeRender(); if (!document.body.classList.contains('list')) apply();
+  toast(esHecho(k) ? 'Pasó a «Hechos»' : 'Volvió a su fila', 2000);
+});
 function render(){
   const intro = `<section class="row" id="r0"><div class="card intro">
     <span class="rotulo">Sergio Rosa y Asociados · octubre</span>
@@ -1072,9 +1097,9 @@ function render(){
   $('#world').innerHTML = intro + renderPerfil() + renderFijados() + D.refs.map(r => `<section class="row" id="r${r.n}">
     <div class="row-title"><span class="n">${String(r.n).padStart(2,'0')}</span><span class="f">${E('r' + r.n + ':formato', r.formato)}</span><span class="m">${E('r' + r.n + ':resumen', r.resumen)}</span></div>
     ${renderRef(r, false, 'r' + r.n)}${(r.extra || []).map((x, k) => renderRef(Object.assign({tags: [], mecanica: []}, x), true, 'r' + r.n + 'x' + k)).join('')}
-    <div class="scripts">${r.guiones.map(g => renderScript(r, g)).join('')}</div>
-  </section>`).join('') + renderIdeas() + renderDis();
-  $('#jump').innerHTML = `<option value="0">Ir a…</option>` + (P ? `<option value="P">IG · El perfil</option>` : '') + (D.fijados ? `<option value="F">★ · Los 3 fijados</option>` : '') + D.refs.map(r => `<option value="${r.n}">${String(r.n).padStart(2,'0')} · ${esc(r.formato)}</option>`).join('') + (D.ideas ? `<option value="${D.ideas.n}">${String(D.ideas.n).padStart(2,'0')} · ${esc(D.ideas.titulo)}</option>` : '') + `<option value="DIS">PZ · Lo que ya está diseñado</option>`;
+    <div class="scripts">${r.guiones.filter(g => !esHecho(r.n + g.v)).map(g => renderScript(r, g)).join('') || '<p class="vacio">Los guiones de esta fila ya están hechos: pasaron a «Hechos».</p>'}</div>
+  </section>`).join('') + renderHechos() + renderIdeas() + renderDis();
+  $('#jump').innerHTML = `<option value="0">Ir a…</option>` + (P ? `<option value="P">IG · El perfil</option>` : '') + (D.fijados ? `<option value="F">★ · Los 3 fijados</option>` : '') + D.refs.map(r => `<option value="${r.n}">${String(r.n).padStart(2,'0')} · ${esc(r.formato)}</option>`).join('') + `<option value="H">✓ · Hechos</option>` + (D.ideas ? `<option value="${D.ideas.n}">${String(D.ideas.n).padStart(2,'0')} · ${esc(D.ideas.titulo)}</option>` : '') + `<option value="DIS">PZ · Lo que ya está diseñado</option>`;
   prog();
 }
 render();

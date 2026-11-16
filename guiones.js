@@ -21,6 +21,12 @@ window.GUIONES = {
     "Sin nombres ni casos que se puedan reconocer.",
     "La voz en off la hace quien filma."
   ],
+  "hechos": {
+    "3B": "Publicado el 20-10 · 2.772 vistas · 6 seguidores nuevos · el mejor del mes",
+    "2A": "Publicado el 26-10 · 1.229 vistas · 4 compartidos",
+    "3A": "Publicado el 02-11 · 650 vistas · 1 seguidor nuevo",
+    "2B": "Publicado el 12-11 · 530 vistas · 1 comentario"
+  },
   "refs": [
     {
       "n": 1,
