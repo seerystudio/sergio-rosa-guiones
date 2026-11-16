@@ -561,6 +561,149 @@ T.append(tema('T13', 'Trabajar un feriado', 'amplio', 'CONSULTA', 'A',
     ['Si te pasó, comentá CONSULTA o mandanos un mensaje.', 'Comentá CONSULTA y te escribimos por privado.', 'Mandáselo a alguien que trabajó el feriado.'])],
   aviso='Si nadie lo elige para antes del fin de semana largo de diciembre, vuelve al banco.'))
 
+# ── formatos ganadores (búsqueda en Instagram del 2026-11-16, ~120 posts del rubro; detalle en REELS-2026-11.md) ──
+F.update({
+ 'jefe': ('el que sabe sus derechos', 'DfumIwPzWCO', '«¿Estás despedida? Perfecto, mandámelo por escrito» · @errantipestrin (170 mil likes, 14-11, Argentina)',
+          'Dos del estudio: uno hace de jefe y el otro de empleado que le contesta, tranquilo, con lo que dice la ley. Tono de oficina real, sin exagerar. Al final, el abogado a cámara cierra. Otra referencia: @un_tio_legal_ «5 abusos ilegales» (151 mil).'),
+ 'contra': ('contracorriente a cámara', 'DH__ZwjyCfz', '«El certificado médico no es necesario para justificar el día» · @abogadosgbacaba (27 mil likes, 1.461 comentarios, Argentina)',
+            'A cámara, plano medio, micrófono de mano a la vista. La frase que contradice lo que todos creen, arriba en placa desde el primer cuadro. Sin artículos en placa.'),
+ 'lista': ('lista numerada', 'DdscIYoObQB', '«¿Atropellaste a alguien? Lo que hagas en los primeros minutos…» · @everardoabogado (47 mil likes)',
+           'Sentado, fondo oscuro, plano entero. Cada punto entra numerado en placa grande mientras habla.'),
+ 'frases': ('lo que te dicen', 'DbZVitMOjoq', '«"No tengo seguro, no tengo plata, no me vas a sacar nada"» · @hablandode.derecho (45 mil likes)',
+            'A cámara, plano medio. Cada frase entre comillas en una caja arriba; abajo, la respuesta.'),
+ 'animado2': ('animado con datos', 'DfsTUmLBJXI', '«¿Te toca trabajar este lunes? Ojo: no es un día normal» · @abogadify.mx (51 mil likes, 13-11)',
+              'Todo animado: un muñeco en una oficina y los datos que entran en placa, sin cifras. Voz en off de Sergio.'),
+})
+POR_TEMA = {t['r']: t for t in T}
+
+
+def ganador(r, v, porque):
+    """Suma la versión ganadora a un tema y la deja recomendada."""
+    t = POR_TEMA[r]
+    v = dict(v); v['v'] = 'D'
+    if v.get('f') == 'jefe': v['lineas'] = [[l[0], {'S': 'J', 'K': 'W'}.get(l[1], l[1])] + l[2:] for l in v['lineas']]
+    v.pop('f', None); v['mecanica'] = '★ ' + v['mecanica'] + ' (ganador)'
+    t['versiones'].append(v)
+    t['recomendacion'] = 'grabar D — formato ganador en Instagram: ' + porque
+
+
+def recomendar(r, letra, porque):
+    POR_TEMA[r]['recomendacion'] = 'grabar ' + letra + ' — formato ganador en Instagram: ' + porque
+
+
+ganador('T01', ver('D', 'jefe', '«Estás despedido» · el que sabe sus derechos', [
+    L('0:00', 'S', 'Estás despedido. Pasá por administración que te dan la liquidación.', 'Arranque · hace de jefe'),
+    L('0:03', 'K', 'Perfecto. Mandámelo por escrito.', 'hace de empleado, tranquilo'),
+    L('0:05', 'S', '¿Para qué? Si te lo estoy diciendo.'),
+    L('0:07', 'K', 'Porque de palabra no se puede probar.', AV),
+    L('0:09', 'S', 'Te pagamos los días del mes y las vacaciones.'),
+    L('0:12', 'K', '¿Y el aguinaldo?'),
+    L('0:13', 'S', 'El aguinaldo es para los que siguen.'),
+    L('0:15', 'K', 'No. La parte que ya trabajé me la tenés que pagar, aunque me eches.', AV),
+    L('0:19', 'K', 'Y la indemnización es otra cosa: va aparte.', AV),
+    L('0:22', 'V', 'Si te echan en diciembre, no firmes nada sin que alguien revise la liquidación.', 'A cámara')],
+    'Si te echaron este mes, comentá DESPIDO o mandanos un mensaje y la revisamos.',
+    ['Estás despedido. Pasá por administración que te dan la liquidación.', '«El aguinaldo es para los que siguen.» No.',
+     'Así le contesta alguien que sabe sus derechos.', 'Te echan en diciembre: lo que tenés que contestar.'],
+    ['Si te echaron este mes, comentá DESPIDO o mandanos un mensaje y la revisamos.', 'Mandáselo a alguien al que echaron este mes.',
+     'Comentá DESPIDO y te escribimos por privado.']),
+  'la escena del jefe y el empleado que conoce sus derechos es el reel argentino más visto de despido en la búsqueda (@errantipestrin, 170 mil likes, del 14-11), con este mismo tema: liquidación, aguinaldo e indemnización.')
+
+ganador('T02', ver('D', 'jefe', '«Para enero no te renovamos» · el que sabe sus derechos', [
+    L('0:00', 'S', 'Para enero no te renovamos. Se terminó el contrato.', 'Arranque · hace de jefe'),
+    L('0:03', 'K', 'Perfecto. Mandámelo por escrito.', 'hace de empleado'),
+    L('0:05', 'S', 'Y no te corresponde nada, eh.'),
+    L('0:07', 'K', 'La liquidación final me la pagás igual: los días, las vacaciones y el aguinaldo.', AV),
+    L('0:12', 'S', 'Pero era un contrato a plazo.'),
+    L('0:14', 'K', 'Me lo renovaron una y otra vez haciendo lo mismo. Eso hay que mirarlo.', AV),
+    L('0:19', 'V', 'Si no te renuevan, no te vayas sin que alguien mire tu contrato.', 'A cámara')],
+    'Si te avisaron que no te renuevan, comentá DESPIDO o mandanos un mensaje.',
+    ['Para enero no te renovamos. Se terminó el contrato.', '«No te corresponde nada.» Así se contesta.',
+     'Te avisan que no te renuevan: lo que tenés que decir.', 'Contrato a plazo no quiere decir que te vas con las manos vacías.'],
+    ['Si te avisaron que no te renuevan, comentá DESPIDO o mandanos un mensaje.', 'Mandáselo a alguien con contrato que vence.',
+     'Comentá DESPIDO y te escribimos por privado.']),
+  'la escena del jefe y el empleado es lo que más rinde en despido (170 mil y 151 mil likes en las dos referencias).')
+
+ganador('T03', ver('D', 'contra', 'Faltar al control médico no es causa automática de despido', [
+    L('0:00', 'V', 'Faltar a un control médico no te deja despedido automáticamente.', 'Arranque · placa arriba: CONTROL MÉDICO'),
+    L('0:04', 'V', 'Lo que te piden es avisar que estás enfermo el primer día.', AV),
+    L('0:08', 'V', 'Y la empresa tiene derecho a mandarte un médico a controlar.', AV),
+    L('0:12', 'V', 'Si no estabas o no fuiste, justificalo por escrito y pedí otra fecha.', AV),
+    L('0:17', 'V', 'Una falta aislada no es lo mismo que faltar siempre.', AV),
+    L('0:21', 'V', 'No dejes que te digan lo contrario sin preguntar.')],
+    'Si te pasó, comentá DESPIDO o mandanos un mensaje.',
+    ['Faltar a un control médico no te deja despedido automáticamente.', 'Lo que te dicen del control médico no es tan así.',
+     'El control médico no es una trampa. Pero ojo con esto.', 'Te mandaron el médico y no estabas. No es el fin.'],
+    ['Si te pasó, comentá DESPIDO o mandanos un mensaje.', 'Mandáselo a alguien que está de licencia.', 'Comentá DESPIDO y te escribimos por privado.']),
+  'la frase que contradice lo que todos creen, sobre este mismo tema, sacó 1.461 comentarios en una cuenta argentina (@abogadosgbacaba).')
+
+recomendar('T04', 'C', 'contestar un comentario es el formato más visto del relevamiento (@honorem.sac, 202 mil likes, respuesta corta con la burbuja del comentario).')
+
+ganador('T05', ver('D', 'jefe', '«Volviste de la ART, pero ya no te necesitamos»', [
+    L('0:00', 'S', 'Volviste de la ART, pero ya no te necesitamos.', 'Arranque · hace de jefe'),
+    L('0:03', 'K', 'Perfecto. Mandámelo por escrito.', 'hace de empleado'),
+    L('0:05', 'S', 'Igual estás de alta, podés buscar otra cosa.'),
+    L('0:08', 'K', 'Que me hayan dado el alta no quiere decir que esté como antes.', AV),
+    L('0:12', 'S', 'Te pasamos a otro puesto, con otro sueldo.'),
+    L('0:14', 'K', 'Me podés dar otras tareas. El sueldo no me lo bajás.', AV),
+    L('0:18', 'V', 'Si volviste de la ART y te pasa esto, guardá el alta y los mensajes.', 'A cámara')],
+    'Si te pasó, comentá ART o mandanos un mensaje.',
+    ['Volviste de la ART, pero ya no te necesitamos.', 'Así se contesta cuando volvés de la ART y te quieren echar.',
+     '«Te pasamos a otro puesto, con otro sueldo.» No.', 'Volviste de la ART: lo que te pueden cambiar y lo que no.'],
+    ['Si te pasó, comentá ART o mandanos un mensaje.', 'Mandáselo a un compañero que volvió de la ART.', 'Comentá ART y te escribimos por privado.']),
+  'la escena del jefe y el empleado que conoce sus derechos (170 mil y 151 mil likes) le da al trabajador la frase exacta para contestar.')
+
+recomendar('T06', 'A', 'contestar un comentario es el formato más visto del relevamiento (@honorem.sac, 202 mil likes).')
+
+ganador('T09', ver('D', 'lista', 'Te chocaron: lo que hacés apenas pasa', [
+    L('0:00', 'V', 'Te chocaron. Lo que hagas en los primeros minutos vale más que todo lo demás.', 'Arranque · fondo oscuro'),
+    L('0:04', 'P', '1 · No muevas el auto hasta sacar fotos.'),
+    L('0:08', 'P', '2 · Fotos de los dos autos, las patentes y el lugar.'),
+    L('0:12', 'P', '3 · Nombre, teléfono y seguro del otro.'),
+    L('0:16', 'P', '4 · Si alguien vio todo, su teléfono.'),
+    L('0:20', 'P', '5 · Si te duele algo, a la guardia, aunque parezca poco.', AV),
+    L('0:24', 'P', '6 · No firmes ni reconozcas nada en el momento.', AV)],
+    'Si te pasó, comentá CHOQUE o mandanos un mensaje y te decimos por dónde seguir.',
+    ['Te chocaron. Lo que hagas en los primeros minutos vale más que todo lo demás.', 'Seis cosas que tenés que hacer apenas te chocan.',
+     'Guardalo: lo vas a necesitar el día que te choquen.', 'Después de un choque, en este orden.'],
+    ['Si te pasó, comentá CHOQUE o mandanos un mensaje y te decimos por dónde seguir.', 'Guardalo para cuando te toque.',
+     'Mandáselo a alguien que maneja todos los días.']),
+  'la lista numerada de «qué hacer en los primeros minutos» sacó 47 mil likes (@everardoabogado); es lo que la gente guarda.')
+
+ganador('T10', ver('D', 'frases', 'Lo que te dice el seguro', [
+    L('0:00', 'P', '«Es lo que corresponde.»', 'Arranque · la frase en una caja'),
+    L('0:02', 'V', 'Es lo que calcularon mirando el auto. Tu lesión va aparte.', AV),
+    L('0:07', 'P', '«Firmá hoy y mañana cobrás.»'),
+    L('0:09', 'V', 'Lo que firmás hoy después no se vuelve a abrir.', AV),
+    L('0:13', 'P', '«Si vas a juicio, tarda años.»'),
+    L('0:15', 'V', 'No siempre hace falta un juicio. Y el apuro es de ellos, no tuyo.', AV),
+    L('0:20', 'V', '¿Qué logran con estas frases? Que firmes rápido.')],
+    'Si te dijeron alguna, comentá CHOQUE o mandanos un mensaje antes de firmar.',
+    ['«Es lo que corresponde.» Lo que te dice el seguro, y lo que no te dice.', 'Tres frases que te dice el seguro después de un choque.',
+     '«Firmá hoy y mañana cobrás.» Esperá.', '¿Qué logra el seguro con estas frases?'],
+    ['Si te dijeron alguna, comentá CHOQUE o mandanos un mensaje antes de firmar.', '¿Cuál te dijeron a vos? Comentá CHOQUE o escribinos.',
+     'Mandáselo a alguien que acaba de chocar.']),
+  '«lo que te dice el que te chocó», con las frases entre comillas, sacó 45 mil likes (@hablandode.derecho).')
+
+ganador('T13', ver('D', 'animado2', 'Trabajar el feriado: no es un día normal', [
+    L('0:00', 'V', '¿Te toca trabajar el feriado? Ojo: no es un día normal.', 'Arranque · muñeco animado en la oficina'),
+    L('0:04', 'V', 'Si tu jefe te pide ir, no te lo puede pagar como un día cualquiera.', AV + ' · en placa: NO ES UN DÍA NORMAL'),
+    L('0:09', 'V', 'Se paga distinto, y tiene que figurar en tu recibo.', AV),
+    L('0:14', 'V', 'Es un derecho que no se negocia.', AV),
+    L('0:17', 'V', 'Si no aparece en tu recibo, se puede reclamar.', AV),
+    L('0:21', 'V', 'Trabajar el feriado no es un favor.')],
+    'Si trabajaste el feriado y no te lo pagaron bien, comentá CONSULTA o mandanos un mensaje.',
+    ['¿Te toca trabajar el feriado? Ojo: no es un día normal.', 'Trabajar el feriado no es un favor.',
+     'Si trabajás el feriado, mirá tu recibo.', 'El feriado no se paga como un día cualquiera.'],
+    ['Si trabajaste el feriado y no te lo pagaron bien, comentá CONSULTA o mandanos un mensaje.', 'Mandáselo a alguien que trabaja el feriado.',
+     'Guardalo para el próximo feriado.']),
+  'el animado de @abogadify.mx sobre trabajar el feriado sacó 51 mil likes hace tres días (sin sus cifras).')
+
+recomendar('T07', 'A', 'la pregunta en placa es la mecánica del reel que más rindió en el rubro este mes (@derechosart, 128 mil vistas, 13 veces su normal).')
+recomendar('T08', 'A', 'el animado de casos con veredicto (@futuroseguro.ok) es el mismo lenguaje del animado de @abogadify.mx (51 mil likes).')
+recomendar('T11', 'A', 'dos personas en cámara: las colaboraciones son lo que más rinde en la cuenta, y la referencia es exacta del tema.')
+recomendar('T12', 'A', 'el reloj de 60 segundos (@wolfofwallst, 14 mil likes; @abogadify.mx lo usa en «Tienes 60 segundos»).')
+
 # hechos: los cuatro publicados
 def hecho(r, k, tipo, titulo, ej, ejde, meta, pal):
     lin, _ = de_octubre(k)

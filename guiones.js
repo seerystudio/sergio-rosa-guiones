@@ -90,7 +90,7 @@ window.GUIONES = {
      "Mandáselo a alguien al que echaron este mes, y comentá DESPIDO si querés que la miremos."
     ],
     "hookIdx": 0,
-    "recomendacion": "grabar A — despido es el tema que más rinde en la cuenta, y la pregunta y respuesta sacó el mejor reel (2.772 vistas).",
+    "recomendacion": "grabar D — formato ganador en Instagram: la escena del jefe y el empleado que conoce sus derechos es el reel argentino más visto de despido en la búsqueda (@errantipestrin, 170 mil likes, del 14-11), con este mismo tema: liquidación, aguinaldo e indemnización.",
     "versiones": [
      {
       "v": "B",
@@ -217,6 +217,90 @@ window.GUIONES = {
        "¿Te falta alguna? Comentá DESPIDO o escribinos."
       ],
       "hookIdx": 0
+     },
+     {
+      "v": "D",
+      "titulo": "«Estás despedido» · el que sabe sus derechos",
+      "mecanica": "★ el que sabe sus derechos (ganador)",
+      "meta": "Duración ≈35 s",
+      "ej": "DfumIwPzWCO",
+      "ejde": "«¿Estás despedida? Perfecto, mandámelo por escrito» · @errantipestrin (170 mil likes, 14-11, Argentina)",
+      "nota": "Dos del estudio: uno hace de jefe y el otro de empleado que le contesta, tranquilo, con lo que dice la ley. Tono de oficina real, sin exagerar. Al final, el abogado a cámara cierra. Otra referencia: @un_tio_legal_ «5 abusos ilegales» (151 mil).",
+      "lineas": [
+       [
+        "0:00",
+        "J",
+        "Estás despedido. Pasá por administración que te dan la liquidación.",
+        "Arranque · hace de jefe"
+       ],
+       [
+        "0:03",
+        "W",
+        "Perfecto. Mandámelo por escrito.",
+        "hace de empleado, tranquilo"
+       ],
+       [
+        "0:05",
+        "J",
+        "¿Para qué? Si te lo estoy diciendo.",
+        ""
+       ],
+       [
+        "0:07",
+        "W",
+        "Porque de palabra no se puede probar.",
+        "A validar"
+       ],
+       [
+        "0:09",
+        "J",
+        "Te pagamos los días del mes y las vacaciones.",
+        ""
+       ],
+       [
+        "0:12",
+        "W",
+        "¿Y el aguinaldo?",
+        ""
+       ],
+       [
+        "0:13",
+        "J",
+        "El aguinaldo es para los que siguen.",
+        ""
+       ],
+       [
+        "0:15",
+        "W",
+        "No. La parte que ya trabajé me la tenés que pagar, aunque me eches.",
+        "A validar"
+       ],
+       [
+        "0:19",
+        "W",
+        "Y la indemnización es otra cosa: va aparte.",
+        "A validar"
+       ],
+       [
+        "0:22",
+        "V",
+        "Si te echan en diciembre, no firmes nada sin que alguien revise la liquidación.",
+        "A cámara"
+       ]
+      ],
+      "cierre": "Si te echaron este mes, comentá DESPIDO o mandanos un mensaje y la revisamos.",
+      "hooks": [
+       "Estás despedido. Pasá por administración que te dan la liquidación.",
+       "«El aguinaldo es para los que siguen.» No.",
+       "Así le contesta alguien que sabe sus derechos.",
+       "Te echan en diciembre: lo que tenés que contestar."
+      ],
+      "cierres": [
+       "Si te echaron este mes, comentá DESPIDO o mandanos un mensaje y la revisamos.",
+       "Mandáselo a alguien al que echaron este mes.",
+       "Comentá DESPIDO y te escribimos por privado."
+      ],
+      "hookIdx": 0
      }
     ]
    },
@@ -279,7 +363,7 @@ window.GUIONES = {
      "Mandáselo a alguien con contrato que vence en diciembre."
     ],
     "hookIdx": 0,
-    "recomendacion": "grabar B — el formato «¿es verdad?» todavía no se usó y la pregunta es la que se escucha en esta época.",
+    "recomendacion": "grabar D — formato ganador en Instagram: la escena del jefe y el empleado es lo que más rinde en despido (170 mil y 151 mil likes en las dos referencias).",
     "versiones": [
      {
       "v": "B",
@@ -406,6 +490,72 @@ window.GUIONES = {
        "Comentá DESPIDO y te escribimos por privado."
       ],
       "hookIdx": 0
+     },
+     {
+      "v": "D",
+      "titulo": "«Para enero no te renovamos» · el que sabe sus derechos",
+      "mecanica": "★ el que sabe sus derechos (ganador)",
+      "meta": "Duración ≈35 s",
+      "ej": "DfumIwPzWCO",
+      "ejde": "«¿Estás despedida? Perfecto, mandámelo por escrito» · @errantipestrin (170 mil likes, 14-11, Argentina)",
+      "nota": "Dos del estudio: uno hace de jefe y el otro de empleado que le contesta, tranquilo, con lo que dice la ley. Tono de oficina real, sin exagerar. Al final, el abogado a cámara cierra. Otra referencia: @un_tio_legal_ «5 abusos ilegales» (151 mil).",
+      "lineas": [
+       [
+        "0:00",
+        "J",
+        "Para enero no te renovamos. Se terminó el contrato.",
+        "Arranque · hace de jefe"
+       ],
+       [
+        "0:03",
+        "W",
+        "Perfecto. Mandámelo por escrito.",
+        "hace de empleado"
+       ],
+       [
+        "0:05",
+        "J",
+        "Y no te corresponde nada, eh.",
+        ""
+       ],
+       [
+        "0:07",
+        "W",
+        "La liquidación final me la pagás igual: los días, las vacaciones y el aguinaldo.",
+        "A validar"
+       ],
+       [
+        "0:12",
+        "J",
+        "Pero era un contrato a plazo.",
+        ""
+       ],
+       [
+        "0:14",
+        "W",
+        "Me lo renovaron una y otra vez haciendo lo mismo. Eso hay que mirarlo.",
+        "A validar"
+       ],
+       [
+        "0:19",
+        "V",
+        "Si no te renuevan, no te vayas sin que alguien mire tu contrato.",
+        "A cámara"
+       ]
+      ],
+      "cierre": "Si te avisaron que no te renuevan, comentá DESPIDO o mandanos un mensaje.",
+      "hooks": [
+       "Para enero no te renovamos. Se terminó el contrato.",
+       "«No te corresponde nada.» Así se contesta.",
+       "Te avisan que no te renuevan: lo que tenés que decir.",
+       "Contrato a plazo no quiere decir que te vas con las manos vacías."
+      ],
+      "cierres": [
+       "Si te avisaron que no te renuevan, comentá DESPIDO o mandanos un mensaje.",
+       "Mandáselo a alguien con contrato que vence.",
+       "Comentá DESPIDO y te escribimos por privado."
+      ],
+      "hookIdx": 0
      }
     ]
    },
@@ -486,7 +636,7 @@ window.GUIONES = {
      "Mandáselo a alguien que está de licencia."
     ],
     "hookIdx": 0,
-    "recomendacion": "grabar A — es el formato de la referencia tal cual, del lado del trabajador.",
+    "recomendacion": "grabar D — formato ganador en Instagram: la frase que contradice lo que todos creen, sobre este mismo tema, sacó 1.461 comentarios en una cuenta argentina (@abogadosgbacaba).",
     "versiones": [
      {
       "v": "B",
@@ -595,6 +745,66 @@ window.GUIONES = {
        "Comentá DESPIDO y te escribimos."
       ],
       "hookIdx": 0
+     },
+     {
+      "v": "D",
+      "titulo": "Faltar al control médico no es causa automática de despido",
+      "mecanica": "★ contracorriente a cámara (ganador)",
+      "meta": "Duración ≈35 s",
+      "ej": "DH__ZwjyCfz",
+      "ejde": "«El certificado médico no es necesario para justificar el día» · @abogadosgbacaba (27 mil likes, 1.461 comentarios, Argentina)",
+      "nota": "A cámara, plano medio, micrófono de mano a la vista. La frase que contradice lo que todos creen, arriba en placa desde el primer cuadro. Sin artículos en placa.",
+      "lineas": [
+       [
+        "0:00",
+        "V",
+        "Faltar a un control médico no te deja despedido automáticamente.",
+        "Arranque · placa arriba: CONTROL MÉDICO"
+       ],
+       [
+        "0:04",
+        "V",
+        "Lo que te piden es avisar que estás enfermo el primer día.",
+        "A validar"
+       ],
+       [
+        "0:08",
+        "V",
+        "Y la empresa tiene derecho a mandarte un médico a controlar.",
+        "A validar"
+       ],
+       [
+        "0:12",
+        "V",
+        "Si no estabas o no fuiste, justificalo por escrito y pedí otra fecha.",
+        "A validar"
+       ],
+       [
+        "0:17",
+        "V",
+        "Una falta aislada no es lo mismo que faltar siempre.",
+        "A validar"
+       ],
+       [
+        "0:21",
+        "V",
+        "No dejes que te digan lo contrario sin preguntar.",
+        ""
+       ]
+      ],
+      "cierre": "Si te pasó, comentá DESPIDO o mandanos un mensaje.",
+      "hooks": [
+       "Faltar a un control médico no te deja despedido automáticamente.",
+       "Lo que te dicen del control médico no es tan así.",
+       "El control médico no es una trampa. Pero ojo con esto.",
+       "Te mandaron el médico y no estabas. No es el fin."
+      ],
+      "cierres": [
+       "Si te pasó, comentá DESPIDO o mandanos un mensaje.",
+       "Mandáselo a alguien que está de licencia.",
+       "Comentá DESPIDO y te escribimos por privado."
+      ],
+      "hookIdx": 0
      }
     ]
    },
@@ -657,7 +867,7 @@ window.GUIONES = {
      "Mandáselo a alguien que trabaja sin estar anotado."
     ],
     "hookIdx": 0,
-    "recomendacion": "grabar A — es el formato de la referencia tal cual. 🔒 No se graba hasta que Sergio explique qué cambió con la reforma.",
+    "recomendacion": "grabar C — formato ganador en Instagram: contestar un comentario es el formato más visto del relevamiento (@honorem.sac, 202 mil likes, respuesta corta con la burbuja del comentario).",
     "versiones": [
      {
       "v": "B",
@@ -834,7 +1044,7 @@ window.GUIONES = {
      "Mandáselo a un compañero que volvió de la ART."
     ],
     "hookIdx": 0,
-    "recomendacion": "grabar A — la pregunta y respuesta es el formato que mejor rindió; la referencia (#bajamedica de juanmalorente) sacó 369 mil. Antes de publicar: arreglar el ManyChat de ART (todavía manda la guía de in itinere).",
+    "recomendacion": "grabar D — formato ganador en Instagram: la escena del jefe y el empleado que conoce sus derechos (170 mil y 151 mil likes) le da al trabajador la frase exacta para contestar.",
     "versiones": [
      {
       "v": "B",
@@ -955,6 +1165,72 @@ window.GUIONES = {
        "Comentá ART y te escribimos."
       ],
       "hookIdx": 0
+     },
+     {
+      "v": "D",
+      "titulo": "«Volviste de la ART, pero ya no te necesitamos»",
+      "mecanica": "★ el que sabe sus derechos (ganador)",
+      "meta": "Duración ≈35 s",
+      "ej": "DfumIwPzWCO",
+      "ejde": "«¿Estás despedida? Perfecto, mandámelo por escrito» · @errantipestrin (170 mil likes, 14-11, Argentina)",
+      "nota": "Dos del estudio: uno hace de jefe y el otro de empleado que le contesta, tranquilo, con lo que dice la ley. Tono de oficina real, sin exagerar. Al final, el abogado a cámara cierra. Otra referencia: @un_tio_legal_ «5 abusos ilegales» (151 mil).",
+      "lineas": [
+       [
+        "0:00",
+        "J",
+        "Volviste de la ART, pero ya no te necesitamos.",
+        "Arranque · hace de jefe"
+       ],
+       [
+        "0:03",
+        "W",
+        "Perfecto. Mandámelo por escrito.",
+        "hace de empleado"
+       ],
+       [
+        "0:05",
+        "J",
+        "Igual estás de alta, podés buscar otra cosa.",
+        ""
+       ],
+       [
+        "0:08",
+        "W",
+        "Que me hayan dado el alta no quiere decir que esté como antes.",
+        "A validar"
+       ],
+       [
+        "0:12",
+        "J",
+        "Te pasamos a otro puesto, con otro sueldo.",
+        ""
+       ],
+       [
+        "0:14",
+        "W",
+        "Me podés dar otras tareas. El sueldo no me lo bajás.",
+        "A validar"
+       ],
+       [
+        "0:18",
+        "V",
+        "Si volviste de la ART y te pasa esto, guardá el alta y los mensajes.",
+        "A cámara"
+       ]
+      ],
+      "cierre": "Si te pasó, comentá ART o mandanos un mensaje.",
+      "hooks": [
+       "Volviste de la ART, pero ya no te necesitamos.",
+       "Así se contesta cuando volvés de la ART y te quieren echar.",
+       "«Te pasamos a otro puesto, con otro sueldo.» No.",
+       "Volviste de la ART: lo que te pueden cambiar y lo que no."
+      ],
+      "cierres": [
+       "Si te pasó, comentá ART o mandanos un mensaje.",
+       "Mandáselo a un compañero que volvió de la ART.",
+       "Comentá ART y te escribimos por privado."
+      ],
+      "hookIdx": 0
      }
     ]
    },
@@ -1033,7 +1309,7 @@ window.GUIONES = {
      "Comentá CONSULTA y te escribimos por privado."
     ],
     "hookIdx": 0,
-    "recomendacion": "grabar A — ya está guionado (R-01 de octubre).",
+    "recomendacion": "grabar A — formato ganador en Instagram: contestar un comentario es el formato más visto del relevamiento (@honorem.sac, 202 mil likes).",
     "versiones": [
      {
       "v": "B",
@@ -1210,7 +1486,7 @@ window.GUIONES = {
      "Escribinos por privado y lo vemos con tiempo."
     ],
     "hookIdx": 0,
-    "recomendacion": "grabar A — es la mecánica del reel que más rindió en el rubro este mes (@derechosart, 128 mil, 13 veces su normal); el único para Mónica.",
+    "recomendacion": "grabar A — formato ganador en Instagram: la pregunta en placa es la mecánica del reel que más rindió en el rubro este mes (@derechosart, 128 mil vistas, 13 veces su normal).",
     "versiones": [
      {
       "v": "B",
@@ -1387,7 +1663,7 @@ window.GUIONES = {
      "¿En cuál te pasó? Comentá CHOQUE o escribinos."
     ],
     "hookIdx": 0,
-    "recomendacion": "grabar A — tránsito tuvo cero reels el ciclo pasado y el animado ya tiene receta (R-17).",
+    "recomendacion": "grabar A — formato ganador en Instagram: el animado de casos con veredicto (@futuroseguro.ok) es el mismo lenguaje del animado de @abogadify.mx (51 mil likes).",
     "versiones": [
      {
       "v": "B",
@@ -1610,7 +1886,7 @@ window.GUIONES = {
      "Mandáselo a alguien que maneja todos los días."
     ],
     "hookIdx": 0,
-    "recomendacion": "grabar A — ya está guionado (C-17 de octubre); el POV todavía no se usó en la cuenta.",
+    "recomendacion": "grabar D — formato ganador en Instagram: la lista numerada de «qué hacer en los primeros minutos» sacó 47 mil likes (@everardoabogado); es lo que la gente guarda.",
     "versiones": [
      {
       "v": "B",
@@ -1755,6 +2031,72 @@ window.GUIONES = {
        "Comentá CHOQUE y te escribimos por privado."
       ],
       "hookIdx": 0
+     },
+     {
+      "v": "D",
+      "titulo": "Te chocaron: lo que hacés apenas pasa",
+      "mecanica": "★ lista numerada (ganador)",
+      "meta": "Duración ≈35 s",
+      "ej": "DdscIYoObQB",
+      "ejde": "«¿Atropellaste a alguien? Lo que hagas en los primeros minutos…» · @everardoabogado (47 mil likes)",
+      "nota": "Sentado, fondo oscuro, plano entero. Cada punto entra numerado en placa grande mientras habla.",
+      "lineas": [
+       [
+        "0:00",
+        "V",
+        "Te chocaron. Lo que hagas en los primeros minutos vale más que todo lo demás.",
+        "Arranque · fondo oscuro"
+       ],
+       [
+        "0:04",
+        "P",
+        "1 · No muevas el auto hasta sacar fotos.",
+        ""
+       ],
+       [
+        "0:08",
+        "P",
+        "2 · Fotos de los dos autos, las patentes y el lugar.",
+        ""
+       ],
+       [
+        "0:12",
+        "P",
+        "3 · Nombre, teléfono y seguro del otro.",
+        ""
+       ],
+       [
+        "0:16",
+        "P",
+        "4 · Si alguien vio todo, su teléfono.",
+        ""
+       ],
+       [
+        "0:20",
+        "P",
+        "5 · Si te duele algo, a la guardia, aunque parezca poco.",
+        "A validar"
+       ],
+       [
+        "0:24",
+        "P",
+        "6 · No firmes ni reconozcas nada en el momento.",
+        "A validar"
+       ]
+      ],
+      "cierre": "Si te pasó, comentá CHOQUE o mandanos un mensaje y te decimos por dónde seguir.",
+      "hooks": [
+       "Te chocaron. Lo que hagas en los primeros minutos vale más que todo lo demás.",
+       "Seis cosas que tenés que hacer apenas te chocan.",
+       "Guardalo: lo vas a necesitar el día que te choquen.",
+       "Después de un choque, en este orden."
+      ],
+      "cierres": [
+       "Si te pasó, comentá CHOQUE o mandanos un mensaje y te decimos por dónde seguir.",
+       "Guardalo para cuando te toque.",
+       "Mandáselo a alguien que maneja todos los días."
+      ],
+      "hookIdx": 0
      }
     ]
    },
@@ -1845,7 +2187,7 @@ window.GUIONES = {
      "Mandáselo a alguien al que le acaban de ofrecer algo."
     ],
     "hookIdx": 0,
-    "recomendacion": "grabar A — ya está guionado (C-16 de octubre).",
+    "recomendacion": "grabar D — formato ganador en Instagram: «lo que te dice el que te chocó», con las frases entre comillas, sacó 45 mil likes (@hablandode.derecho).",
     "versiones": [
      {
       "v": "B",
@@ -1960,6 +2302,72 @@ window.GUIONES = {
        "Mandáselo a alguien que acaba de chocar."
       ],
       "hookIdx": 0
+     },
+     {
+      "v": "D",
+      "titulo": "Lo que te dice el seguro",
+      "mecanica": "★ lo que te dicen (ganador)",
+      "meta": "Duración ≈35 s",
+      "ej": "DbZVitMOjoq",
+      "ejde": "«\"No tengo seguro, no tengo plata, no me vas a sacar nada\"» · @hablandode.derecho (45 mil likes)",
+      "nota": "A cámara, plano medio. Cada frase entre comillas en una caja arriba; abajo, la respuesta.",
+      "lineas": [
+       [
+        "0:00",
+        "P",
+        "«Es lo que corresponde.»",
+        "Arranque · la frase en una caja"
+       ],
+       [
+        "0:02",
+        "V",
+        "Es lo que calcularon mirando el auto. Tu lesión va aparte.",
+        "A validar"
+       ],
+       [
+        "0:07",
+        "P",
+        "«Firmá hoy y mañana cobrás.»",
+        ""
+       ],
+       [
+        "0:09",
+        "V",
+        "Lo que firmás hoy después no se vuelve a abrir.",
+        "A validar"
+       ],
+       [
+        "0:13",
+        "P",
+        "«Si vas a juicio, tarda años.»",
+        ""
+       ],
+       [
+        "0:15",
+        "V",
+        "No siempre hace falta un juicio. Y el apuro es de ellos, no tuyo.",
+        "A validar"
+       ],
+       [
+        "0:20",
+        "V",
+        "¿Qué logran con estas frases? Que firmes rápido.",
+        ""
+       ]
+      ],
+      "cierre": "Si te dijeron alguna, comentá CHOQUE o mandanos un mensaje antes de firmar.",
+      "hooks": [
+       "«Es lo que corresponde.» Lo que te dice el seguro, y lo que no te dice.",
+       "Tres frases que te dice el seguro después de un choque.",
+       "«Firmá hoy y mañana cobrás.» Esperá.",
+       "¿Qué logra el seguro con estas frases?"
+      ],
+      "cierres": [
+       "Si te dijeron alguna, comentá CHOQUE o mandanos un mensaje antes de firmar.",
+       "¿Cuál te dijeron a vos? Comentá CHOQUE o escribinos.",
+       "Mandáselo a alguien que acaba de chocar."
+      ],
+      "hookIdx": 0
      }
     ]
    },
@@ -2022,7 +2430,7 @@ window.GUIONES = {
      "Mandáselo a alguien que está por firmar."
     ],
     "hookIdx": 0,
-    "recomendacion": "grabar A — es el formato de la referencia tal cual; dos personas en cámara (las colaboraciones son lo que más rinde en la cuenta).",
+    "recomendacion": "grabar A — formato ganador en Instagram: dos personas en cámara: las colaboraciones son lo que más rinde en la cuenta, y la referencia es exacta del tema.",
     "versiones": [
      {
       "v": "B",
@@ -2253,7 +2661,7 @@ window.GUIONES = {
      "Mandáselo a alguien que lo viene pensando hace meses."
     ],
     "hookIdx": 0,
-    "recomendacion": "grabar A — es el formato que más te gustó y se graba en una sola toma.",
+    "recomendacion": "grabar A — formato ganador en Instagram: el reloj de 60 segundos (@wolfofwallst, 14 mil likes; @abogadify.mx lo usa en «Tienes 60 segundos»).",
     "versiones": [
      {
       "v": "B",
@@ -2442,7 +2850,7 @@ window.GUIONES = {
      "Guardalo para el próximo feriado."
     ],
     "hookIdx": 0,
-    "recomendacion": "grabar A — la pregunta la tiene cualquiera antes de un fin de semana largo; solo tiene sentido publicarlo antes de un feriado. Si nadie lo elige para antes del fin de semana largo de diciembre, vuelve al banco.",
+    "recomendacion": "grabar D — formato ganador en Instagram: el animado de @abogadify.mx sobre trabajar el feriado sacó 51 mil likes hace tres días (sin sus cifras).",
     "versiones": [
      {
       "v": "B",
@@ -2549,6 +2957,66 @@ window.GUIONES = {
        "Si te pasó, comentá CONSULTA o mandanos un mensaje.",
        "Comentá CONSULTA y te escribimos por privado.",
        "Mandáselo a alguien que trabajó el feriado."
+      ],
+      "hookIdx": 0
+     },
+     {
+      "v": "D",
+      "titulo": "Trabajar el feriado: no es un día normal",
+      "mecanica": "★ animado con datos (ganador)",
+      "meta": "Duración ≈35 s",
+      "ej": "DfsTUmLBJXI",
+      "ejde": "«¿Te toca trabajar este lunes? Ojo: no es un día normal» · @abogadify.mx (51 mil likes, 13-11)",
+      "nota": "Todo animado: un muñeco en una oficina y los datos que entran en placa, sin cifras. Voz en off de Sergio.",
+      "lineas": [
+       [
+        "0:00",
+        "V",
+        "¿Te toca trabajar el feriado? Ojo: no es un día normal.",
+        "Arranque · muñeco animado en la oficina"
+       ],
+       [
+        "0:04",
+        "V",
+        "Si tu jefe te pide ir, no te lo puede pagar como un día cualquiera.",
+        "A validar · en placa: NO ES UN DÍA NORMAL"
+       ],
+       [
+        "0:09",
+        "V",
+        "Se paga distinto, y tiene que figurar en tu recibo.",
+        "A validar"
+       ],
+       [
+        "0:14",
+        "V",
+        "Es un derecho que no se negocia.",
+        "A validar"
+       ],
+       [
+        "0:17",
+        "V",
+        "Si no aparece en tu recibo, se puede reclamar.",
+        "A validar"
+       ],
+       [
+        "0:21",
+        "V",
+        "Trabajar el feriado no es un favor.",
+        ""
+       ]
+      ],
+      "cierre": "Si trabajaste el feriado y no te lo pagaron bien, comentá CONSULTA o mandanos un mensaje.",
+      "hooks": [
+       "¿Te toca trabajar el feriado? Ojo: no es un día normal.",
+       "Trabajar el feriado no es un favor.",
+       "Si trabajás el feriado, mirá tu recibo.",
+       "El feriado no se paga como un día cualquiera."
+      ],
+      "cierres": [
+       "Si trabajaste el feriado y no te lo pagaron bien, comentá CONSULTA o mandanos un mensaje.",
+       "Mandáselo a alguien que trabaja el feriado.",
+       "Guardalo para el próximo feriado."
       ],
       "hookIdx": 0
      }

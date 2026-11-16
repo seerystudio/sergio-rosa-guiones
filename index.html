@@ -485,7 +485,7 @@ body.list .piez{width:auto}
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <div class="alerta" id="alerta" hidden>Este navegador no está guardando lo que escribís (puede ser una ventana privada). Antes de cerrar, tocá «Enviar» o bajate un respaldo.</div>
 
-<script src="guiones.js?v=2026-11-06"></script>
+<script src="guiones.js?v=2026-11-16c"></script>
 <script>
 const D = window.GUIONES;
 const $ = s => document.querySelector(s);
@@ -690,13 +690,13 @@ function poolGuiones(){
 }
 function cardTanda(G, ahora){
   const ok = !!hecho[G.r];
-  const quien = q => q === 'E' ? 'Pregunta en off' : q === 'B' ? 'Imagen' : q === 'C' ? 'Chat de WhatsApp' : q === 'P' ? 'En pantalla' : q === 'S' ? 'Sin abogado' : q === 'K' ? 'Con abogado' : 'A cámara';
+  const quien = q => q === 'E' ? 'Pregunta en off' : q === 'B' ? 'Imagen' : q === 'C' ? 'Chat de WhatsApp' : q === 'P' ? 'En pantalla' : q === 'S' ? 'Sin abogado' : q === 'K' ? 'Con abogado' : q === 'J' ? 'Hace de jefe' : q === 'W' ? 'Hace de empleado' : 'A cámara';
   const por = ahora && D.jornada.porque ? D.jornada.porque[G.r] : '';
   const vs = [{v: 'A', titulo: G.titulo, mecanica: 'la de la tanda', puntaje: null}].concat(G.versiones || []);
-  const rec = ((G.recomendacion || '').match(/grabar\s+([ABC])/) || [])[1];
+  const rec = ((G.recomendacion || '').match(/grabar\s+([ABCD])/) || [])[1];
   const sel = vs.some(x => x.v === ver[G.r]) ? ver[G.r] : (vs.some(x => x.v === rec) ? rec : 'A');
   const guion = (X, base, conOpc) => `
-        <ol>${X.lineas.map((l, i) => `<li class="${l[1] === 'E' || l[1] === 'C' || l[1] === 'P' ? 'e' : 'v'}${l[1] === 'C' ? ' chat' : ''}"><span class="t">${esc(l[0])}</span><div><div class="q">${quien(l[1])}</div>${E(base + '|' + i, l[2], 'tx')}${l[3] ? `<span class="nt">${esc(l[3])}</span>` : ''}</div></li>`).join('')}</ol>
+        <ol>${X.lineas.map((l, i) => `<li class="${l[1] === 'E' || l[1] === 'C' || l[1] === 'P' || l[1] === 'J' ? 'e' : 'v'}${l[1] === 'C' ? ' chat' : ''}"><span class="t">${esc(l[0])}</span><div><div class="q">${quien(l[1])}</div>${E(base + '|' + i, l[2], 'tx')}${l[3] ? `<span class="nt">${esc(l[3])}</span>` : ''}</div></li>`).join('')}</ol>
         <div class="cierres"><div><b>Cierre:</b> ${E(base + '|cierre', X.cierre)}</div></div>
         ${conOpc ? opciones(X, base) : ''}`;
   const tabs = vs.length > 1 ? `<div class="vtabs" role="group" aria-label="Versiones">${vs.map(x => `<button type="button" data-vsel="${esc(G.r)}" data-v="${x.v}" aria-pressed="${x.v === sel}">${x.v}${x.v === 'A' ? ' · ' + esc((G.tipo || '').split(' · ')[0].toLowerCase()) : ' · ' + esc(x.mecanica)}${x.puntaje ? ` <small>${x.puntaje}/10</small>` : ''}</button>`).join('')}</div>
