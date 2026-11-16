@@ -80,29 +80,31 @@ T.append(tema('T01', 'Me echaron en diciembre: ¿y el aguinaldo?', 'Diego', 'DES
      '¿Te despidieron justo antes de fin de año? Escuchá esto antes de firmar.', 'El aguinaldo no se pierde porque te echen. Te explico.'],
     ['Si te echaron este mes, comentá DESPIDO o mandanos un mensaje y la revisamos con vos.',
      'Antes de firmar la liquidación, comentá DESPIDO o escribinos.', 'Mandáselo a alguien al que echaron este mes, y comentá DESPIDO si querés que la miremos.']),
-  ver('B', 'jamas', 'Jamás firmes la liquidación de diciembre sin mirar esto', [
-    L('0:00', 'V', 'Jamás firmes la liquidación de diciembre sin mirar esto.', 'Arranque · En pantalla: DICIEMBRE'),
-    L('0:04', 'V', 'Renuncies o te echen, tu liquidación tiene que traer tres cosas.', AV),
-    L('0:08', 'V', 'Uno: la parte del aguinaldo que ya trabajaste.', AV + ' · En pantalla: 1'),
-    L('0:12', 'V', 'Dos: las vacaciones que no te tomaste.', AV + ' · En pantalla: 2'),
-    L('0:16', 'V', 'Tres: los días que trabajaste del mes.', 'En pantalla: 3'),
-    L('0:20', 'V', 'Si falta una, no firmes conforme.')],
-    'Si te vas este mes, comentá DESPIDO o mandanos un mensaje y la miramos antes de que firmes.',
-    ['Jamás firmes la liquidación de diciembre sin mirar esto.', 'Si te vas de un trabajo en diciembre, revisá estas tres cosas.',
-     'Tres cosas que tiene que traer tu liquidación de fin de año.', 'Antes de firmar en diciembre, mirá esto.'],
-    ['Si te vas este mes, comentá DESPIDO o mandanos un mensaje y la miramos antes de que firmes.',
-     'Guardalo para cuando te toque, y comentá DESPIDO si querés que la revisemos.', '¿Te faltó alguna? Comentá DESPIDO o escribinos.']),
-  ver('C', 'papel', 'Buscá esto en tu liquidación de diciembre', [
-    L('0:00', 'V', 'Si te echan en diciembre, buscá esto en tu liquidación.', 'Arranque · la liquidación sobre la mesa, sin cifras legibles'),
-    L('0:04', 'V', 'Acá: la parte del aguinaldo que ya trabajaste.', AV + ' · la mano marca la línea'),
-    L('0:09', 'V', 'Acá: las vacaciones que no te tomaste.', AV),
-    L('0:13', 'V', 'Y acá: los días que trabajaste del mes.'),
-    L('0:17', 'V', 'Si alguno no está, no firmes conforme. Traela y la miramos.')],
-    'Si tenés tu liquidación en la mano, comentá DESPIDO o mandanos un mensaje.',
-    ['Si te echan en diciembre, buscá esto en tu liquidación.', 'Tu liquidación de fin de año tiene que tener estas tres líneas.',
-     'Agarrá tu liquidación y fijate si dice esto.', 'Esto es lo primero que miramos cuando nos traen una liquidación.'],
-    ['Si tenés tu liquidación en la mano, comentá DESPIDO o mandanos un mensaje.', 'Sacale una foto y escribinos: la miramos.',
-     '¿No encontrás alguna? Comentá DESPIDO o escribinos.'])]))
+  ver('B', 'chat', '«Ya te liquidamos todo»', [
+    L('0:00', 'C', 'Encargado: Te pasamos la liquidación. Firmala y mañana cobrás.', 'Arranque'),
+    L('0:03', 'C', 'Vos: ¿Y el aguinaldo?'),
+    L('0:05', 'C', 'Encargado: No, el aguinaldo es para los que siguen.'),
+    L('0:07', 'V', 'Esa respuesta no es así.', AV),
+    L('0:09', 'V', 'Aunque te vayas en diciembre, la parte del aguinaldo que ya trabajaste es tuya.', AV),
+    L('0:15', 'V', 'Y también las vacaciones que no te tomaste y los días del mes.', AV),
+    L('0:19', 'V', 'Guardá ese chat y no firmes conforme hasta que alguien la revise.')],
+    'Si te mandaron un mensaje así, comentá DESPIDO o mandanos una captura y la revisamos.',
+    ['«El aguinaldo es para los que siguen.» ¿Te dijeron esto?', 'Si tu encargado te escribió esto, no firmes todavía.',
+     'Este chat se repite mucho en diciembre.', '«Firmala y mañana cobrás.» Esperá.'],
+    ['Si te mandaron un mensaje así, comentá DESPIDO o mandanos una captura y la revisamos.', 'Guardá el chat y escribinos.',
+     'Comentá DESPIDO y te escribimos por privado.']),
+  ver('C', 'pizarron', 'La liquidación de diciembre, en el pizarrón', [
+    L('0:00', 'V', 'Si te echan en diciembre, esto es lo que tiene que traer tu liquidación. Te lo muestro.', 'Arranque · pizarrón limpio'),
+    L('0:05', 'V', 'Uno: la parte del aguinaldo que ya trabajaste.', AV + ' · lo escribe'),
+    L('0:10', 'V', 'Dos: las vacaciones que no te tomaste.', AV + ' · lo escribe'),
+    L('0:14', 'V', 'Tres: los días que trabajaste del mes.', 'lo escribe'),
+    L('0:18', 'V', 'Y si te echaron, la indemnización va aparte.', AV + ' · lo escribe y lo encierra'),
+    L('0:23', 'V', 'Si falta alguna, no firmes conforme.')],
+    'Si te echaron este mes, comentá DESPIDO o mandanos un mensaje y la revisamos.',
+    ['Si te echan en diciembre, esto es lo que tiene que traer tu liquidación.', 'La liquidación de fin de año, en un pizarrón.',
+     'Te muestro qué tiene que decir tu liquidación de diciembre.', 'Cuatro renglones que tienen que estar en tu liquidación.'],
+    ['Si te echaron este mes, comentá DESPIDO o mandanos un mensaje y la revisamos.', 'Sacale una foto a tu liquidación y escribinos.',
+     '¿Te falta alguna? Comentá DESPIDO o escribinos.'], 'Duración ≈32 s')]))
 
 # 02 · no me renuevan el contrato
 T.append(tema('T02', 'No me renuevan el contrato para enero', 'Diego', 'DESPIDO', 'B',
@@ -279,15 +281,15 @@ T.append(tema('T06', 'Trabajo en negro y me lastimé', 'Roberto', 'CONSULTA', 'A
     ['Trabajo en negro y me caí de una escalera en la obra.', '«No podés reclamar porque no estás anotado.» No es así.',
      'Te lastimaste trabajando en negro. Lo primero que te preguntamos.', 'Vino a consultar porque el patrón le dijo que no podía reclamar.'],
     ['Si te pasó, comentá CONSULTA o mandanos un mensaje.', 'Comentá CONSULTA y te escribimos por privado.', 'Mandáselo a alguien que trabaja en una obra.']),
-  ver('C', 'sipodes', 'Sí: podés reclamar aunque trabajes en negro', [
-    L('0:00', 'V', 'Sí: podés reclamar aunque trabajes en negro.', 'Arranque · En pantalla: AUNQUE ESTÉS EN NEGRO'),
-    L('0:04', 'V', 'Lo que hay que mostrar es que trabajabas ahí. Tres formas.', AV),
-    L('0:08', 'V', 'Uno: los mensajes con el patrón.', 'En pantalla: 1'),
-    L('0:11', 'V', 'Dos: fotos y testigos.', 'En pantalla: 2'),
-    L('0:14', 'V', 'Tres: cómo te pagaban.', 'En pantalla: 3')],
+  ver('C', 'placa', '¿Se puede reclamar si trabajás en negro?', [
+    L('0:00', 'P', 'TE LASTIMASTE TRABAJANDO EN NEGRO. ¿PODÉS RECLAMAR?', 'Arranque'),
+    L('0:03', 'V', 'Sí. Que no te hayan registrado no borra lo que te pasó.', AV),
+    L('0:07', 'V', 'Lo que hay que mostrar es que trabajabas ahí.', AV),
+    L('0:10', 'V', 'Los mensajes con el patrón, fotos, testigos y cómo te pagaban.', AV),
+    L('0:15', 'V', 'Guardá todo eso antes de que te lo pidan.')],
     'Si te lastimaste trabajando en negro, comentá CONSULTA o mandanos un mensaje.',
-    ['Sí: podés reclamar aunque trabajes en negro.', 'Trabajar en negro no te deja sin derechos.',
-     'Tres cosas que sirven para mostrar que trabajabas ahí.', 'Sí, podés. Aunque no estés anotado.'],
+    ['Te lastimaste trabajando en negro. ¿Podés reclamar?', 'Trabajar en negro no te deja sin derechos.',
+     'Lo que sirve para mostrar que trabajabas ahí.', 'En negro no quiere decir sin nada.'],
     ['Si te lastimaste trabajando en negro, comentá CONSULTA o mandanos un mensaje.', 'Guardalo y comentá CONSULTA si te pasó.',
      'Mandáselo a alguien que trabaja sin estar anotado.'])]))
 
@@ -389,17 +391,19 @@ T.append(tema('T09', 'Qué traer a la primera consulta después de un choque', '
      'Te chocaron. Tenés un minuto: juntá esto.', 'Contra reloj: lo que no podés no tener después de un choque.'],
     ['Si te pasó, comentá CHOQUE o mandanos un mensaje y te decimos por dónde empezar.', 'Guardalo para cuando te toque.',
      'Mandáselo a alguien que maneja todos los días.'], 'Duración ≈45 s'),
-  ver('C', 'papel', 'Lo que hay que traer, uno por uno sobre la mesa', [
-    L('0:00', 'V', 'Esto es lo que nos tenés que traer después de un choque.', 'Arranque · escritorio vacío'),
-    L('0:03', 'V', 'Las fotos de los autos y del lugar.', 'La mano deja las fotos impresas'),
-    L('0:07', 'V', 'Los datos del otro y de su seguro.', 'Un papel con datos tapados'),
-    L('0:11', 'V', 'La denuncia que hiciste.', AV),
-    L('0:15', 'V', 'La constancia de la guardia y los recibos.'),
-    L('0:19', 'V', 'Y si no pudiste trabajar, tu recibo de sueldo.'),
-    L('0:23', 'V', 'Si te falta algo, se consigue. Pero con esto no arrancamos de cero.')],
+  ver('C', 'cadena', 'Tuve un choque: ¿qué tengo que guardar?', [
+    L('0:00', 'E', 'Doctor, tuve un choque. ¿Qué tengo que guardar?', 'Arranque · la pregunta en una caja'),
+    L('0:03', 'V', 'Las fotos de los dos autos y del lugar. Y no las borres.'),
+    L('0:07', 'E', '¿Y si ya las borré?'),
+    L('0:08', 'V', 'Fijate si alguien más sacó. Un testigo o el otro conductor.'),
+    L('0:12', 'E', '¿Y los papeles?'),
+    L('0:13', 'V', 'La denuncia en tu seguro, la constancia de la guardia y los recibos de lo que gastaste.', AV),
+    L('0:19', 'E', '¿Y si no pude ir a trabajar?'),
+    L('0:20', 'V', 'Tu recibo de sueldo, o algo que muestre cuánto cobrabas.'),
+    L('0:24', 'V', 'No improvises: primero juntá todo, después decidís.')],
     'Si te pasó, comentá CHOQUE o mandanos un mensaje.',
-    ['Esto es lo que nos tenés que traer después de un choque.', 'Lo que tiene que haber sobre esta mesa el primer día.',
-     'Seis papeles que hacen que no arranquemos de cero.', 'Después de un choque, esto vale oro.'],
+    ['Doctor, tuve un choque. ¿Qué tengo que guardar?', 'Después de un choque, cuatro preguntas que te vas a hacer.',
+     '«¿Y si ya borré las fotos?» Te contesto.', 'Lo que tenés que guardar después de un choque, pregunta por pregunta.'],
     ['Si te pasó, comentá CHOQUE o mandanos un mensaje.', 'Guardalo para cuando te toque.', 'Comentá CHOQUE y te escribimos por privado.'])]))
 
 # 10 · lo que te ofrece el seguro (A = C-16)
@@ -462,16 +466,16 @@ T.append(tema('T11', 'Arreglar con el seguro: solo o con abogado', 'Carlos', 'CH
      '«¿Y si necesito la plata ya?» Te contesto.', 'Arreglar rápido con el seguro: lo que nadie te pregunta.'],
     ['Si te ofrecieron arreglar, comentá CHOQUE o mandanos un mensaje.', 'No improvises: comentá CHOQUE o escribinos.',
      'Mandáselo a alguien que está por firmar.']),
-  ver('C', 'jamas', 'Jamás arregles con el seguro sin revisar esto', [
-    L('0:00', 'V', 'Jamás arregles con el seguro sin revisar esto.', 'Arranque'),
-    L('0:03', 'V', 'Uno: si incluye tu lesión, no solo el auto.', AV + ' · En pantalla: 1'),
-    L('0:07', 'V', 'Dos: si incluye lo que gastaste en médicos y remedios.', AV + ' · En pantalla: 2'),
-    L('0:11', 'V', 'Tres: si incluye los días que no pudiste trabajar.', AV + ' · En pantalla: 3'),
-    L('0:15', 'V', 'Si falta una, no firmes.')],
+  ver('C', 'pizarron', 'Lo que te paga el seguro y lo que te corresponde', [
+    L('0:00', 'V', 'Lo que te ofrece el seguro y lo que te corresponde no son lo mismo. Te lo muestro.', 'Arranque · pizarrón con dos columnas'),
+    L('0:05', 'V', 'De este lado, lo que suele mirar el seguro: el auto.', AV + ' · escribe «EL AUTO»'),
+    L('0:10', 'V', 'De este otro, lo tuyo: la lesión, los médicos y los remedios.', AV + ' · escribe en la otra columna'),
+    L('0:16', 'V', 'Y los días que no pudiste trabajar.', AV),
+    L('0:20', 'V', 'Si el arreglo solo tiene la primera columna, no firmes.')],
     'Si estás por arreglar, comentá CHOQUE o mandanos un mensaje.',
-    ['Jamás arregles con el seguro sin revisar esto.', 'Tres cosas que tiene que incluir el arreglo con el seguro.',
-     'Antes de firmar con el seguro, mirá estas tres.', 'Si el arreglo no dice esto, no firmes.'],
-    ['Si estás por arreglar, comentá CHOQUE o mandanos un mensaje.', 'Guardalo para cuando te toque.', 'Mandáselo a alguien que está por firmar.'])]))
+    ['Lo que te ofrece el seguro y lo que te corresponde no son lo mismo. Te lo muestro.', 'Dos columnas antes de arreglar con el seguro.',
+     'Esto mira el seguro. Esto te corresponde a vos.', 'Si tu arreglo tiene una sola columna, no firmes.'],
+    ['Si estás por arreglar, comentá CHOQUE o mandanos un mensaje.', 'Guardalo para cuando te toque.', 'Mandáselo a alguien que está por firmar.'], 'Duración ≈30 s')]))
 
 # 12 · las excusas para no consultar
 T.append(tema('T12', 'Las excusas para no consultar', 'amplio', 'CONSULTA', 'A',
@@ -523,17 +527,18 @@ T.append(tema('T12', 'Las excusas para no consultar', 'amplio', 'CONSULTA', 'A',
 
 # 13 · feriado
 T.append(tema('T13', 'Trabajar un feriado', 'amplio', 'CONSULTA', 'A',
-  'es la fila «Jamás» que ya se usó con Lucía; solo tiene sentido publicarlo antes de un feriado.', [
-  ver('A', 'jamas', 'Jamás trabajes un feriado sin saber esto', [
-    L('0:00', 'V', 'Jamás trabajes un feriado sin saber esto.', 'Arranque'),
-    L('0:03', 'V', 'Uno: no se paga como un día normal.', AV + ' · En pantalla: 1'),
-    L('0:07', 'V', 'Dos: tiene que figurar aparte en tu recibo.', AV + ' · En pantalla: 2'),
-    L('0:11', 'V', 'Tres: si no te lo pagaron bien, se puede reclamar.', AV + ' · En pantalla: 3')],
+  'la pregunta la tiene cualquiera antes de un fin de semana largo; solo tiene sentido publicarlo antes de un feriado.', [
+  ver('A', 'esverdad', '¿Es verdad que el feriado se paga como un día más?', [
+    L('0:00', 'E', 'Doctor, ¿es verdad que si trabajo el feriado me lo pagan como un día más?', 'Arranque · la pregunta en una caja'),
+    L('0:04', 'V', 'Te lo respondo porque me lo preguntan mucho antes de cada fin de semana largo. No.', AV),
+    L('0:09', 'V', 'El feriado trabajado se paga distinto.', AV),
+    L('0:12', 'V', 'Y tiene que figurar aparte en tu recibo.', AV),
+    L('0:16', 'V', 'Si no figura, se puede reclamar. No alcanza con saber que trabajaste: guardá el recibo.', AV)],
     'Si trabajaste un feriado y no te lo pagaron bien, comentá CONSULTA o mandanos un mensaje.',
-    ['Jamás trabajes un feriado sin saber esto.', 'Si te toca trabajar el feriado, mirá esto.',
-     'Tres cosas que tiene que tener tu recibo si trabajaste un feriado.', 'El feriado no se paga como un día normal.'],
+    ['Doctor, ¿es verdad que si trabajo el feriado me lo pagan como un día más?', '¿Es verdad que el feriado es un día más?',
+     'Te lo respondo porque me lo preguntan antes de cada fin de semana largo.', 'No. Y te explico cómo te das cuenta.'],
     ['Si trabajaste un feriado y no te lo pagaron bien, comentá CONSULTA o mandanos un mensaje.', 'Mandáselo a alguien que trabaja el feriado.',
-     'Guardalo para el próximo feriado.']),
+     'Guardalo para el próximo feriado.'], 'Duración ≈28 s'),
   ver('B', 'placa', '¿Te pueden hacer trabajar un feriado?', [
     L('0:00', 'P', '¿TE PUEDEN HACER TRABAJAR UN FERIADO?', 'Arranque'),
     L('0:03', 'V', 'Depende del trabajo. Pero si lo trabajás, no se paga como un día cualquiera.', AV),

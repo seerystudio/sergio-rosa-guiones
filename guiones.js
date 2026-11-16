@@ -94,115 +94,127 @@ window.GUIONES = {
     "versiones": [
      {
       "v": "B",
-      "titulo": "Jamás firmes la liquidación de diciembre sin mirar esto",
-      "mecanica": "jamás",
+      "titulo": "«Ya te liquidamos todo»",
+      "mecanica": "chat en pantalla",
       "meta": "Duración ≈35 s",
-      "ej": "DeHHucjoZG8",
-      "ejde": "«Jamás te vayas de una empresa sin reclamar esto» · @juanmalorente_laboralista",
-      "nota": "De pie al lado de la ventana, plano medio. Corte con zoom y placa en cada número.",
+      "ej": "DU5r_mnDkj5",
+      "ejde": "Consultas por WhatsApp · @estudiojuridicoarancibia",
+      "nota": "El chat en pantalla, armado en edición con nombres inventados; el abogado lo lee y explica.",
       "lineas": [
        [
         "0:00",
-        "V",
-        "Jamás firmes la liquidación de diciembre sin mirar esto.",
-        "Arranque · En pantalla: DICIEMBRE"
+        "C",
+        "Encargado: Te pasamos la liquidación. Firmala y mañana cobrás.",
+        "Arranque"
        ],
        [
-        "0:04",
+        "0:03",
+        "C",
+        "Vos: ¿Y el aguinaldo?",
+        ""
+       ],
+       [
+        "0:05",
+        "C",
+        "Encargado: No, el aguinaldo es para los que siguen.",
+        ""
+       ],
+       [
+        "0:07",
         "V",
-        "Renuncies o te echen, tu liquidación tiene que traer tres cosas.",
+        "Esa respuesta no es así.",
         "A validar"
        ],
        [
-        "0:08",
+        "0:09",
         "V",
-        "Uno: la parte del aguinaldo que ya trabajaste.",
-        "A validar · En pantalla: 1"
+        "Aunque te vayas en diciembre, la parte del aguinaldo que ya trabajaste es tuya.",
+        "A validar"
        ],
        [
-        "0:12",
+        "0:15",
         "V",
-        "Dos: las vacaciones que no te tomaste.",
-        "A validar · En pantalla: 2"
+        "Y también las vacaciones que no te tomaste y los días del mes.",
+        "A validar"
        ],
        [
-        "0:16",
+        "0:19",
         "V",
-        "Tres: los días que trabajaste del mes.",
-        "En pantalla: 3"
-       ],
-       [
-        "0:20",
-        "V",
-        "Si falta una, no firmes conforme.",
+        "Guardá ese chat y no firmes conforme hasta que alguien la revise.",
         ""
        ]
       ],
-      "cierre": "Si te vas este mes, comentá DESPIDO o mandanos un mensaje y la miramos antes de que firmes.",
+      "cierre": "Si te mandaron un mensaje así, comentá DESPIDO o mandanos una captura y la revisamos.",
       "hooks": [
-       "Jamás firmes la liquidación de diciembre sin mirar esto.",
-       "Si te vas de un trabajo en diciembre, revisá estas tres cosas.",
-       "Tres cosas que tiene que traer tu liquidación de fin de año.",
-       "Antes de firmar en diciembre, mirá esto."
+       "«El aguinaldo es para los que siguen.» ¿Te dijeron esto?",
+       "Si tu encargado te escribió esto, no firmes todavía.",
+       "Este chat se repite mucho en diciembre.",
+       "«Firmala y mañana cobrás.» Esperá."
       ],
       "cierres": [
-       "Si te vas este mes, comentá DESPIDO o mandanos un mensaje y la miramos antes de que firmes.",
-       "Guardalo para cuando te toque, y comentá DESPIDO si querés que la revisemos.",
-       "¿Te faltó alguna? Comentá DESPIDO o escribinos."
+       "Si te mandaron un mensaje así, comentá DESPIDO o mandanos una captura y la revisamos.",
+       "Guardá el chat y escribinos.",
+       "Comentá DESPIDO y te escribimos por privado."
       ],
       "hookIdx": 0
      },
      {
       "v": "C",
-      "titulo": "Buscá esto en tu liquidación de diciembre",
-      "mecanica": "papel en la mesa",
-      "meta": "Duración ≈35 s",
-      "ej": "DeHp3Qyucg7",
-      "ejde": "«Esta cláusula» · @reyessulbaran.juridico",
-      "nota": "Cenital del escritorio: el papel sobre la mesa y la mano que marca cada parte. Voz del abogado. Ninguna cifra legible.",
+      "titulo": "La liquidación de diciembre, en el pizarrón",
+      "mecanica": "pizarrón",
+      "meta": "Duración ≈32 s",
+      "ej": "DdSDh_hD9SU",
+      "ejde": "El pizarrón · @laboralista.ok",
+      "nota": "Plano entero; escribe en el pizarrón mientras explica. Pizarrón limpio y fibrón que se lea.",
       "lineas": [
        [
         "0:00",
         "V",
-        "Si te echan en diciembre, buscá esto en tu liquidación.",
-        "Arranque · la liquidación sobre la mesa, sin cifras legibles"
+        "Si te echan en diciembre, esto es lo que tiene que traer tu liquidación. Te lo muestro.",
+        "Arranque · pizarrón limpio"
        ],
        [
-        "0:04",
+        "0:05",
         "V",
-        "Acá: la parte del aguinaldo que ya trabajaste.",
-        "A validar · la mano marca la línea"
+        "Uno: la parte del aguinaldo que ya trabajaste.",
+        "A validar · lo escribe"
        ],
        [
-        "0:09",
+        "0:10",
         "V",
-        "Acá: las vacaciones que no te tomaste.",
-        "A validar"
+        "Dos: las vacaciones que no te tomaste.",
+        "A validar · lo escribe"
        ],
        [
-        "0:13",
+        "0:14",
         "V",
-        "Y acá: los días que trabajaste del mes.",
-        ""
+        "Tres: los días que trabajaste del mes.",
+        "lo escribe"
        ],
        [
-        "0:17",
+        "0:18",
         "V",
-        "Si alguno no está, no firmes conforme. Traela y la miramos.",
+        "Y si te echaron, la indemnización va aparte.",
+        "A validar · lo escribe y lo encierra"
+       ],
+       [
+        "0:23",
+        "V",
+        "Si falta alguna, no firmes conforme.",
         ""
        ]
       ],
-      "cierre": "Si tenés tu liquidación en la mano, comentá DESPIDO o mandanos un mensaje.",
+      "cierre": "Si te echaron este mes, comentá DESPIDO o mandanos un mensaje y la revisamos.",
       "hooks": [
-       "Si te echan en diciembre, buscá esto en tu liquidación.",
-       "Tu liquidación de fin de año tiene que tener estas tres líneas.",
-       "Agarrá tu liquidación y fijate si dice esto.",
-       "Esto es lo primero que miramos cuando nos traen una liquidación."
+       "Si te echan en diciembre, esto es lo que tiene que traer tu liquidación.",
+       "La liquidación de fin de año, en un pizarrón.",
+       "Te muestro qué tiene que decir tu liquidación de diciembre.",
+       "Cuatro renglones que tienen que estar en tu liquidación."
       ],
       "cierres": [
-       "Si tenés tu liquidación en la mano, comentá DESPIDO o mandanos un mensaje.",
-       "Sacale una foto y escribinos: la miramos.",
-       "¿No encontrás alguna? Comentá DESPIDO o escribinos."
+       "Si te echaron este mes, comentá DESPIDO o mandanos un mensaje y la revisamos.",
+       "Sacale una foto a tu liquidación y escribinos.",
+       "¿Te falta alguna? Comentá DESPIDO o escribinos."
       ],
       "hookIdx": 0
      }
@@ -1085,50 +1097,50 @@ window.GUIONES = {
      },
      {
       "v": "C",
-      "titulo": "Sí: podés reclamar aunque trabajes en negro",
-      "mecanica": "sí, podés",
+      "titulo": "¿Se puede reclamar si trabajás en negro?",
+      "mecanica": "pregunta en placa",
       "meta": "Duración ≈35 s",
-      "ej": "Dd1KV0LIqb4",
-      "ejde": "«Sí, podés irte con indemnización» · @juanmalorente_laboralista",
-      "nota": "De pie al lado de la ventana, plano medio. Corte con zoom y placa en cada número.",
+      "ej": "De7zcEUIAs5",
+      "ejde": "«¿Quién cobra la indemnización cuando fallece el trabajador?» · @derechosart (128 mil, 13 veces su normal)",
+      "nota": "La pregunta escrita grande desde el primer cuadro; el abogado contesta de frente, plano cerrado.",
       "lineas": [
        [
         "0:00",
-        "V",
-        "Sí: podés reclamar aunque trabajes en negro.",
-        "Arranque · En pantalla: AUNQUE ESTÉS EN NEGRO"
+        "P",
+        "TE LASTIMASTE TRABAJANDO EN NEGRO. ¿PODÉS RECLAMAR?",
+        "Arranque"
        ],
        [
-        "0:04",
+        "0:03",
         "V",
-        "Lo que hay que mostrar es que trabajabas ahí. Tres formas.",
+        "Sí. Que no te hayan registrado no borra lo que te pasó.",
         "A validar"
        ],
        [
-        "0:08",
+        "0:07",
         "V",
-        "Uno: los mensajes con el patrón.",
-        "En pantalla: 1"
+        "Lo que hay que mostrar es que trabajabas ahí.",
+        "A validar"
        ],
        [
-        "0:11",
+        "0:10",
         "V",
-        "Dos: fotos y testigos.",
-        "En pantalla: 2"
+        "Los mensajes con el patrón, fotos, testigos y cómo te pagaban.",
+        "A validar"
        ],
        [
-        "0:14",
+        "0:15",
         "V",
-        "Tres: cómo te pagaban.",
-        "En pantalla: 3"
+        "Guardá todo eso antes de que te lo pidan.",
+        ""
        ]
       ],
       "cierre": "Si te lastimaste trabajando en negro, comentá CONSULTA o mandanos un mensaje.",
       "hooks": [
-       "Sí: podés reclamar aunque trabajes en negro.",
+       "Te lastimaste trabajando en negro. ¿Podés reclamar?",
        "Trabajar en negro no te deja sin derechos.",
-       "Tres cosas que sirven para mostrar que trabajabas ahí.",
-       "Sí, podés. Aunque no estés anotado."
+       "Lo que sirve para mostrar que trabajabas ahí.",
+       "En negro no quiere decir sin nada."
       ],
       "cierres": [
        "Si te lastimaste trabajando en negro, comentá CONSULTA o mandanos un mensaje.",
@@ -1668,62 +1680,74 @@ window.GUIONES = {
      },
      {
       "v": "C",
-      "titulo": "Lo que hay que traer, uno por uno sobre la mesa",
-      "mecanica": "papel en la mesa",
+      "titulo": "Tuve un choque: ¿qué tengo que guardar?",
+      "mecanica": "cadena de repreguntas",
       "meta": "Duración ≈35 s",
-      "ej": "DeHp3Qyucg7",
-      "ejde": "«Esta cláusula» · @reyessulbaran.juridico",
-      "nota": "Cenital del escritorio: el papel sobre la mesa y la mano que marca cada parte. Voz del abogado. Ninguna cifra legible.",
+      "ej": "Dez56Kxx_Rf",
+      "ejde": "«¿Lo puedo sancionar?» · @ani.petratti.abogada",
+      "nota": "Sentado, plano medio. La primera pregunta en una caja arriba; las repreguntas en off, cortas. Respuestas de una o dos frases.",
       "lineas": [
        [
         "0:00",
-        "V",
-        "Esto es lo que nos tenés que traer después de un choque.",
-        "Arranque · escritorio vacío"
+        "E",
+        "Doctor, tuve un choque. ¿Qué tengo que guardar?",
+        "Arranque · la pregunta en una caja"
        ],
        [
         "0:03",
         "V",
-        "Las fotos de los autos y del lugar.",
-        "La mano deja las fotos impresas"
+        "Las fotos de los dos autos y del lugar. Y no las borres.",
+        ""
        ],
        [
         "0:07",
-        "V",
-        "Los datos del otro y de su seguro.",
-        "Un papel con datos tapados"
+        "E",
+        "¿Y si ya las borré?",
+        ""
        ],
        [
-        "0:11",
+        "0:08",
         "V",
-        "La denuncia que hiciste.",
+        "Fijate si alguien más sacó. Un testigo o el otro conductor.",
+        ""
+       ],
+       [
+        "0:12",
+        "E",
+        "¿Y los papeles?",
+        ""
+       ],
+       [
+        "0:13",
+        "V",
+        "La denuncia en tu seguro, la constancia de la guardia y los recibos de lo que gastaste.",
         "A validar"
        ],
        [
-        "0:15",
-        "V",
-        "La constancia de la guardia y los recibos.",
-        ""
-       ],
-       [
         "0:19",
-        "V",
-        "Y si no pudiste trabajar, tu recibo de sueldo.",
+        "E",
+        "¿Y si no pude ir a trabajar?",
         ""
        ],
        [
-        "0:23",
+        "0:20",
         "V",
-        "Si te falta algo, se consigue. Pero con esto no arrancamos de cero.",
+        "Tu recibo de sueldo, o algo que muestre cuánto cobrabas.",
+        ""
+       ],
+       [
+        "0:24",
+        "V",
+        "No improvises: primero juntá todo, después decidís.",
         ""
        ]
       ],
       "cierre": "Si te pasó, comentá CHOQUE o mandanos un mensaje.",
       "hooks": [
-       "Esto es lo que nos tenés que traer después de un choque.",
-       "Lo que tiene que haber sobre esta mesa el primer día.",
-       "Seis papeles que hacen que no arranquemos de cero.",
-       "Después de un choque, esto vale oro."
+       "Doctor, tuve un choque. ¿Qué tengo que guardar?",
+       "Después de un choque, cuatro preguntas que te vas a hacer.",
+       "«¿Y si ya borré las fotos?» Te contesto.",
+       "Lo que tenés que guardar después de un choque, pregunta por pregunta."
       ],
       "cierres": [
        "Si te pasó, comentá CHOQUE o mandanos un mensaje.",
@@ -2068,50 +2092,50 @@ window.GUIONES = {
      },
      {
       "v": "C",
-      "titulo": "Jamás arregles con el seguro sin revisar esto",
-      "mecanica": "jamás",
-      "meta": "Duración ≈35 s",
-      "ej": "DeHHucjoZG8",
-      "ejde": "«Jamás te vayas de una empresa sin reclamar esto» · @juanmalorente_laboralista",
-      "nota": "De pie al lado de la ventana, plano medio. Corte con zoom y placa en cada número.",
+      "titulo": "Lo que te paga el seguro y lo que te corresponde",
+      "mecanica": "pizarrón",
+      "meta": "Duración ≈30 s",
+      "ej": "DdSDh_hD9SU",
+      "ejde": "El pizarrón · @laboralista.ok",
+      "nota": "Plano entero; escribe en el pizarrón mientras explica. Pizarrón limpio y fibrón que se lea.",
       "lineas": [
        [
         "0:00",
         "V",
-        "Jamás arregles con el seguro sin revisar esto.",
-        "Arranque"
+        "Lo que te ofrece el seguro y lo que te corresponde no son lo mismo. Te lo muestro.",
+        "Arranque · pizarrón con dos columnas"
        ],
        [
-        "0:03",
+        "0:05",
         "V",
-        "Uno: si incluye tu lesión, no solo el auto.",
-        "A validar · En pantalla: 1"
+        "De este lado, lo que suele mirar el seguro: el auto.",
+        "A validar · escribe «EL AUTO»"
        ],
        [
-        "0:07",
+        "0:10",
         "V",
-        "Dos: si incluye lo que gastaste en médicos y remedios.",
-        "A validar · En pantalla: 2"
+        "De este otro, lo tuyo: la lesión, los médicos y los remedios.",
+        "A validar · escribe en la otra columna"
        ],
        [
-        "0:11",
+        "0:16",
         "V",
-        "Tres: si incluye los días que no pudiste trabajar.",
-        "A validar · En pantalla: 3"
+        "Y los días que no pudiste trabajar.",
+        "A validar"
        ],
        [
-        "0:15",
+        "0:20",
         "V",
-        "Si falta una, no firmes.",
+        "Si el arreglo solo tiene la primera columna, no firmes.",
         ""
        ]
       ],
       "cierre": "Si estás por arreglar, comentá CHOQUE o mandanos un mensaje.",
       "hooks": [
-       "Jamás arregles con el seguro sin revisar esto.",
-       "Tres cosas que tiene que incluir el arreglo con el seguro.",
-       "Antes de firmar con el seguro, mirá estas tres.",
-       "Si el arreglo no dice esto, no firmes."
+       "Lo que te ofrece el seguro y lo que te corresponde no son lo mismo. Te lo muestro.",
+       "Dos columnas antes de arreglar con el seguro.",
+       "Esto mira el seguro. Esto te corresponde a vos.",
+       "Si tu arreglo tiene una sola columna, no firmes."
       ],
       "cierres": [
        "Si estás por arreglar, comentá CHOQUE o mandanos un mensaje.",
@@ -2367,44 +2391,50 @@ window.GUIONES = {
    },
    {
     "r": "T13",
-    "tipo": "Jamás · amplio · CONSULTA",
+    "tipo": "¿es verdad? · amplio · CONSULTA",
     "titulo": "Trabajar un feriado",
-    "meta": "Duración ≈35 s · amplio · cierra en CONSULTA",
-    "ej": "DeHHucjoZG8",
-    "ejde": "«Jamás te vayas de una empresa sin reclamar esto» · @juanmalorente_laboralista",
-    "nota": "De pie al lado de la ventana, plano medio. Corte con zoom y placa en cada número.",
+    "meta": "Duración ≈28 s · amplio · cierra en CONSULTA",
+    "ej": "DfDWRLStGwO",
+    "ejde": "«¿Ya no hay multas con la Ley Bases?» · @ani.petratti.abogada",
+    "nota": "Sentado a una mesa con el celular en la mano, como si leyera la pregunta. La pregunta en una caja en el primer cuadro; papeles de b-roll a la mitad.",
     "lineas": [
      [
       "0:00",
-      "V",
-      "Jamás trabajes un feriado sin saber esto.",
-      "Arranque"
+      "E",
+      "Doctor, ¿es verdad que si trabajo el feriado me lo pagan como un día más?",
+      "Arranque · la pregunta en una caja"
      ],
      [
-      "0:03",
+      "0:04",
       "V",
-      "Uno: no se paga como un día normal.",
-      "A validar · En pantalla: 1"
+      "Te lo respondo porque me lo preguntan mucho antes de cada fin de semana largo. No.",
+      "A validar"
      ],
      [
-      "0:07",
+      "0:09",
       "V",
-      "Dos: tiene que figurar aparte en tu recibo.",
-      "A validar · En pantalla: 2"
+      "El feriado trabajado se paga distinto.",
+      "A validar"
      ],
      [
-      "0:11",
+      "0:12",
       "V",
-      "Tres: si no te lo pagaron bien, se puede reclamar.",
-      "A validar · En pantalla: 3"
+      "Y tiene que figurar aparte en tu recibo.",
+      "A validar"
+     ],
+     [
+      "0:16",
+      "V",
+      "Si no figura, se puede reclamar. No alcanza con saber que trabajaste: guardá el recibo.",
+      "A validar"
      ]
     ],
     "cierre": "Si trabajaste un feriado y no te lo pagaron bien, comentá CONSULTA o mandanos un mensaje.",
     "hooks": [
-     "Jamás trabajes un feriado sin saber esto.",
-     "Si te toca trabajar el feriado, mirá esto.",
-     "Tres cosas que tiene que tener tu recibo si trabajaste un feriado.",
-     "El feriado no se paga como un día normal."
+     "Doctor, ¿es verdad que si trabajo el feriado me lo pagan como un día más?",
+     "¿Es verdad que el feriado es un día más?",
+     "Te lo respondo porque me lo preguntan antes de cada fin de semana largo.",
+     "No. Y te explico cómo te das cuenta."
     ],
     "cierres": [
      "Si trabajaste un feriado y no te lo pagaron bien, comentá CONSULTA o mandanos un mensaje.",
@@ -2412,7 +2442,7 @@ window.GUIONES = {
      "Guardalo para el próximo feriado."
     ],
     "hookIdx": 0,
-    "recomendacion": "grabar A — es la fila «Jamás» que ya se usó con Lucía; solo tiene sentido publicarlo antes de un feriado. Si nadie lo elige para antes del fin de semana largo de diciembre, vuelve al banco.",
+    "recomendacion": "grabar A — la pregunta la tiene cualquiera antes de un fin de semana largo; solo tiene sentido publicarlo antes de un feriado. Si nadie lo elige para antes del fin de semana largo de diciembre, vuelve al banco.",
     "versiones": [
      {
       "v": "B",
